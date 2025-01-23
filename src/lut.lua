@@ -3,19 +3,20 @@ local function defaulthandler(self, _line)
 end
 
 local hextable = {
-    ["[%s]*Mind's Reflection[%s]*"]={
+    ["minds-reflection"]={
+        ["match_pattern"]="[%s]*Mind's Reflection[%s]*",
         ["start_dir"]="NORTH_EAST",
         ["angles"]="qaq",
         ["handler"]=defaulthandler
     },
-    --- introspection
-    ["[%s]*{[%s]*"]={
+    ["introspection"]={
+        ["match_pattern"]="[%s]*{[%s]*",
         ["start_dir"]="NORTH_EAST",
         ["angles"]="qqq",
         ["handler"]=defaulthandler
     },
-    --- retrospection
-    ["[%s]*}[%s]*"]={
+    ["retrospection"]={
+        ["match_pattern"]="[%s]*}[%s]*",
         ["start_dir"]="NORTH_EAST",
         ["angles"]="eee",
         ["handler"]=defaulthandler

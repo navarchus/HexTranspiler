@@ -55,64 +55,29 @@ local hexlookup = lookup.hextable
 -- load input
 ---@diagnostic disable-next-line: undefined-global
 if not fs.exists(input) then error("Bad input path") end
-local lines = {}
-for line in io.lines(input) do
-    -- TODO! #define and #include macros
-    -- error if we encounter #define or include
-    if string.match(line, ".*#define.*") or string.match(line, ".*#include.*") then
-        error("TODO: implement #define and #include macros")
-    end
-    -- don't push empty whitespace and comments
-    if not string.match(line, "^[%s]$") and not string.match(line, "^//.*$") and not string.match(line, "^$") then
-        table.insert(lines, line)
-    end
-end
+local in_file = fs.open(input, "r")
+local in_contents = in_file.readAll()
+in_file.close()
 
 -- get resulting hexpattern
-local result_hex = nil
-if #lines == 1 then
-    --special case for if we want to write a hex with only one iota
-    for pattern, hex_data in pairs(hexlookup) do
-        if string.match(lines[1], pattern) then
-            result_hex = hex_data:handler()
-            -- break out of for loop
-            goto outer_break_single_iota
-        end
-    end
-    ::outer_break_single_iota::
-else
-    result_hex = {}
-    -- get matches in LUT and handle matching cases
-    for line_num, line in ipairs(lines) do
-        if line_num == 1 then
-            -- check for introspection
-            if not line:match "[%s]*{[%s]*" then
-                error("Expected { at line: "..line_num)
+local position = 1;
+local maxlen = string.len(in_contents)
+local result_hex = {}
+while position < maxlen do
+    for pattern_name, hexdata in pairs(hexlookup) do
+        local sidx, eidx = string.find(in_contents, hexdata["match_pattern"], position)
+        if sidx ~=nil and eidx ~=nil then
+            print(pattern_name)
+            local res = hexdata:handler(string.sub(in_contents, sidx, eidx))
+            if res ~= nil then
+                table.insert(result_hex, res)
             end
-            -- continue
-            goto outer_continue_list_iota
+            position = eidx+1
         end
-
-        if line_num == #lines then
-            -- check for retrospection
-            if not line:match "[%s]*}[%s]*" then
-                error("Expected } at line: "..line_num)
-            end
-            -- continue
-            goto outer_continue_list_iota
-        end
-
-        for pattern, hex_data in pairs(hexlookup) do
-            if string.match(line, pattern) then
-                table.insert(result_hex, hex_data:handler(line))
-                -- break out of inner for loop
-                goto outer_continue_list_iota
-            end
-        end
-
-        ::outer_continue_list_iota::
     end
 end
+
+
 
 -- if we are exporting, attempt to find ducky focal port
 if export then
