@@ -101,7 +101,7 @@ for line_num, line in pairs(lines) do
 end
 
 -- if we are saving to text file, attempt to save
-if output ~= nil then
+if output ~= "" then
 ---@diagnostic disable-next-line: undefined-global
     local out_file = fs.open(output, "w")
     for idx, pattern in ipairs(result_hex) do
