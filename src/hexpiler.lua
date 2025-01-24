@@ -65,7 +65,6 @@ while true do
   lines[#lines + 1] = line
 end
 
-
 -- get resulting hexpattern
 local result_hex = {}
 
@@ -83,7 +82,7 @@ for line_num, line in pairs(lines) do
         local sidx, eidx = string.find(line, hex_data["match_pattern"], position)
         if sidx and eidx and sidx==position then
             matches = matches + 1
-            local res=hex_data:handler(line)
+            local res=hex_data:handler(string.sub(line, sidx, eidx))
             -- if we return values, add them to the result hex
             if res ~= nil then
                 for h_idx, h_val in ipairs(res) do
