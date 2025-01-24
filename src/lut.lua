@@ -27,9 +27,13 @@ local function nilhandler(self, _match)
 end
 
 local function greatspellhandler(self, _match)
-    print("Great Spells not supported at this time. Using Numerical Reflection 0 as a placeholder.")
+    print("Great Spells not supported at this time. Using Numerical Reflection: 0 as a placeholder.")
     return {[1] = { ["startDir"] = "SOUTH_EAST", ["angles"] = "aqaa" }}
 
+end
+
+local function macrohandler(self, _match)
+    error("No support for Brigh's Gambit macros at this time.")
 end
 
 local function bookkeeperhandler(self, match)
@@ -1387,6 +1391,16 @@ local hextable = {
         ["name"] = "flay-mind",
         ["match_pattern"] = "Flay Mind",
         ["handler"] = greatspellhandler
+    },
+    [180] = {
+        ["name"] = "define-macro",
+        ["match_pattern"] = "#define.*$",
+        ["handler"] = macrohandler
+    },
+    [181] = {
+        ["name"] = "include-macro",
+        ["match_pattern"] = "#include.*$",
+        ["handler"] = macrohandler
     },
 }
 

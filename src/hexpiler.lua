@@ -12,8 +12,8 @@ local function tobool(str)
 end
 
 --Args:
--- --input/-i <string> : path to input file (should be in .hexpattern format: https://github.com/object-Object/vscode-hex-casting)
--- --output/-o <string> : path to output (default h.out)
+-- --input/-i <string> : absolute path to input file (should be in .hexpattern format: https://github.com/object-Object/vscode-hex-casting)
+-- --output/-o <string> : absolute path to output (eg: h.hexout) (alphanumeric representation of ducky peripheral iota format)
 -- --lut/-l <string> : hexpattern lookup table (default lut.lua)
 -- --export/-e <bool> : whether to attempt to export transpiled hex to focus using ducky peripherals (default false) (https://github.com/SamsTheNerd/ducky-periphs/wiki/Focal-Port)
 local argmap = {
@@ -24,7 +24,7 @@ local argmap = {
 }
 
 local input = ""
-local output = "h.out"
+local output = ""
 local lut = "lut"
 local export = false
 
@@ -47,7 +47,7 @@ for i = 1, #args, 2 do
 end
 
 if input == "" then error("--input <filepath> required!") end
-if output == "" or lut == "" or not (export == true or export == false) then error("Invalid param set") end
+if lut == "" or not (export == true or export == false) then error("Invalid param set") end
 
 -- load lookup table
 local lookup = require(lut)
@@ -100,7 +100,20 @@ for line_num, line in pairs(lines) do
     ::continue_line_for_loop_result_parse::
 end
 
--- TODO: export to text file
+-- if we are saving to text file, attempt to save
+if output ~= nil then
+---@diagnostic disable-next-line: undefined-global
+    local out_file = fs.open(output, "w")
+    for idx, pattern in ipairs(result_hex) do
+        local towrite = "{".."startDir="..pattern["startDir"].."angles="..pattern["angles"].."}"
+        if idx ~= #result_hex then
+            towrite=towrite..","
+        end
+        out_file.write(towrite)
+    end
+    out_file.close()
+
+end
 
 -- if we are exporting, attempt to find ducky focal port
 if export then
