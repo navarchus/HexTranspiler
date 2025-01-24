@@ -82,6 +82,7 @@ for line_num, line in pairs(lines) do
         local sidx, eidx = string.find(line, hex_data["match_pattern"], position)
         if sidx and eidx and sidx==position then
             matches = matches + 1
+            -- print(hex_data["name"])
             local res=hex_data:handler(string.sub(line, sidx, eidx))
             -- if we return values, add them to the result hex
             if res ~= nil then
@@ -99,6 +100,7 @@ for line_num, line in pairs(lines) do
     ::continue_line_for_loop_result_parse::
 end
 
+-- TODO: export to text file
 
 -- if we are exporting, attempt to find ducky focal port
 if export then

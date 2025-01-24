@@ -26,6 +26,12 @@ local function nilhandler(self, _match)
     return nil
 end
 
+local function greatspellhandler(self, _match)
+    print("Great Spells not supported at this time. Using Numerical Reflection 0 as a placeholder.")
+    return {[1] = { ["startDir"] = "SOUTH_EAST", ["angles"] = "aqaa" }}
+
+end
+
 local function bookkeeperhandler(self, match)
     local startDir = ""
     local angles = ""
@@ -78,7 +84,9 @@ local function numhandler(self, match)
         end
 
         local diff = math.abs(target - current)
-        if diff >= 10 then
+        if (current * 2) <= diff and current ~= 0 then
+            return calc_num(current * 2, target, patternstring .. "a")
+        elseif diff >= 10 then
             return calc_num(current + 10, target, patternstring .. "e")
         elseif diff >= 5 then
             return calc_num(current + 5, target, patternstring .. "q")
@@ -859,7 +867,527 @@ local hextable = {
         ["angles"] = "eeedw",
         ["handler"] = defaulthandler
     },
-    --left off at reading/writing
+    [102] = {
+        ["name"] = "scribes-reflection",
+        ["match_pattern"] = "Scribe's Reflection",
+        ["startDir"] = "EAST",
+        ["angles"] = "aqqqqq",
+        ["handler"] = defaulthandler
+    },
+    [103] = {
+        ["name"] = "scribes-gambit",
+        ["match_pattern"] = "Scribe's Gambit",
+        ["startDir"] = "EAST",
+        ["angles"] = "deeeee",
+        ["handler"] = defaulthandler
+    },
+    [104] = {
+        ["name"] = "chroniclers-purification",
+        ["match_pattern"] = "Chronicler's Purification",
+        ["startDir"] = "EAST",
+        ["angles"] = "wawqwqwqwqwqw",
+        ["handler"] = defaulthandler
+    },
+    [105] = {
+        ["name"] = "chroniclers-gambit",
+        ["match_pattern"] = "Chronicler's Gambit",
+        ["startDir"] = "EAST",
+        ["angles"] = "wdwewewewewew",
+        ["handler"] = defaulthandler
+    },
+    [106] = {
+        ["name"] = "auditors-purification",
+        ["match_pattern"] = "Auditor's Purification",
+        ["startDir"] = "EAST",
+        ["angles"] = "wawqwqwqwqwqwew",
+        ["handler"] = defaulthandler
+    },
+    [107] = {
+        ["name"] = "auditors-reflection",
+        ["match_pattern"] = "Auditor's Reflection",
+        ["startDir"] = "EAST",
+        ["angles"] = "aqqqqqe",
+        ["handler"] = defaulthandler
+    },
+    [108] = {
+        ["name"] = "assessors-reflection",
+        ["match_pattern"] = "Assessor's Reflection",
+        ["startDir"] = "EAST",
+        ["angles"] = "aqqqqqe",
+        ["handler"] = defaulthandler
+    },
+    [109] = {
+        ["name"] = "assessors-purification",
+        ["match_pattern"] = "Assessor's Purification",
+        ["startDir"] = "EAST",
+        ["angles"] = "deeeeeq",
+        ["handler"] = defaulthandler
+    },
+    [110] = {
+        ["name"] = "huginns-gambit",
+        ["match_pattern"] = "Huginn's Gambit",
+        ["startDir"] = "NORTH_WEST",
+        ["angles"] = "eqqwawqaaw",
+        ["handler"] = defaulthandler
+    },
+    [111] = {
+        ["name"] = "muninns-gambit",
+        ["match_pattern"] = "Muninn's Reflection",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "qeewdweddw",
+        ["handler"] = defaulthandler
+    },
+    -- these need to be in this exact order vv
+    [112] = {
+        ["name"] = "inverse-sine-purification",
+        ["match_pattern"] = "Inverse Sine Purification",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "ddeeeee",
+        ["handler"] = defaulthandler
+    },
+    [113] = {
+        ["name"] = "inverse-cosine-purification",
+        ["match_pattern"] = "Inverse Cosine Purification",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "adeeeee",
+        ["handler"] = defaulthandler
+    },
+    [114] = {
+        ["name"] = "inverse-tangent-purification-ii",
+        ["match_pattern"] = "Inverse Tangent Purification II",
+        ["startDir"] = "WEST",
+        ["angles"] = "deadeeeeewd",
+        ["handler"] = defaulthandler
+    },
+    [115] = {
+        ["name"] = "inverse-tangent-purification",
+        ["match_pattern"] = "Inverse Tangent Purification",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "eadeeeeew",
+        ["handler"] = defaulthandler
+    },
+    [116] = {
+        ["name"] = "sine-purification",
+        ["match_pattern"] = "Sine Purification",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "qqqqqaa",
+        ["handler"] = defaulthandler
+    },
+    [117] = {
+        ["name"] = "cosine-purification",
+        ["match_pattern"] = "Sine Purification",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "qqqqqaa",
+        ["handler"] = defaulthandler
+    },
+    [118] = {
+        ["name"] = "tangent-purification",
+        ["match_pattern"] = "Tangent Purification",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "wqqqqqadq",
+        ["handler"] = defaulthandler
+    },
+    -- these need to be in this exact order ^^
+    [119] = {
+        ["name"] = "logarithmic-distillation",
+        ["match_pattern"] = "Logarithmic Distillation",
+        ["startDir"] = "NORTH_WEST",
+        ["angles"] = "eqaqe",
+        ["handler"] = defaulthandler
+    },
+    [120] = {
+        ["name"] = "uniqueness-purification",
+        ["match_pattern"] = "Uniqueness Purification",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "aweaqa",
+        ["handler"] = defaulthandler
+    },
+    [121] = {
+        ["name"] = "hermes-gambit",
+        ["match_pattern"] = "Hermes' Gambit",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "deaqq",
+        ["handler"] = defaulthandler
+    },
+    [122] = {
+        ["name"] = "iris-gambit",
+        ["match_pattern"] = "Iris' Gambit",
+        ["startDir"] = "NORTH_WEST",
+        ["angles"] = "qwaqde",
+        ["handler"] = defaulthandler
+    },
+    [123] = {
+        ["name"] = "thoths-gambit",
+        ["match_pattern"] = "Thoth's Gambit",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "dadad",
+        ["handler"] = defaulthandler
+    },
+    [124] = {
+        ["name"] = "charon's-gambit",
+        ["match_pattern"] = "Charon's Gambit",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "aqdee",
+        ["handler"] = defaulthandler
+    },
+    [125] = {
+        ["name"] = "thanatos's-reflection",
+        ["match_pattern"] = "Thanatos's Reflection",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "qqaed",
+        ["handler"] = defaulthandler
+    },
+    [126] = {
+        ["name"] = "waystone-reflection",
+        ["match_pattern"] = "Waystone Reflection",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "eaqwqae",
+        ["handler"] = defaulthandler
+    },
+    [127] = {
+        ["name"] = "lodestone-reflection",
+        ["match_pattern"] = "Lodestone Reflection",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "eaqwqaewede",
+        ["handler"] = defaulthandler
+    },
+    [128] = {
+        ["name"] = "lesser-fold-reflection",
+        ["match_pattern"] = "Lesser Fold Reflection",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "eaqwqaewdd",
+        ["handler"] = defaulthandler
+    },
+    [129] = {
+        ["name"] = "greater-fold-reflection",
+        ["match_pattern"] = "Greater Fold Reflection",
+        ["startDir"] = "WEST",
+        ["angles"] = "aqwqawaaqa",
+        ["handler"] = defaulthandler
+    },
+    [130] = {
+        ["name"] = "akashas-distillation",
+        ["match_pattern"] = "Akasha's Distillation",
+        ["startDir"] = "WEST",
+        ["angles"] = "qqqwqqqqqaq",
+        ["handler"] = defaulthandler
+    },
+    [131] = {
+        ["name"] = "akashas-distillation",
+        ["match_pattern"] = "Akasha's Distillation",
+        ["startDir"] = "EAST",
+        ["angles"] = "eeeweeeeede",
+        ["handler"] = defaulthandler
+    },
+    [132] = {
+        ["name"] = "explosion",
+        ["match_pattern"] = "Explosion",
+        ["startDir"] = "EAST",
+        ["angles"] = "aawaawaa",
+        ["handler"] = defaulthandler
+    },
+    [133] = {
+        ["name"] = "fireball",
+        ["match_pattern"] = "fireball",
+        ["startDir"] = "EAST",
+        ["angles"] = "ddwddwdd",
+        ["handler"] = defaulthandler
+    },
+    [134] = {
+        ["name"] = "impulse",
+        ["match_pattern"] = "impulse",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "awqqqwaqw",
+        ["handler"] = defaulthandler
+    },
+    [135] = {
+        ["name"] = "blink",
+        ["match_pattern"] = "blink",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "awqqqwaq",
+        ["handler"] = defaulthandler
+    },
+    [136] = {
+        ["name"] = "make-note",
+        ["match_pattern"] = "Make Note",
+        ["startDir"] = "WEST",
+        ["angles"] = "adaa",
+        ["handler"] = defaulthandler
+    },
+    [137] = {
+        ["name"] = "place-block",
+        ["match_pattern"] = "Place Block",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "eeeeede",
+        ["handler"] = defaulthandler
+    },
+    [138] = {
+        ["name"] = "break-block",
+        ["match_pattern"] = "Break Block",
+        ["startDir"] = "EAST",
+        ["angles"] = "qaqqqqq",
+        ["handler"] = defaulthandler
+    },
+    [139] = {
+        ["name"] = "create-water",
+        ["match_pattern"] = "Create Water",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "aqawqadaq",
+        ["handler"] = defaulthandler
+    },
+    [140] = {
+        ["name"] = "destroy-liquid",
+        ["match_pattern"] = "Destroy Liquid",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "dedwedade",
+        ["handler"] = defaulthandler
+    },
+    [141] = {
+        ["name"] = "conjure-block",
+        ["match_pattern"] = "Conjure Block",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "qqa",
+        ["handler"] = defaulthandler
+    },
+    [142] = {
+        ["name"] = "conjure-light",
+        ["match_pattern"] = "Conjure Light",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "qqd",
+        ["handler"] = defaulthandler
+    },
+    [143] = {
+        ["name"] = "overgrow",
+        ["match_pattern"] = "Overgrow",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "wqaqwawqaqw",
+        ["handler"] = defaulthandler
+    },
+    [144] = {
+        ["name"] = "edify-sapling",
+        ["match_pattern"] = "Edify-Sapling",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "wqaqwd",
+        ["handler"] = defaulthandler
+    },
+    [145] = {
+        ["name"] = "ignite",
+        ["match_pattern"] = "Ignite",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "aaqawawa",
+        ["handler"] = defaulthandler
+    },
+    [146] = {
+        ["name"] = "extinguish-area",
+        ["match_pattern"] = "Extinguish Area",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "aaqawawa",
+        ["handler"] = defaulthandler
+    },
+    [147] = {
+        ["name"] = "white-suns-nadir",
+        ["match_pattern"] = "White Sun's Nadir",
+        ["startDir"] = "NORTH_WEST",
+        ["angles"] = "qqqqqaqwawaw",
+        ["handler"] = defaulthandler
+    },
+    [148] = {
+        ["name"] = "blue-suns-nadir",
+        ["match_pattern"] = "Blue Sun's Nadir",
+        ["startDir"] = "WEST",
+        ["angles"] = "qqqqqawwawawd",
+        ["handler"] = defaulthandler
+    },
+    [149] = {
+        ["name"] = "black-suns-nadir",
+        ["match_pattern"] = "Black Sun's Nadir",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "qqqqqaewawawe",
+        ["handler"] = defaulthandler
+    },
+    [150] = {
+        ["name"] = "red-suns-nadir",
+        ["match_pattern"] = "Red Sun's Nadir",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "qqqqqadwawaww",
+        ["handler"] = defaulthandler
+    },
+    [151] = {
+        ["name"] = "green-suns-nadir",
+        ["match_pattern"] = "Green Sun's Nadir",
+        ["startDir"] = "SOUTH_EAST",
+        ["angles"] = "qqqqqadwawaw",
+        ["handler"] = defaulthandler
+    },
+    [152] = {
+        ["name"] = "craft-cypher",
+        ["match_pattern"] = "Craft Cypher",
+        ["startDir"] = "EAST",
+        ["angles"] = "waqqqqq",
+        ["handler"] = defaulthandler
+    },
+    [153] = {
+        ["name"] = "craft-trinket",
+        ["match_pattern"] = "Craft Trinket",
+        ["startDir"] = "EAST",
+        ["angles"] = "wwaqqqqqeaqeaeqqqeaeq",
+        ["handler"] = defaulthandler
+    },
+    [154] = {
+        ["name"] = "craft-artifact",
+        ["match_pattern"] = "Craft Artifact",
+        ["startDir"] = "EAST",
+        ["angles"] = "wwaqqqqqeawqwqwqwqwqwwqqeadaeqqeqqeadaeqq",
+        ["handler"] = defaulthandler
+    },
+    [155] = {
+        ["name"] = "recharge-item",
+        ["match_pattern"] = "Recharge Item",
+        ["startDir"] = "NORTH_WEST",
+        ["angles"] = "qqqqqwaeaeaeaeaea",
+        ["handler"] = defaulthandler
+    },
+    [156] = {
+        ["name"] = "erase-item",
+        ["match_pattern"] = "Erase Item",
+        ["startDir"] = "EAST",
+        ["angles"] = "qdqawwaww",
+        ["handler"] = defaulthandler
+    },
+    [157] = {
+        ["name"] = "summon-sentinel",
+        ["match_pattern"] = "Summon Sentinel",
+        ["startDir"] = "EAST",
+        ["angles"] = "waeawae",
+        ["handler"] = defaulthandler
+    },
+    [158] = {
+        ["name"] = "banish-sentinel",
+        ["match_pattern"] = "Banish Sentinel",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "qdwdqdw",
+        ["handler"] = defaulthandler
+    },
+    [159] = {
+        ["name"] = "locate-sentinel",
+        ["match_pattern"] = "Locate Sentinel",
+        ["startDir"] = "EAST",
+        ["angles"] = "waeawaede",
+        ["handler"] = defaulthandler
+    },
+    [160] = {
+        ["name"] = "wayfind-sentinel",
+        ["match_pattern"] = "Wayfind Sentinel",
+        ["startDir"] = "EAST",
+        ["angles"] = "waeawaedwa",
+        ["handler"] = defaulthandler
+    },
+    [161] = {
+        ["name"] = "internalize-pigment",
+        ["match_pattern"] = "Internalize Pigment",
+        ["startDir"] = "EAST",
+        ["angles"] = "awddwqawqwawq",
+        ["handler"] = defaulthandler
+    },
+    [162] = {
+        ["name"] = "casters-glamour",
+        ["match_pattern"] = "Caster's Glamour",
+        ["startDir"] = "WEST",
+        ["angles"] = "dwaawedwewdwe",
+        ["handler"] = defaulthandler
+    },
+    [163] = {
+        ["name"] = "anchorites-flight",
+        ["match_pattern"] = "Anchorite's Flight",
+        ["startDir"] = "SOUTH_WEST",
+        ["angles"] = "awawaawq",
+        ["handler"] = defaulthandler
+    },
+    [164] = {
+        ["name"] = "wayfarers-flight",
+        ["match_pattern"] = "Wayfarer's Flight",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "dwdwdewq",
+        ["handler"] = defaulthandler
+    },
+    [165] = {
+        ["name"] = "aviators-purification",
+        ["match_pattern"] = "Aviator's Purification",
+        ["startDir"] = "NORTH_EAST",
+        ["angles"] = "dwdwdeweaqa",
+        ["handler"] = defaulthandler
+    },
+    -- Great Spells
+    [166] = {
+        ["name"] = "create-lava",
+        ["match_pattern"] = "Create Lava",
+        ["handler"] = greatspellhandler
+    },
+    [167] = {
+        ["name"] = "summon-lightning",
+        ["match_pattern"] = "Summon Lightning",
+        ["handler"] = greatspellhandler
+    },
+    [168] = {
+        ["name"] = "summon-rain",
+        ["match_pattern"] = "Summon Rain",
+        ["handler"] = greatspellhandler
+    },
+    [169] = {
+        ["name"] = "dispel-rain",
+        ["match_pattern"] = "Dispel Rain",
+        ["handler"] = greatspellhandler
+    },
+    [170] = {
+        ["name"] = "altiora",
+        ["match_pattern"] = "Altiora",
+        ["handler"] = greatspellhandler
+    },
+    [171] = {
+        ["name"] = "greater-teleport",
+        ["match_pattern"] = "Greater Teleport",
+        ["handler"] = greatspellhandler
+    },
+    [172] = {
+        ["name"] = "blue-suns-zenith",
+        ["match_pattern"] = "Blue Sun's Zenith",
+        ["handler"] = greatspellhandler
+    },
+    [173] = {
+        ["name"] = "black-suns-zenith",
+        ["match_pattern"] = "Black Sun's Zenith",
+        ["handler"] = greatspellhandler
+    },
+    [174] = {
+        ["name"] = "red-suns-zenith",
+        ["match_pattern"] = "Red Sun's Zenith",
+        ["handler"] = greatspellhandler
+    },
+    [175] = {
+        ["name"] = "white-suns-zenith",
+        ["match_pattern"] = "White Sun's Zenith",
+        ["handler"] = greatspellhandler
+    },
+    [176] = {
+        ["name"] = "green-suns-zenith",
+        ["match_pattern"] = "Green Sun's Zenith",
+        ["handler"] = greatspellhandler
+    },
+    [177] = {
+        ["name"] = "summon-greater-sentinel",
+        ["match_pattern"] = "Summon Greater Sentinel",
+        ["handler"] = greatspellhandler
+    },
+    [178] = {
+        ["name"] = "craft-phial",
+        ["match_pattern"] = "Craft Phial",
+        ["handler"] = greatspellhandler
+    },
+    [179] = {
+        ["name"] = "flay-mind",
+        ["match_pattern"] = "Flay Mind",
+        ["handler"] = greatspellhandler
+    },
 }
 
 return { hextable = hextable }
