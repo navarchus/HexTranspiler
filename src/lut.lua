@@ -19,7 +19,7 @@ function table.deepcopy(o, seen)
 end
 
 local function defaulthandler(self, _match)
-    return { [1] = { ["startDir"] = self["start_dir"], ["angles"] = self["angles"] } }
+    return { [1] = { ["startDir"] = self["startDir"], ["angles"] = self["angles"] } }
 end
 
 local function nilhandler(self, _match)
@@ -169,21 +169,21 @@ local hextable = {
     [3] = {
         ["name"] = "minds-reflection",
         ["match_pattern"] = "Mind's Reflection",
-        ["start_dir"] = "NORTH_EAST",
+        ["startDir"] = "NORTH_EAST",
         ["angles"] = "qaq",
         ["handler"] = defaulthandler
     },
     [4] = {
         ["name"] = "introspection",
         ["match_pattern"] = "{",
-        ["start_dir"] = "NORTH_EAST",
+        ["startDir"] = "NORTH_EAST",
         ["angles"] = "qqq",
         ["handler"] = defaulthandler
     },
     [5] = {
         ["name"] = "retrospection",
         ["match_pattern"] = "}",
-        ["start_dir"] = "NORTH_EAST",
+        ["startDir"] = "NORTH_EAST",
         ["angles"] = "eee",
         ["handler"] = defaulthandler
     },
@@ -191,14 +191,14 @@ local hextable = {
     [6] = {
         ["name"] = "compass-purification-ii",
         ["match_pattern"] = "Compass' Purification II",
-        ["start_dir"] = "NORTH_EAST",
+        ["startDir"] = "NORTH_EAST",
         ["angles"] = "dd",
         ["handler"] = defaulthandler
     },
     [7] = {
         ["name"] = "compass-purification",
         ["match_pattern"] = "Compass' Purification",
-        ["start_dir"] = "EAST",
+        ["startDir"] = "EAST",
         ["angles"] = "aa",
         ["handler"] = defaulthandler
     },
@@ -206,49 +206,49 @@ local hextable = {
     [8] = {
         ["name"] = "alidades-purification",
         ["match_pattern"] = "Alidade's Purification",
-        ["start_dir"] = "EAST",
+        ["startDir"] = "EAST",
         ["angles"] = "wa",
         ["handler"] = defaulthandler
     },
     [9] = {
         ["name"] = "archers-distillation",
         ["match_pattern"] = "Archer's Distillation",
-        ["start_dir"] = "EAST",
+        ["startDir"] = "EAST",
         ["angles"] = "wqaawdd",
         ["handler"] = defaulthandler
     },
     [10] = {
         ["name"] = "architects-distillation",
         ["match_pattern"] = "Architect's Distillation",
-        ["start_dir"] = "EAST",
+        ["startDir"] = "EAST",
         ["angles"] = "weddwaa",
         ["handler"] = defaulthandler
     },
     [11] = {
         ["name"] = "scouts-distillation",
         ["match_pattern"] = "Scout's Distillation",
-        ["start_dir"] = "EAST",
+        ["startDir"] = "EAST",
         ["angles"] = "weaqa",
         ["handler"] = defaulthandler
     },
     [12] = {
         ["name"] = "reveal",
         ["match_pattern"] = "Reveal",
-        ["start_dir"] = "NORTH_EAST",
+        ["startDir"] = "NORTH_EAST",
         ["angles"] = "de",
         ["handler"] = defaulthandler
     },
     [13] = {
         ["name"] = "stadiometers-purification",
         ["match_pattern"] = "Stadiometer's Purification",
-        ["start_dir"] = "NORTH_EAST",
+        ["startDir"] = "NORTH_EAST",
         ["angles"] = "awq",
         ["handler"] = defaulthandler
     },
     [14] = {
         ["name"] = "pace-purification",
         ["match_pattern"] = "Pace Purification",
-        ["start_dir"] = "EAST",
+        ["startDir"] = "EAST",
         ["angles"] = "wq",
         ["handler"] = defaulthandler
     },
