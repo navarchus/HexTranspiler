@@ -1,4 +1,6 @@
 -- Helper Fns
+
+-- whether string is 'true' or not
 ---@param str string
 ---@return boolean
 local function tobool(str)
@@ -8,7 +10,6 @@ local function tobool(str)
     end
     return bool
 end
-
 
 --Args:
 -- --input/-i <string> : path to input file (should be in .hexpattern format: https://github.com/object-Object/vscode-hex-casting)
@@ -55,34 +56,58 @@ local hexlookup = lookup.hextable
 -- load input
 ---@diagnostic disable-next-line: undefined-global
 if not fs.exists(input) then error("Bad input path") end
-local in_file = fs.open(input, "r")
-local in_contents = in_file.readAll()
-in_file.close()
+---@diagnostic disable-next-line: undefined-global
+local file = fs.open(input, "r")
+local lines = {}
+while true do
+  local line = file.readLine()
+  if not line then break end
+  lines[#lines + 1] = line
+end
+
 
 -- get resulting hexpattern
-local position = 1;
-local maxlen = string.len(in_contents)
 local result_hex = {}
-while position < maxlen do
-    for pattern_name, hexdata in pairs(hexlookup) do
-        local sidx, eidx = string.find(in_contents, hexdata["match_pattern"], position)
-        if sidx ~=nil and eidx ~=nil then
-            print(pattern_name)
-            local res = hexdata:handler(string.sub(in_contents, sidx, eidx))
+
+for line_num, line in pairs(lines) do
+    -- skip empty lines
+    if string.len(line)==0 then
+        goto continue_line_for_loop_result_parse
+    end
+    local position = 1;
+    local matches = 0;
+    for hex_idx, hex_data in ipairs(hexlookup) do
+        if position > string.len(line)then
+            break
+        end
+        local sidx, eidx = string.find(line, hex_data["match_pattern"], position)
+        if sidx and eidx and sidx==position then
+            matches = matches + 1
+            local res=hex_data:handler(line)
+            -- if we return values, add them to the result hex
             if res ~= nil then
-                table.insert(result_hex, res)
+                for h_idx, h_val in ipairs(res) do
+                    table.insert(result_hex, h_val)
+                end
             end
+            
             position = eidx+1
         end
     end
+    if matches == 0 then
+        error("No valid symbols found on line "..line_num)
+    end
+    ::continue_line_for_loop_result_parse::
 end
-
 
 
 -- if we are exporting, attempt to find ducky focal port
 if export then
     print("Exporting to focal port...")
----@diagnostic disable-next-line: undefined-global
+    ---@diagnostic disable-next-line: undefined-global
     local focal_port = peripheral.find("focal_port")
-    focal_port.writeIota(result_hex)
+    local result = focal_port.writeIota(result_hex)
+    if result ~= true then
+        error("Could not write to focal port!")
+    end
 end
