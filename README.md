@@ -10,3 +10,4 @@ TODO:
 - Support for multiple LUT to allow for different lookups on a per-mod basis
 - optimized numerical reflection (https://s5bug.github.io/squiggler/)??
 - Maybe attempt macros/higher level programming concepts?
+- File consisting of only invalid symbols outputs empty hex
