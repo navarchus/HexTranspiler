@@ -537,7 +537,7 @@ local hextable = {
         ["match_pattern"] = "Swindler's Gambit",
         ["startDir"] = "SOUTH_EAST",
         ["angles"] = "qaawdde",
-        ["handler"] = bookkeeperhandler
+        ["handler"] = defaulthandler
     },
     [56] = {
         ["name"] = "augurs-purification",
