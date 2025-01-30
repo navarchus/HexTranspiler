@@ -127,17 +127,17 @@ for line_num, line in ipairs(lines) do
                     local res = hex_data:handler(string.sub(line, sidx, eidx), line_num)
 
                     if res ~= nil then
-
-                        -- if we are defining a macro, insert a matching pattern into the hexlookup
-                         -- if we return values, add them to the result hex
-                        if res["definemacro"] == true then
-                            for h_idx, h_val in ipairs(res) do
-
+                        -- if we are defining a macro, insert a matching pattern(s) into the hexlookup
+                        -- if we return values, add them to the result hex
+                        if res["macro"] == true then
+                            --for each table of macros
+                            for t_idx, t_val in ipairs(res[1]) do
+                                --for each macro in each table of macros
                                 local definehex = {
-                                    ["name"] = h_val["name"],
-                                    ["match_pattern"] = h_val["name"],
-                                    ["startDir"] = h_val["startDir"],
-                                    ["angles"] = h_val["angles"],
+                                    ["name"] = t_val["name"],
+                                    ["match_pattern"] = t_val["name"],
+                                    ["startDir"] = t_val["startDir"],
+                                    ["angles"] = t_val["angles"],
                                     ["handler"] = h.defaulthandler
                                 }
                                 --insert after index of special chars (defines, includes, whitespace and comments)

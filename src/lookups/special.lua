@@ -20,7 +20,8 @@ table.insert(hextable, {
 })
 table.insert(hextable, {
     ["name"] = "include-macro",
-    ["match_pattern"] = "#include ([^%s])[%s]$",
+    -- need to escape quotes here
+    ["match_pattern"] = "#include%s+\"([%S]+)\"%s*$",
     ["handler"] = h.includehandler
 })
 

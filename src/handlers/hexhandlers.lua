@@ -27,40 +27,66 @@ end
 
 local function greatspellhandler(self, _match, line_num)
     print("Great Spells not supported at this time. Using --- as a placeholder.")
-    return {[1] = { ["startDir"] = "EAST ", ["angles"] = "ww" }}
-
-end
-
-local function includehandler(self, match, line_num)
-    error("line "..line_num..": ".."Include not supported at this time", 0)
+    return { [1] = { ["startDir"] = "EAST ", ["angles"] = "ww" } }
 end
 
 local function definehandler(self, match, line_num)
-    local name, patterndef, startDir, angles = string.match(match, "#define (%a+%s?%a+) (%(%s*(%S+)%s*([aqweds]*)%s*%))%s*$")
+    local name, patterndef, startDir, angles = string.match(match,
+        "#define (%a+%s?%a+) (%(%s*(%S+)%s*([aqweds]*)%s*%))%s*$")
 
     if name == nil and startDir == nil and angles == nil then
-        error("line "..line_num..": ".."Cannot have empty define", 0)
-    elseif name == nil and startDir ~= nil and angles ~=nil then
-        error("line "..line_num..": ".."Cannot have unnamed define", 0)
+        error("line " .. line_num .. ": " .. "Cannot have empty define", 0)
+    elseif name == nil and startDir ~= nil and angles ~= nil then
+        error("line " .. line_num .. ": " .. "Cannot have unnamed define", 0)
     elseif angles ~= nil and startDir == nil then
-        error("line "..line_num..": ".."Cannot have angles in a define without start dir", 0)
+        error("line " .. line_num .. ": " .. "Cannot have angles in a define without start dir", 0)
     end
     --check for bad startDir and bad angles
     local is_valid_start = (startDir == "NORTH_EAST" or startDir == "EAST" or startDir == "SOUTH_EAST" or startDir == "SOUTH_WEST" or startDir == "WEST" or startDir == "NORTH_WEST")
     if not is_valid_start then
-        error("line "..line_num..": ".."Invalid startDir in define", 0)
+        error("line " .. line_num .. ": " .. "Invalid startDir in define", 0)
     end
-    
+
     if angles == "" then
-        return {{["name"] = name, ["startDir"] = "startDir"}, ["definemacro"]=true}
+        return { { ["name"] = name, ["startDir"] = "startDir" }, ["definemacro"] = true }
     end
 
     local is_valid_angles = string.match(angles, "[aqweds]+")
     if not is_valid_angles then
-        error("line "..line_num..": ".."Invalid angles in define", 0)
+        error("line " .. line_num .. ": " .. "Invalid angles in define", 0)
     end
 
-    return {{["name"] = name,  ["startDir"] = "startDir", ["angles"] = angles}, ["definemacro"]=true}
+    return { [1]={{ ["name"] = name, ["startDir"] = "startDir", ["angles"] = angles }}, ["macro"] = true }
+end
+
+local function includehandler(self, match, line_num)
+    local include_rawpath = string.match(match, "#include%s+\"([%S]+)\"%s*$")
+    --this will fail in non cc environments
+    local include_path = shell.resolve(include_rawpath)
+    if not fs.exists(include_path) then
+        error("line " .. line_num .. ": " .. "Invalid path for include: " .. include_path, 0)
+    end
+
+    local include_file = fs.open(include_path, "r")
+    local include_lines = {}
+    while true do
+        local line = include_file.readLine()
+        if not line then break end
+        include_lines[#include_lines + 1] = line
+    end
+    include_file.close()
+
+    local defines = {}
+    --look for #define statements:
+    for include_line_num, include_line in ipairs(include_lines) do
+        local include_sidx, include_eidx = string.find(include_line, "^[%s]*#define (%a+%s?%a+) (%(%s*(%S+)%s*([aqweds]*)%s*%))%s*$")
+        if include_sidx ~= nil and include_eidx ~= nil then
+            local define_res = definehandler(self, string.sub(include_line, include_sidx, include_eidx), include_line_num)
+            table.insert(defines, define_res[1][1])
+        end
+    end
+
+    return { defines, ["macro"] = true }
 end
 
 local function bookkeeperhandler(self, match, line_num)
@@ -69,7 +95,7 @@ local function bookkeeperhandler(self, match, line_num)
     local keeper_arguments = string.match(match, "[-v]+")
 
     if keeper_arguments == nil then
-        error("line "..line_num..": ".."Must provide at least one argument for Bookkeeper's Gambit", 0)
+        error("line " .. line_num .. ": " .. "Must provide at least one argument for Bookkeeper's Gambit", 0)
     end
 
     -- figure out starting direction
@@ -80,14 +106,14 @@ local function bookkeeperhandler(self, match, line_num)
     elseif start == "-" then
         startDir = "EAST"
     else
-        error("line "..line_num..": ".."Invalid bookkeper's argument: " .. start, 0)
+        error("line " .. line_num .. ": " .. "Invalid bookkeper's argument: " .. start, 0)
     end
     for i = 2, #keeper_arguments do
         local curr = keeper_arguments:sub(i, i)
         local prev = keeper_arguments:sub(i - 1, i - 1)
 
         if curr ~= "-" and curr ~= "v" then
-            error("line "..line_num..": ".."Invalid bookkeper's argument: " .. curr, 0)
+            error("line " .. line_num .. ": " .. "Invalid bookkeper's argument: " .. curr, 0)
         end
 
         if prev == "-" and curr == "-" then
@@ -136,7 +162,7 @@ local function numhandler(self, match, line_num)
     fraction = tonumber(fraction)
 
     if whole == nil then
-        error("line "..line_num..": ".."Error creating Numerical Reflection, check syntax", 0)
+        error("line " .. line_num .. ": " .. "Error creating Numerical Reflection, check syntax", 0)
     end
 
     local zero = {}
@@ -149,7 +175,7 @@ local function numhandler(self, match, line_num)
     --calculate whole part of number
     local calc_whole = table.deepcopy(zero)
     if calc_whole == nil then
-        error("line "..line_num..": ".."Error copying numerical zero table", 0)
+        error("line " .. line_num .. ": " .. "Error copying numerical zero table", 0)
     end
 
     local extra_whole_symbols = calc_num(0, whole, "")
@@ -163,7 +189,7 @@ local function numhandler(self, match, line_num)
 
 
         if calc_fraction == nil or calc_divisor == nil then
-            error("line "..line_num..": ".."Error copying numerical zero table", 0)
+            error("line " .. line_num .. ": " .. "Error copying numerical zero table", 0)
         end
         local extra_fraction_symbols = calc_num(0, fraction, "")
         calc_fraction["angles"] = calc_fraction["angles"] .. extra_fraction_symbols
@@ -180,7 +206,8 @@ local function numhandler(self, match, line_num)
 
 
     -- if we would return nil something awful has happened
-    error("line "..line_num..": ".."Could not create number via decompositon!", 0)
+    error("line " .. line_num .. ": " .. "Could not create number via decompositon!", 0)
 end
 
-return {numhandler = numhandler, greatspellhandler = greatspellhandler, defaulthandler = defaulthandler, definehandler = definehandler, nilhandler = nilhandler, bookkeeperhandler = bookkeeperhandler, includehandler = includehandler}
+return { numhandler = numhandler, greatspellhandler = greatspellhandler, defaulthandler = defaulthandler, definehandler =
+definehandler, nilhandler = nilhandler, bookkeeperhandler = bookkeeperhandler, includehandler = includehandler }
