@@ -36,9 +36,8 @@ local function includehandler(self, match, line_num)
 end
 
 local function definehandler(self, match, line_num)
-    local name, startDir, angles= string.match(match, "#define ([%a%d]) [(][%s]*([%a_%d]*)[%s]+([%a%d]*)[%s]*[)][%s]*$")
+    local name, patterndef, startDir, angles = string.match(match, "#define (%a+%s?%a+) (%(%s*(%S+)%s*([aqweds]*)%s*%))%s*$")
 
-    
     if name == nil and startDir == nil and angles == nil then
         error("line "..line_num..": ".."Cannot have empty define", 0)
     elseif name == nil and startDir ~= nil and angles ~=nil then
@@ -52,15 +51,16 @@ local function definehandler(self, match, line_num)
         error("line "..line_num..": ".."Invalid startDir in define", 0)
     end
     
-    if angles == nil then
-        return {[1] = {["name"] = name, ["startDir"] = "startDir"}}
+    if angles == "" then
+        return {{["name"] = name, ["startDir"] = "startDir"}, ["definemacro"]=true}
     end
 
     local is_valid_angles = string.match(angles, "[aqweds]+")
     if not is_valid_angles then
         error("line "..line_num..": ".."Invalid angles in define", 0)
     end
-    return {[1] = {["name"] = name, ["definedef"]=true,  ["startDir"] = "startDir"}, ["angles"] = angles}
+
+    return {{["name"] = name,  ["startDir"] = "startDir", ["angles"] = angles}, ["definemacro"]=true}
 end
 
 local function bookkeeperhandler(self, match, line_num)

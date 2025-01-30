@@ -15,7 +15,7 @@ table.insert(hextable, {
 
 table.insert(hextable, {
     ["name"] = "define-macro",
-    ["match_pattern"] = "#define ([%a%d]) [(][%s]*([%a_%d]*)[%s]+([%a%d]*)[%s]*[)][%s]*$",
+    ["match_pattern"] = "#define (%a+%s?%a+) (%(%s*(%S+)%s*([aqweds]*)%s*%))%s*$",
     ["handler"] = h.definehandler
 })
 table.insert(hextable, {

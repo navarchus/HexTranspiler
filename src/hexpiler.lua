@@ -1,3 +1,4 @@
+local h = require("handlers.hexhandlers")
 -- Helper Fns
 
 -- whether string is 'true' or not
@@ -43,7 +44,7 @@ for i = 1, #args, 2 do
     elseif arg == "--output" then
         output = param
     elseif arg == "--lut" then
-        if not fs.exists("/"..shell.resolve(param)) then
+        if not fs.exists("/" .. shell.resolve(param)) then
             error("--lut valid filepath required!")
         end
         --strip .lua bc require doesn't like it
@@ -63,7 +64,7 @@ if not (export == true or export == false) then error("Invalid param set") end
 local hexpiler_dir = fs.getDir(shell.getRunningProgram())
 
 --load skip, comment, #define and #include first
-local lookuptables = { [1] = shell.resolve(hexpiler_dir.."/lookups/special") }
+local lookuptables = { [1] = shell.resolve(hexpiler_dir .. "/lookups/special") }
 --load user defined lookup tables
 for index, table_path in ipairs(arglookups) do
     if table_path then
@@ -73,20 +74,20 @@ for index, table_path in ipairs(arglookups) do
 end
 
 --attempt to load all non sensitive lookup tables in ./lookups
-for _, filename in pairs(fs.list(hexpiler_dir.."/lookups")) do
+for _, filename in pairs(fs.list(hexpiler_dir .. "/lookups")) do
     --strip .lua bc require doesn't like it
     local fixedfilename = string.gsub(filename, ".lua", "")
     if fixedfilename ~= "special" or fixedfilename ~= "hexcasting" then
-        table.insert(lookuptables, hexpiler_dir.."/lookups/"..fixedfilename)
+        table.insert(lookuptables, hexpiler_dir .. "/lookups/" .. fixedfilename)
     end
 end
 
 --load base hexcasting last
-table.insert(lookuptables, shell.resolve(hexpiler_dir.."/lookups/hexcasting"))
+table.insert(lookuptables, shell.resolve(hexpiler_dir .. "/lookups/hexcasting"))
 --flatten everything
 local hexlookup = {}
 for idx, table_path in ipairs(lookuptables) do
-    local curr_table = require("/"..shell.resolve(table_path))
+    local curr_table = require("/" .. shell.resolve(table_path))
     for hex_idx, hex_val in ipairs(curr_table["hextable"]) do
         table.insert(hexlookup, hex_val)
     end
@@ -123,14 +124,32 @@ for line_num, line in ipairs(lines) do
                     -- if hex_data["name"] ~= "skip" then
                     --     print(hex_data["name"])
                     -- end
-                    local res = hex_data:handler(string.sub(line, sidx, eidx))
+                    local res = hex_data:handler(string.sub(line, sidx, eidx), line_num)
 
-                    -- if we return values, add them to the result hex
                     if res ~= nil then
-                        for h_idx, h_val in ipairs(res) do
-                            table.insert(result_hex, h_val)
+
+                        -- if we are defining a macro, insert a matching pattern into the hexlookup
+                         -- if we return values, add them to the result hex
+                        if res["definemacro"] == true then
+                            for h_idx, h_val in ipairs(res) do
+
+                                local definehex = {
+                                    ["name"] = h_val["name"],
+                                    ["match_pattern"] = h_val["name"],
+                                    ["startDir"] = h_val["startDir"],
+                                    ["angles"] = h_val["angles"],
+                                    ["handler"] = h.defaulthandler
+                                }
+                                --insert after index of special chars (defines, includes, whitespace and comments)
+                                table.insert(hexlookup, 5, definehex)
+                            end
+                        else
+                            for h_idx, h_val in ipairs(res) do
+                                table.insert(result_hex, h_val)
+                            end
                         end
                     end
+
 
                     line_position = eidx + 1
 
