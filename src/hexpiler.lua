@@ -1,4 +1,8 @@
 local h = require("handlers.hexhandlers")
+-- needed vars
+local hexpiler_dir = fs.getDir(shell.getRunningProgram())
+
+
 -- Helper Fns
 
 -- whether string is 'true' or not
@@ -12,24 +16,67 @@ local function tobool(str)
     return bool
 end
 
---Args:
--- --input/-i <string> : path to input file (should be in .hexpattern format: https://github.com/object-Object/vscode-hex-casting)
--- --output/-o <string> : path to output (eg: h.hexout) (alphanumeric representation of ducky peripheral iota format)
--- --lut/-l <string> : path to hexpattern lookup table (can have multiple)
--- --export/-e <bool> : whether to attempt to export transpiled hex to focus using ducky peripherals (default false) (https://github.com/SamsTheNerd/ducky-periphs/wiki/Focal-Port)
+-- given a matchpattern for a greatspell, removes the definition from the greatspells.csv file
+local function removegreatspell(pattern)
+    if pattern == "all" then
+        local greatspellfile = fs.open(hexpiler_dir .. "/greatspells/greatspells.csv", "w")
+        greatspellfile.write("NAME, MATCHPATTERN, STARTDIR, ANGLES")
+        greatspellfile.close()
+    else
+        local lines = {}
+        local greatspellfile = fs.open(hexpiler_dir .. "/greatspells/greatspells.csv", "r")
+        while true do
+            local line = greatspellfile.readLine()
+            if not line then break end
+            lines[#lines + 1] = line
+        end
+        greatspellfile.close()
+        local goodlines = nil
+        for line_num, line in ipairs(lines) do
+            local line_pat = string.match(line, "[%S%s]+,([%S%s]+),[%S%s]+,[%S%s]+")
+            if not (pattern == line_pat) then
+                if not goodlines then
+                    goodlines = line
+                else
+                    goodlines = goodlines.."\n"..line
+                end
+            end
+        end
+        local greatspellfile = fs.open(hexpiler_dir .. "/greatspells/greatspells.csv", "w")
+        greatspellfile.write(goodlines)
+        greatspellfile.close()
+    end
+end
+
+
+--Subcommands:
+-- cleargreatspell/cgs <string> : clear great spell from great spell file with given string. If given the string "all", clears all great spells.
+local args = { ... }
+
+if arg[1] == "cleargreatspell" or arg[1] == "cgs" then
+    local param = arg[2]
+    removegreatspell(param)
+    return
+end
+
+
 local argmap = {
     i = "--input",
     o = "--output",
     l = "--lut",
-    e = "--export"
+    e = "--export",
 }
+
+
+--Args:
+-- --input/-i <string> : path to input file (should be in .hexpattern format: https://github.com/object-Object/vscode-hex-casting)
+-- --output/-o <string> : path to output (eg: h.hexout) (alphanumeric representation of ducky peripheral iota format)
+-- --lut/-l <string> : path to hexpattern lookup table (can have multiple)
+-- --export/-e <bool> : whether to attempt to export transpiled hex to focus using ducky peripherals (default true) (https://github.com/SamsTheNerd/ducky-periphs/wiki/Focal-Port)
 
 local input = ""
 local output = ""
-local export = false
-
-local args = { ... }
-
+local export = true
 --temp list for lookup tables
 local arglookups = {}
 
@@ -38,7 +85,6 @@ for i = 1, #args, 2 do
     if arg:match "^%-%a$" then arg = argmap[arg:match "^%-(%a)$"] or arg end
     if not arg:match "^%-%-" then error("Invalid argument at position " .. i) end
     if param == nil then error("Missing parameter to " .. arg) end
-
     if arg == "--input" then
         input = param
     elseif arg == "--output" then
@@ -61,7 +107,6 @@ if not (export == true or export == false) then error("Invalid param set") end
 
 -- load lookup tables
 -- this will fail in non cc environments
-local hexpiler_dir = fs.getDir(shell.getRunningProgram())
 
 --load skip, comment, #define and #include first
 local lookuptables = { [1] = shell.resolve(hexpiler_dir .. "/lookups/special") }
@@ -96,9 +141,7 @@ end
 
 
 -- load input
----@diagnostic disable-next-line: undefined-global
 if not fs.exists(input) then error("Bad input path") end
----@diagnostic disable-next-line: undefined-global
 local file = fs.open(input, "r")
 local lines = {}
 while true do
@@ -169,7 +212,6 @@ end
 
 -- if we are saving to text file, attempt to save
 if output ~= "" then
-    ---@diagnostic disable-next-line: undefined-global
     local out_file = fs.open(output, "w")
     for idx, pattern in ipairs(result_hex) do
         local towrite = "{" .. "startDir=" .. pattern["startDir"] .. "angles=" .. pattern["angles"] .. "}"
@@ -184,7 +226,7 @@ end
 -- if we are exporting, attempt to find ducky focal port
 if export then
     print("Exporting to focal port...")
-    ---@diagnostic disable-next-line: undefined-global
+
     local focal_port = peripheral.find("focal_port")
     local result = focal_port.writeIota(result_hex)
     if result ~= true then

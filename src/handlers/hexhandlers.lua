@@ -1,3 +1,5 @@
+local csv = require("utilities.csv")
+
 -- needed for numhandler
 function table.deepcopy(o, seen)
     seen = seen or {}
@@ -25,9 +27,72 @@ local function nilhandler(self, _match, line_num)
     return nil
 end
 
-local function greatspellhandler(self, _match, line_num)
-    print("Great Spells not supported at this time. Using --- as a placeholder.")
-    return { [1] = { ["startDir"] = "EAST ", ["angles"] = "ww" } }
+local function greatspellhandler(self, match, line_num)
+    local hexpiler_dir = fs.getDir(shell.getRunningProgram())
+    if not fs.exists(hexpiler_dir .. "/greatspells/greatspells.csv") then
+        local greatspellfile = fs.open(hexpiler_dir .. "/greatspells/greatspells.csv", "w")
+        greatspellfile.write("NAME, MATCHPATTERN, STARTDIR, ANGLES")
+        greatspellfile.close()
+    end
+    local f = csv.open(hexpiler_dir .. "/greatspells/greatspells.csv", {["header"]=true})
+    if f == nil then
+        error("Could not open Great Spell file",0)
+    end
+    for fields in f:lines() do
+        if fields["NAME"]==self["name"] then
+            local res = {
+                [1] = {["startDir"] = fields["STARTDIR"], ["angles"] = fields["ANGLES"]}
+            }
+            return res
+        end
+    end
+
+    local continueprompt = "\nPress y to proceed with Great Spell definition.\nPress any other key to abort compilation.\n"
+    print("No matching great spell found for "..match)
+    print(continueprompt)
+    local user_input = read()
+    if user_input ~= "y" then
+        error("Undefined great spell on line: "..line_num, 0)
+    end
+    print()
+
+
+    print("Insert a focus containing the definition for "..match.." into a focal port attached to this computer.\nThe definition must be escaped with consideration, not intro/retrospection.")
+    print(continueprompt)
+    local user_input = read()
+    if user_input ~= "y" then
+        error("Undefined great spell on line: "..line_num, 0)
+    end
+    print()
+
+
+    local focal_port = peripheral.find("focal_port")
+    local iota = focal_port.readIota()
+
+    local startDir = iota["startDir"]
+    local angles = iota["angles"]
+
+    if startDir == nil or angles == nil then
+        error("Unable to read Great Spell definition from focal port")
+    end
+
+    local greatspellfilehandler = fs.open(hexpiler_dir .. "/greatspells/greatspells.csv", "a")
+    greatspellfilehandler.write("\n"..self["name"]..","..self["match_pattern"]..","..startDir..","..angles)
+    greatspellfilehandler.close()
+
+    print("If exporting, insert a blank focus into attached focal port to write hex to.")
+    print(continueprompt)
+    local user_input = read()
+    if user_input ~= "y" then
+        error("User cancellation after Great Spell definition", 0)
+    end
+    print()
+
+    local res = {
+        [1] = {["startDir"] = startDir, ["angles"] = angles}
+    }
+
+    return res
 end
 
 local function definehandler(self, match, line_num)
@@ -56,7 +121,7 @@ local function definehandler(self, match, line_num)
         error("line " .. line_num .. ": " .. "Invalid angles in define", 0)
     end
 
-    return { [1]={{ ["name"] = name, ["startDir"] = "startDir", ["angles"] = angles }}, ["macro"] = true }
+    return { [1] = { { ["name"] = name, ["startDir"] = "startDir", ["angles"] = angles } }, ["macro"] = true }
 end
 
 local function includehandler(self, match, line_num)
@@ -79,7 +144,8 @@ local function includehandler(self, match, line_num)
     local defines = {}
     --look for #define statements:
     for include_line_num, include_line in ipairs(include_lines) do
-        local include_sidx, include_eidx = string.find(include_line, "^[%s]*#define (%a+%s?%a+) (%(%s*(%S+)%s*([aqweds]*)%s*%))%s*$")
+        local include_sidx, include_eidx = string.find(include_line,
+            "^[%s]*#define (%a+%s?%a+) (%(%s*(%S+)%s*([aqweds]*)%s*%))%s*$")
         if include_sidx ~= nil and include_eidx ~= nil then
             local define_res = definehandler(self, string.sub(include_line, include_sidx, include_eidx), include_line_num)
             table.insert(defines, define_res[1][1])
@@ -209,5 +275,13 @@ local function numhandler(self, match, line_num)
     error("line " .. line_num .. ": " .. "Could not create number via decompositon!", 0)
 end
 
-return { numhandler = numhandler, greatspellhandler = greatspellhandler, defaulthandler = defaulthandler, definehandler =
-definehandler, nilhandler = nilhandler, bookkeeperhandler = bookkeeperhandler, includehandler = includehandler }
+return {
+    numhandler = numhandler,
+    greatspellhandler = greatspellhandler,
+    defaulthandler = defaulthandler,
+    definehandler =
+        definehandler,
+    nilhandler = nilhandler,
+    bookkeeperhandler = bookkeeperhandler,
+    includehandler = includehandler
+}
