@@ -4,8 +4,6 @@ Pseudocode Transpiler for Hexcasting
 Current minecraft version supported: 1.20.1
 
 TODO:
-- Easy installation on computercraft
-- Default lookup tables for popular mods
 - Usage guide
 - Optimized numerical reflection (https://s5bug.github.io/squiggler/)??
 - More detailed error messages
