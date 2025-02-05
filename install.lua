@@ -138,5 +138,7 @@ preset.done()
 for _, name in pairs(fs.list("/hexpiler/src")) do
     fs.move("/hexpiler/src/"..name, "/hexpiler/"..name)
 end
+
 fs.delete("/hexpiler/src")
+fs.delete("/hexpiler/install.lua")
 fs.delete(shell.getRunningProgram())
