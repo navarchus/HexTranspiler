@@ -13,3 +13,4 @@ TODO:
 - Refactoring for better maintainence
 - Consider swapping from lua lookup tables to CSV for all patterns
 - Better flow for great spell importing
+- Possible issue with #define macros without angles
