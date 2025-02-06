@@ -28,7 +28,7 @@ local preset = {
 	branch = nil,
 	
 	-- The local folder to save all the files to (defaults to '/')
-	path = "hexpiler",
+	path = "/hexpiler",
 	
 	-- Function to run before starting the download
 	start = function()
@@ -146,3 +146,8 @@ fs.delete("/hexpiler/src")
 fs.delete("/hexpiler/install.lua")
 fs.delete("/hexpiler/scraper")
 fs.delete(shell.getRunningProgram())
+
+--create stub executable in main folder
+local stub = fs.open("/hexpiler.lua", "w")
+stub.write('shell.execute("/hexpiler/hexpiler.lua", ...)')
+stub.close()
