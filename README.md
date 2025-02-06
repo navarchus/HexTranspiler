@@ -1,33 +1,33 @@
 # HexTranspiler
 Pseudocode Transpiler for Hexcasting
-<br>
+<br/>
 Current minecraft version supported: 1.20.1
 
 ## HOW TO USE:
 ### get the install script:
 `wget https://raw.githubusercontent.com/navarchus/HexTranspiler/refs/heads/master/install.lua`
-<br>
+<br/>
 ### run the install script
 ### ex: `install.lua`
 There is one subcommand: `cgs` or `cleargreatspell`. Using this command clears saved greatspells from local storage.
-<br>
+<br/>
 ex:
-<br>
+<br/>
 `hexpiler cgs "Create Lava"` will clear any definition for "Create Lava"
-<br>
+<br/>
 `hexpiler cgs all` will clear ALL great spell definitions
-<br>
+<br/>
 
 There are three arguments:
 - `--install/-i`: Required, string, file path to the [.hexpattern](https://marketplace.visualstudio.com/items?itemName=object-Object.hex-casting) file to transpile.
 - `--output/-o`: Optional, string, file path to write raw anglesigs to. Will not write anything if not set.
 - `--export/-e`: Optional, boolean, whether to write the result to a [focal port](https://github.com/SamsTheNerd/ducky-periphs/wiki/Focal-Port). Defaults to `true`
-<br>
-#### Example Usage
+<br/>
+## Example Usage
 The command
-<br>
+<br/>
 `hexpiler -i counter.hexpattern -o a.out -e true`
-<br>
+<br/>
 would attempt to read the file `counter.hexpattern`, write raw anglesigs to the file `a.out`, and attempt to write the result to an attached focal port.
 
 ## Current list of supported addons:
