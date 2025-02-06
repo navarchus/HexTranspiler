@@ -6,6 +6,9 @@ This requires ElvishJerricco's JSON parsing API.
 Direct link: http://pastebin.com/raw.php?i=4nRg9CHU
 ]]--
 
+-- clear out hexpiler dir if exists
+fs.delete("/hexpiler")
+
 -- Edit these variables to use preset mode.
 -- Whether to download the files asynchronously (huge speed benefits, will also retry failed files)
 -- If false will download the files one by one and use the old output (List each file name as it's downloaded) instead of the progress bar
@@ -141,4 +144,5 @@ end
 
 fs.delete("/hexpiler/src")
 fs.delete("/hexpiler/install.lua")
+fs.delete("/hexpiler/scraper")
 fs.delete(shell.getRunningProgram())
