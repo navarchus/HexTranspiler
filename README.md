@@ -22,12 +22,18 @@ There are three arguments:
 - `--install/-i`: Required, string, file path to the [.hexpattern](https://marketplace.visualstudio.com/items?itemName=object-Object.hex-casting) file to transpile.
 - `--output/-o`: Optional, string, file path to write raw anglesigs to. Will not write anything if not set.
 - `--export/-e`: Optional, boolean, whether to write the result to a [focal port](https://github.com/SamsTheNerd/ducky-periphs/wiki/Focal-Port). Defaults to `true`
+
 <br/>
+
 ## Example Usage
 The command
+
 <br/>
+
 `hexpiler -i counter.hexpattern -o a.out -e true`
+
 <br/>
+
 would attempt to read the file `counter.hexpattern`, write raw anglesigs to the file `a.out`, and attempt to write the result to an attached focal port.
 
 ## Current list of supported addons:
