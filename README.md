@@ -8,7 +8,7 @@ Current minecraft version supported: 1.20.1
 `wget https://raw.githubusercontent.com/navarchus/HexTranspiler/refs/heads/master/install.lua`
 <br/>
 ### run the install script
-### ex: `install.lua`
+ex: `install.lua`
 There is one subcommand: `cgs` or `cleargreatspell`. Using this command clears saved greatspells from local storage.
 <br/>
 ex:
