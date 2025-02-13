@@ -9,6 +9,8 @@ Current minecraft version supported: 1.20.1
 <br/>
 ### run the install script
 ex: `install.lua`
+<br/>
+#### Subcommands
 There is one subcommand: `cgs` or `cleargreatspell`. Using this command clears saved greatspells from local storage.
 <br/>
 ex:
@@ -17,7 +19,7 @@ ex:
 <br/>
 `hexpiler cgs all` will clear ALL great spell definitions
 <br/>
-
+#### Arguments
 There are three arguments:
 - `--install/-i`: Required, string, file path to the [.hexpattern](https://marketplace.visualstudio.com/items?itemName=object-Object.hex-casting) file to transpile.
 - `--output/-o`: Optional, string, file path to write raw anglesigs to. Will not write anything if not set.
