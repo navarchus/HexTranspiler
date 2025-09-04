@@ -6,7 +6,7 @@ This requires ElvishJerricco's JSON parsing API.
 Direct link: http://pastebin.com/raw.php?i=4nRg9CHU
 ]]--
 
-local json = [[
+local json_inline = [[
 ------------------------------------------------------------------ utils
 local controls = {["\n"]="\\n", ["\r"]="\\r", ["\t"]="\\t", ["\b"]="\\b", ["\f"]="\\f", ["\""]="\\\"", ["\\"]="\\\\"}
 
@@ -280,14 +280,15 @@ local function download(url, file)
 	save(http.get(url).readAll(),file)
 end
 
--- if not json then
+if not json then
 -- 	download("http://pastebin.com/raw.php?i=4nRg9CHU","json")
 -- 	os.loadAPI("json")
--- end
-local file = fs.open("json", "w")
-file.write(json)
-file.close()
-os.loadAPI("json")
+	local file = fs.open("json", "w")
+	file.write(json_inline)
+	file.close()
+	os.loadAPI("json")
+end
+
 
 
 preset.start()
