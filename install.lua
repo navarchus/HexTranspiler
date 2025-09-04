@@ -284,8 +284,11 @@ end
 -- 	download("http://pastebin.com/raw.php?i=4nRg9CHU","json")
 -- 	os.loadAPI("json")
 -- end
- 
-os.loadAPI(loadstring(json))
+local file = fs.open("json", "w")
+file.write(json)
+file.close()
+os.loadAPI("json")
+
 
 preset.start()
 local data = json.decode(http.get("https://api.github.com/repos/"..args[1].."/"..args[2].."/git/trees/"..args[3].."?recursive=1").readAll())
