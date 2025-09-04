@@ -21,7 +21,7 @@ ex:
 <br/>
 #### Arguments
 There are three arguments:
-- `--install/-i`: Required, string, file path to the [.hexpattern](https://marketplace.visualstudio.com/items?itemName=object-Object.hex-casting) file to transpile.
+- `--input/-i`: Required, string, file path to the [.hexpattern](https://marketplace.visualstudio.com/items?itemName=object-Object.hex-casting) file to transpile.
 - `--output/-o`: Optional, string, file path to write raw anglesigs to. Will not write anything if not set.
 - `--export/-e`: Optional, boolean, whether to write the result to a [focal port](https://github.com/SamsTheNerd/ducky-periphs/wiki/Focal-Port). Defaults to `true`
 
