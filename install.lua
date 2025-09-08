@@ -254,7 +254,9 @@ local preset = {
 }
 
 -- Leave the rest of the program alone.
-local args = {...}
+-- local args = {...}
+--don't accept cmdline args
+local args = {}
 
 args[1] = preset.user or args[1]
 args[2] = preset.repo or args[2]
@@ -360,12 +362,15 @@ for _, name in pairs(fs.list("/hexpiler/src")) do
     fs.move("/hexpiler/src/"..name, "/hexpiler/"..name)
 end
 
-fs.delete("/hexpiler/src")
-fs.delete("/hexpiler/install.lua")
-fs.delete("/hexpiler/scraper")
-fs.delete(shell.getRunningProgram())
 
 --create stub executable in main folder
 local stub = fs.open("/hexpiler.lua", "w")
 stub.write('shell.execute("/hexpiler/hexpiler.lua", ...)')
 stub.close()
+
+--cleanup
+fs.delete("/hexpiler/src")
+fs.delete("/hexpiler/install.lua")
+fs.delete("/hexpiler/scraper")
+fs.delete("json")
+fs.delete(shell.getRunningProgram())
