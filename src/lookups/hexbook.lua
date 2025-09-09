@@ -4787,7 +4787,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Nephthys' Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "deaqqd",
-    ["handler"] = hexicalhandlers.nepthyshandler
+    ["handler"] = h.nepthyshandler
 })
 
 
