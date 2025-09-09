@@ -13,6 +13,15 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "numerical-reflection",
+    ["match_pattern"] = "Numerical Reflection:%s*%d*%.*%d+",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "aqaa",
+    ["handler"] = h.numhandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "logical-right-shift-distillation",
     ["match_pattern"] = "Logical Right Shift Distillation",
     ["startDir"] = "SOUTH_EAST",
@@ -153,6 +162,15 @@ table.insert(hextable, {
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "eeeeeqawawa",
     ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "bookkeepers-gambit",
+    ["match_pattern"] = "Bookkeeper's Gambit:%s*[v-]+",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "aeea",
+    ["handler"] = h.bookkeeperhandler
 })
 
 
@@ -459,15 +477,6 @@ table.insert(hextable, {
     ["startDir"] = "EAST",
     ["angles"] = "wawqwqwqwqwqw",
     ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "numerical-reflection",
-    ["match_pattern"] = "Numerical Reflection: %d+",
-    ["startDir"] = "SOUTH_EAST",
-    ["angles"] = "aqaa",
-    ["handler"] = h.numhandler
 })
 
 
@@ -3492,15 +3501,6 @@ table.insert(hextable, {
     ["startDir"] = "EAST",
     ["angles"] = "ddqaa",
     ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "bookkeepers-gambit",
-    ["match_pattern"] = "Bookkeeper's Gambit",
-    ["startDir"] = "SOUTH_EAST",
-    ["angles"] = "aeea",
-    ["handler"] = h.bookkeeperhandler
 })
 
 
@@ -8000,6 +8000,24 @@ table.insert(hextable, {
     ["match_pattern"] = "Dye",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "dwaqqw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "introspection-special",
+    ["match_pattern"] = "{",
+    ["startDir"] = "WEST",
+    ["angles"] = "qqq",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "retrospection-special",
+    ["match_pattern"] = "}",
+    ["startDir"] = "EAST",
+    ["angles"] = "eee",
     ["handler"] = h.defaulthandler
 })
 

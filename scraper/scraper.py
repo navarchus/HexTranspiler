@@ -154,13 +154,82 @@ for site in hexdoc_sites:
             )
             pat = Pattern(
                 name,
-                matchpattern+": %d+",
+                matchpattern+":%s*%d*%.*%d+",
                 handler=get_handler(name, canvas),
                 startDir=canvas.get("data-start").upper(),
                 angles=canvas.get("data-string"),
             )
             patterns.append(pat)
 
+        elif matchpattern == "Introspection":
+            name = (
+                matchpattern.lower()
+                .replace("-", "minus")
+                .replace("+", "plus")
+                .replace(" ", "-")
+                .replace("'", "")
+                .replace(":", "")
+            )
+            pat = Pattern(
+                name,
+                matchpattern,
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
+            )
+            patterns.append(pat)
+
+            pat2 = Pattern(
+                "introspection-special",
+                "{",
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
+            )
+            patterns.append(pat2)
+        elif matchpattern == "Retrospection":
+            name = (
+                matchpattern.lower()
+                .replace("-", "minus")
+                .replace("+", "plus")
+                .replace(" ", "-")
+                .replace("'", "")
+                .replace(":", "")
+            )
+            pat = Pattern(
+                name,
+                matchpattern,
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
+            )
+            patterns.append(pat)
+
+            pat2 = Pattern(
+                "retrospection-special",
+                "}",
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
+            )
+            patterns.append(pat2)
+        elif matchpattern == "Bookkeeper's Gambit":
+            name = (
+                matchpattern.lower()
+                .replace("-", "minus")
+                .replace("+", "plus")
+                .replace(" ", "-")
+                .replace("'", "")
+                .replace(":", "")
+            )
+            pat = Pattern(
+                name,
+                matchpattern+":%s*[v-]+",
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
+            )
+            patterns.append(pat)
         #all other patterns
         else:
             name = (

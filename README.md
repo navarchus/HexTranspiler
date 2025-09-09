@@ -50,10 +50,6 @@ would attempt to read the file `counter.hexpattern`, write raw anglesigs to the 
 - oneironaut
 
 ## TODO:
-- Optimized numerical reflection (https://s5bug.github.io/squiggler/)??
+- Optimized numerical reflection/more accurate numerical reflection (https://s5bug.github.io/squiggler/)??
 - More detailed error messages
-- More robust handling of #define and #include macros
-- Refactoring for better maintainence
-- Consider swapping from lua lookup tables to CSV for all patterns
-- Better flow for great spell importing
-- Possible issue with #define macros without angles
+- Use Hexbug format instead of custom format for lookup tables

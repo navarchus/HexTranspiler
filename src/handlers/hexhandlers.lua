@@ -320,8 +320,7 @@ return {
     numhandler = numhandler,
     greatspellhandler = greatspellhandler,
     defaulthandler = defaulthandler,
-    definehandler =
-        definehandler,
+    definehandler = definehandler,
     nilhandler = nilhandler,
     bookkeeperhandler = bookkeeperhandler,
     includehandler = includehandler,
