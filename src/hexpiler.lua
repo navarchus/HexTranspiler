@@ -127,16 +127,16 @@ for _, filename in pairs(fs.list(hexpiler_dir .. "/lookups")) do
     end
 end
 
---load base hexcasting last
-table.insert(lookuptables, shell.resolve(hexpiler_dir .. "/lookups/hexcasting"))
---flatten everything
-local hexlookup = {}
-for idx, table_path in ipairs(lookuptables) do
-    local curr_table = require("/" .. shell.resolve(table_path))
-    for hex_idx, hex_val in ipairs(curr_table["hextable"]) do
-        table.insert(hexlookup, hex_val)
-    end
-end
+-- --load base hexcasting last
+-- table.insert(lookuptables, shell.resolve(hexpiler_dir .. "/lookups/hexcasting"))
+-- --flatten everything
+-- local hexlookup = {}
+-- for idx, table_path in ipairs(lookuptables) do
+--     local curr_table = require("/" .. shell.resolve(table_path))
+--     for hex_idx, hex_val in ipairs(curr_table["hextable"]) do
+--         table.insert(hexlookup, hex_val)
+--     end
+-- end
 
 
 
