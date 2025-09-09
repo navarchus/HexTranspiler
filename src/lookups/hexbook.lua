@@ -8,7 +8,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Relative Purification II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "daqqad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -17,7 +17,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Logical Right Shift Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "eaqqdee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -26,7 +26,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arithmetic R. Shift Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "eaqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -35,7 +35,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inverse Tangent Purification II",
     ["startDir"] = "WEST",
     ["angles"] = "deadeeeeewd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -44,7 +44,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Relative Purification",
     ["startDir"] = "EAST",
     ["angles"] = "adeeda",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -53,7 +53,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Non-Monster",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeeeewaqaawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -62,7 +62,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Multiplicative Distillation II",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqawawwaeaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -71,7 +71,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inv. Hyp. Tangent Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qeadeeeeewq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -80,7 +80,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Carving Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqqwaeaeaeaeaeadwaqaeaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -89,7 +89,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Non-Animal",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeeeewaqaawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -98,7 +98,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Non-Player",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeeeewaqaawe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -107,7 +107,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Non-Living",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeeeewaqaawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -116,7 +116,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inv. Hyp. Cosine Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wadeeeeew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -125,7 +125,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Timing Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qqqqqwaeaeaeaeaeadqwdwqwdwdwqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -134,7 +134,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Running Product Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaawaaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -143,7 +143,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Apothecary's Purification II",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "eeeeeqawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -152,7 +152,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pharmacist's Distillation II",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "eeeeeqawawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -161,7 +161,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Entity Purification: Monster",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqdaqaawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -170,7 +170,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inverse Tangent Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eadeeeeew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -179,7 +179,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Authenticator's Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wwqqqqqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -188,7 +188,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Specklike",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqwdeddwqde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -197,7 +197,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gender Identity Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qqqqqeeqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -206,7 +206,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Tachygrapher's Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "aqqqqqedwewewewdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -215,7 +215,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Entity Purification: Player",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqdaqaawe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -224,7 +224,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Entity Purification: Living",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqdaqaawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -233,7 +233,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Non-Item",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeeeewaqaaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -242,7 +242,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Shieldbearer's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qeda",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -251,7 +251,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inverse Cosine Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "adeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -260,7 +260,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cartographer's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qwedewqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -269,7 +269,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Multiplicative Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -278,7 +278,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaterionic Purification: 1",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdeeeeeqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -287,7 +287,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaterionic Purification: i",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdeeeeeqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -296,7 +296,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaterionic Purification: j",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdeeeeeqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -305,7 +305,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inv. Hyp. Sine Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wddeeeeea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -314,7 +314,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Non-Wisp",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eewaqaweewaqaaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -323,7 +323,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Room Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awqwawqdqawwwaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -332,7 +332,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Stadiometer's Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "awq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -341,7 +341,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Debug Locator's Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "dedqdeqwaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -350,7 +350,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lamplighter's Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qedqde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -359,7 +359,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Equestrian Purification II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeedeewaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -368,7 +368,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Monster",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqwdeddwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -377,7 +377,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Concentration Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqaqwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -386,7 +386,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaternionic Reflection: 1",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqqqqqea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -395,7 +395,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaternionic Reflection: i",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqqqqqeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -404,7 +404,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Aviator's Purification III",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dwdwdewqdedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -413,7 +413,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Not BIT",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eewwqwqwqwqwqwweewaqaaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -422,7 +422,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conductor's Reflection II",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqqwqaqded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -431,7 +431,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Glyphmaker's Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aqqqdae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -440,7 +440,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Apothecary's Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qqqqqedwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -449,7 +449,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Classifier's Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -458,7 +458,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Entity Distillation: Type",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dadqqqqqdad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -467,7 +467,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Exaltation: Not-Type",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wdwqqqqqwdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -476,7 +476,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Entity Purification: Item",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqdaqaaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -485,7 +485,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Animal",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqwdeddwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -494,7 +494,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Player",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqwdeddwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -503,7 +503,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Living",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqwdeddwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -512,7 +512,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Chronicler's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "wawqwqwqwqwqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -521,7 +521,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inverse Sine Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ddeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -530,7 +530,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Oncologist's Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqdqqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -539,7 +539,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotation Purification CCW",
     ["startDir"] = "EAST",
     ["angles"] = "aeqeawaeqeaqqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -548,7 +548,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Bibliography Purification",
     ["startDir"] = "EAST",
     ["angles"] = "eaedweew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -557,7 +557,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hyp. Tangent Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ewqqqqqadqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -566,7 +566,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Aviator's Purification II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dwdwdewqded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -575,7 +575,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Entity Purification: Wisp",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqwdedwqqdaqaaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -584,7 +584,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Menderbug's Reflection II",
     ["startDir"] = "EAST",
     ["angles"] = "aedwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -593,7 +593,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Enhancement Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wwwaqeeqawww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -602,7 +602,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Enchantment Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aqawwqqwqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -611,7 +611,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Craft Bottomless Trinket",
     ["startDir"] = "EAST",
     ["angles"] = "wwqeeeeewqqqqqewwaqeqwqeqqqeqwqeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -620,7 +620,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Compass' Purification II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -629,7 +629,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Architect's Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "weddwaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -638,7 +638,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cognitohazard Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wdeaqqdqeedqadqeedqaeadeaqqeadeaqqdqdeaqqeaeedqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -647,7 +647,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Handwriting Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eadqqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -656,7 +656,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Physician's Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qawde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -665,7 +665,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Collector's Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dewqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -674,7 +674,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Treasurer's Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "adeeedew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -683,7 +683,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Integration Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "edqde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -692,7 +692,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Derivation Decomposition",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qaeaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -701,7 +701,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Logarithmic Distillation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "eqaqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -710,7 +710,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Division Distillation II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wdedwdwwdqdww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -719,7 +719,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Determinant Purification",
     ["startDir"] = "WEST",
     ["angles"] = "aeawwaeawaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -728,7 +728,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjunction Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -737,7 +737,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Wave Location Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqdaadqaeeaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -746,7 +746,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Scrivener's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "wawqwawaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -755,7 +755,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Librarian's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqadaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -764,7 +764,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Liposuction Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wawqqqeqdqqqwaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -773,7 +773,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotation Purification CW",
     ["startDir"] = "EAST",
     ["angles"] = "aeqeawaeqeaaede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -782,7 +782,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arborist Purification II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqaqwdedwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -791,7 +791,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Orientation Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqwadeeed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -800,7 +800,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Appellation Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwawqwaqea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -809,7 +809,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Subtractive Distillation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wddw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -818,7 +818,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Disjunction Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -827,7 +827,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hyp. Cosine Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wqqqqqadw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -836,7 +836,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Speedometer's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "eeewdqdee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -845,7 +845,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Disallow Transfer Others",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eeeeeqeaqaawqeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -854,7 +854,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Recognition Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aeqqqqqawwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -863,7 +863,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Containment Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dwqaeaqwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -872,7 +872,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Stacking Distillation II",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "dedqeaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -881,7 +881,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Environment II",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aqdeeqeaeaeaeaeae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -890,7 +890,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Entity Purification: BIT",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqwwewewewewewwqqdaqaaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -899,7 +899,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sanctioner's Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eeeedaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -908,7 +908,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Genie Refl.: Rotational",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qwddedadw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -917,7 +917,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arch. Refl.: Rotational",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwddedadw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -926,7 +926,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Williams' Reflection II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qwaqawewewaqawewddw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -935,7 +935,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gulliver's Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aawawwawwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -944,7 +944,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Timekeeper's Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "ddwaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -953,7 +953,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Equestrian Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqaqqwaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -962,7 +962,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Congruence Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "aaqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -971,7 +971,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Similarity Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "aedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -980,7 +980,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Exltn.: Not-Status",
     ["startDir"] = "EAST",
     ["angles"] = "qweeeeewq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -989,7 +989,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inequality Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "da",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -998,7 +998,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Maximus Distillation II",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1007,7 +1007,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Minimus Distillation II",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1016,7 +1016,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Item",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqwdeddww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1025,7 +1025,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Speaker's Decomposition",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aaqwqaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1034,7 +1034,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Manipulative Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "edaqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1043,7 +1043,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Assessor's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "wdwewewewewewqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1052,7 +1052,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Retrograde Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qqqaede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1061,7 +1061,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Uniqueness Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aweaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1070,7 +1070,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Circle Media Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqdaadqae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1079,7 +1079,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Separation Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "aqwaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1088,7 +1088,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Greater Fold Reflection",
     ["startDir"] = "WEST",
     ["angles"] = "aqwqawaaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1097,7 +1097,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Jason's Purification II",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "edadeedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1106,7 +1106,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Threading Reflection II",
     ["startDir"] = "EAST",
     ["angles"] = "qeqwqwqwqwqeqaweqqqqqwweeweweew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1115,7 +1115,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Program Purification II",
     ["startDir"] = "WEST",
     ["angles"] = "eqeweweweweqedwqeeeeedww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1124,7 +1124,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hierophant's Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqqaeawaea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1133,7 +1133,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Absorption Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "waawedwdwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1142,7 +1142,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Glamour Purification II",
     ["startDir"] = "WEST",
     ["angles"] = "dwaawaqwawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1151,7 +1151,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Peripheral Purification",
     ["startDir"] = "WEST",
     ["angles"] = "eweweweweweewwddawaddww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1160,7 +1160,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Substitution Exaltation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdwddwdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1169,7 +1169,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Derivation Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdwddwewddwdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1178,7 +1178,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Left Shift Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qqae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1187,7 +1187,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Axis Angle Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqqqqqedaqqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1196,7 +1196,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Falling Purification II",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "weeeewedewqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1205,7 +1205,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Allegiance Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "dwqqwdedwqqwddwww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1214,7 +1214,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pathfinder's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "ewdwewdew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1223,7 +1223,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Wisp",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqwdedwqqwdeddww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1232,7 +1232,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Postmaster's Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aweeeeewaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1241,7 +1241,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Infiltration Reflection",
     ["startDir"] = "WEST",
     ["angles"] = "dqddq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1259,7 +1259,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Grant Lightningbending",
     ["startDir"] = "EAST",
     ["angles"] = "wewdawdewqewdqqeedqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1268,7 +1268,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Secretary's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "aqqqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1277,7 +1277,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cognition Purification",
     ["startDir"] = "WEST",
     ["angles"] = "aawqqwqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1286,7 +1286,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Archgenie Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwddedqeed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1295,7 +1295,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conductor's Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqqwqaeaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1304,7 +1304,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Alidade's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "wa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1313,7 +1313,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sentience Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqaqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1322,7 +1322,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Jumbling Decomposition",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aedqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1331,7 +1331,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Vector Reflection Zero",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1340,7 +1340,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Factorial Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wawdedwaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1349,7 +1349,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Clearance Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qaqqqqqdaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1358,7 +1358,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Excisor's Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "edqdewaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1367,7 +1367,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Duelist's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "adeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1376,7 +1376,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hoarder's Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aqwed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1385,7 +1385,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Selection Distillation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "deeed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1394,7 +1394,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Excisor's Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "edqdewaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1403,7 +1403,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Speaker's Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ddewedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1412,7 +1412,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Auditor's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "wawqwqwqwqwqwew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1421,7 +1421,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sprawling Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dwwdqdwwdwdwaqawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1430,7 +1430,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Wave Facing Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqdaadqaeewa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1439,7 +1439,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Locator's Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "dedqde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1448,7 +1448,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Patternmaster's Prfct.",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wdwewdwdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1457,7 +1457,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Flock's Disintegration",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qwaeawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1466,7 +1466,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lesser Fold Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaewdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1475,7 +1475,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lindhal's Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qeqqqdqqqeqaqdwwdq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1484,7 +1484,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Symmastia Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqwwqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1493,7 +1493,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Prfn: Velocity",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawwdaqqqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1502,7 +1502,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Rfln: Teleport",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawweaqaawaaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1511,7 +1511,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rectangle Marker Exlt.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aaweeqwaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1520,7 +1520,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Demoman's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqewaawaawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1529,7 +1529,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Caliper's Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "dwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1538,7 +1538,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Adoration Purification",
     ["startDir"] = "WEST",
     ["angles"] = "qdaqwawqeewde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1547,7 +1547,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Constructed Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "waaqdeaqwqae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1556,7 +1556,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Edibility Purification",
     ["startDir"] = "WEST",
     ["angles"] = "adaqqqdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1565,7 +1565,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Satiation Purification",
     ["startDir"] = "WEST",
     ["angles"] = "adaqqqddqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1574,7 +1574,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Accessory Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "edeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1583,7 +1583,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Warehouse Purification",
     ["startDir"] = "WEST",
     ["angles"] = "edeeweeew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1592,7 +1592,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Fragility Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqwqqqwaqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1601,7 +1601,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Thaumaturgist's Purif.",
     ["startDir"] = "WEST",
     ["angles"] = "waqeaeqawqwawaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1610,7 +1610,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Collector Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqqed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1619,7 +1619,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Potential Purification",
     ["startDir"] = "EAST",
     ["angles"] = "ddeaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1628,7 +1628,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Diagnosis Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1637,7 +1637,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Condition Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqaawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1646,7 +1646,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Clearance Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqaqwdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1655,7 +1655,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Luminance Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqwqwqwqwqwaeqqqqaeqaeaeaeaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1664,7 +1664,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Realising Complexities",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "deew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1673,7 +1673,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Imagining Complexities",
     ["startDir"] = "WEST",
     ["angles"] = "eew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1682,7 +1682,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Exclusion Distillation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "dwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1691,7 +1691,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hyp. Sine Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dqqqqqaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1700,7 +1700,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Chromatic Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "weedwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1709,7 +1709,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Internalize Pigment II",
     ["startDir"] = "EAST",
     ["angles"] = "weeeweeqeeeewqaqweeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1718,7 +1718,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Wristpocket Reflection",
     ["startDir"] = "WEST",
     ["angles"] = "aaqqada",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1727,7 +1727,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Aviator's Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dwdwdeweaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1736,7 +1736,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Transition: Non-binary",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeeeeqqedqde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1745,7 +1745,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Impact Purification II",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "weeeewedewdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1754,7 +1754,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Locate Pseudosentinels",
     ["startDir"] = "EAST",
     ["angles"] = "waeawaewawwaeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1763,7 +1763,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Summon Projectile Wisp",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqaeqeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1772,7 +1772,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Manager's Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aweewaqaweewaawww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1781,7 +1781,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Phonebook Purification",
     ["startDir"] = "EAST",
     ["angles"] = "eqqqqqaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1790,7 +1790,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Stocktake Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aweeeeewaaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1799,7 +1799,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Seniority Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqwdedwqqaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1808,7 +1808,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Particulate Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqqqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1817,7 +1817,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Menderbug's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "qwdea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1826,7 +1826,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: BIT",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqwwewewewewewwqqwdeddww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1835,7 +1835,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reviewer's Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqadww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1844,7 +1844,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Genie Refl.: Temporal",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qwddedqwddwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1853,7 +1853,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arch. Refl.: Temporal",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwddedqwddwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1862,7 +1862,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Compass' Purification",
     ["startDir"] = "EAST",
     ["angles"] = "aa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1871,7 +1871,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Archer's Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "wqaawdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1880,7 +1880,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Debugger's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "qqqqqewaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1889,7 +1889,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Set Breakpoint Before",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awqdeew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1898,7 +1898,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Epiphany Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awqaqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1907,7 +1907,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Squire's Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wqqqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1916,7 +1916,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Tachygrapher's Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "deeeeeqawqwaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1925,7 +1925,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Spatial Reflection II",
     ["startDir"] = "WEST",
     ["angles"] = "wqwqwqwqwqwaqeeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1934,7 +1934,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Entropy Reflection II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeeeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1943,7 +1943,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Flock's Reflection II",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qwaeawqaqded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1952,7 +1952,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Chirographer's Purif.",
     ["startDir"] = "EAST",
     ["angles"] = "wqaedeqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1961,7 +1961,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Calligrapher's Purif.",
     ["startDir"] = "EAST",
     ["angles"] = "wqqqaqwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1970,7 +1970,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ablation Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqeawaqddaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1979,7 +1979,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Single's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "adeeed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1988,7 +1988,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Telepathic Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "wqqadaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -1997,7 +1997,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Assessor's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "deeeeeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2006,7 +2006,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Transformation Prfct.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awwaeawwaadwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2015,7 +2015,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Restoration Prfct. II",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dwwdqdwwdwdwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2024,7 +2024,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Identity Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awwaeawwaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2033,7 +2033,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotation Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awwaeawwawawddw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2042,7 +2042,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Listener's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "wded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2051,7 +2051,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reader's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "awqwawqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2060,7 +2060,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Librarian's Purif. II",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqada",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2069,7 +2069,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Librarian's Gambit II",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "edeedade",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2078,7 +2078,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Bubbles' Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qdqdqdqdqdq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2087,7 +2087,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cleavage Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqeeqqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2096,7 +2096,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mirror Purification Z",
     ["startDir"] = "EAST",
     ["angles"] = "aeqeawaeqeaqqwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2105,7 +2105,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mirror Purification X",
     ["startDir"] = "EAST",
     ["angles"] = "aeqeawaeqeaaewq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2114,7 +2114,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Bounding Purification",
     ["startDir"] = "EAST",
     ["angles"] = "aeqeawaeqeaqqeqaqeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2123,7 +2123,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Rfln: DmgType",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawwqdwaqqwawqwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2132,7 +2132,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arborist Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wedewaqawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2141,7 +2141,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Polyline Marker Exlt.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aaweqde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2150,7 +2150,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Farmer's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqwaea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2159,7 +2159,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Vitality Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wddwaqqwawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2168,7 +2168,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Showcase Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "ewdwewdea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2177,7 +2177,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Artistic Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wawwwqwwawwwqadaqeda",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2186,7 +2186,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Distortion Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aqwawqwqqwqwqwqwqwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2195,7 +2195,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Symbolic Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdwdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2204,7 +2204,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Equality Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdwddwqad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2213,7 +2213,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Division Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wdedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2222,7 +2222,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Negation Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "dw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2231,7 +2231,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Division Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wdedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2240,7 +2240,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Transition: Masculine",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "eeeeeqwaqaeaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2249,7 +2249,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Apply Pseudosentinels",
     ["startDir"] = "EAST",
     ["angles"] = "waeawaewawwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2258,7 +2258,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Allow Transfer Others",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eeeeeqwweqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2267,7 +2267,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Popularity Reflection",
     ["startDir"] = "WEST",
     ["angles"] = "qeeeeedww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2276,7 +2276,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Recitation Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "weeeeew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2285,7 +2285,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Additive Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "waaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2294,7 +2294,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Offering Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awdedwaawwqded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2303,7 +2303,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Environment",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "deaqqeweeeeewdqdqdqdqdq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2312,7 +2312,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Charmed Reflection II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwedeeaqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2321,7 +2321,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Familiar's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "daqweewqaeaqweewqaqwwww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2330,7 +2330,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Envelop Feet in Amel",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qqwwqqqadwewdeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2339,7 +2339,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Spherical Exaltation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wqwqwqwqwqwaeaqaaeaqaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2348,7 +2348,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Visible Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "edeewadwewdwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2357,7 +2357,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Squaremap Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aaeqwawqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2366,7 +2366,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Genie Refl.: Spatial",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qwddedqdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2375,7 +2375,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Genie Refl.: Kinetic",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qwddedqew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2384,7 +2384,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arch. Refl.: Spatial",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwddedqdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2393,7 +2393,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arch. Refl.: Kinetic",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwddedqew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2402,7 +2402,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Archivist Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aqaeaqwqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2411,7 +2411,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Metronome Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqqwqawaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2420,7 +2420,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Williams' Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qeeweeewddw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2429,7 +2429,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Scout's Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "weaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2438,7 +2438,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Set Breakpoint After",
     ["startDir"] = "EAST",
     ["angles"] = "wqqaewd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2447,7 +2447,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Diver's Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqawdwaqawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2456,7 +2456,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Nurse's Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqwawqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2465,7 +2465,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Boxer's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "aeqqqqea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2492,7 +2492,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ceiling Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2501,7 +2501,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Modulus Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "addwaad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2510,7 +2510,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Atlas' Decomposition",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "awqqqwqwqwqwqwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2519,7 +2519,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hashing Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqawqaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2528,7 +2528,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Flock's Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qwaeawqaqdedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2537,7 +2537,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Collage Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dwdeqqqqqawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2546,7 +2546,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gemini Decomposition",
     ["startDir"] = "EAST",
     ["angles"] = "aadaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2555,7 +2555,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Periphery Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aawawaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2564,7 +2564,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Augur's Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2573,7 +2573,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Maximus Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "e",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2582,7 +2582,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Minimus Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "q",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2591,7 +2591,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dousing Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "wqqaqwede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2600,7 +2600,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lilypad Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "weedewqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2609,7 +2609,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Surgeon's Exaltation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wqaeaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2618,7 +2618,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Offensive Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qadee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2627,7 +2627,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Auditor's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "aqqqqqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2636,7 +2636,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Tangent Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqqqadq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2645,7 +2645,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inverse Purification",
     ["startDir"] = "WEST",
     ["angles"] = "wwdqdwwdqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2654,7 +2654,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Thanatos' Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqaed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2663,7 +2663,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Selection Exaltation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qaeaqwded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2672,7 +2672,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Moniker Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "deqqeddqwqqqwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2681,7 +2681,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lodestone Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaewede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2690,7 +2690,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hookean Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqwaawqqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2699,7 +2699,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Jason's Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "edadee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2708,7 +2708,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Threading Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "qeqwqwqwqwqeqaweqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2717,7 +2717,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Program Purification",
     ["startDir"] = "WEST",
     ["angles"] = "eqeweweweweqedwqeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2726,7 +2726,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Schrödinger's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2735,7 +2735,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Schrödinger's Purif.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2744,7 +2744,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Payload Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ddeqaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2753,7 +2753,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ddewaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2762,7 +2762,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Rfln: Damage",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawwqdwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2771,7 +2771,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Prfn: Health",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawwewawqada",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2780,7 +2780,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Prfn: Breath",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawweqqqqqaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2789,7 +2789,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Prfn: Hunger",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawwaedwda",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2798,7 +2798,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Rfln: Attack",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawwqwedweq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2807,7 +2807,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Polygon Marker Exlt.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aaweeaeawaea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2816,7 +2816,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Marker Line Dist. II",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aaweed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2825,7 +2825,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Miner's Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqeeeeedq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2834,7 +2834,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Newspaper Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dqqqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2843,7 +2843,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Fitness Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wddwwawaeqwawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2852,7 +2852,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inferno Purification",
     ["startDir"] = "WEST",
     ["angles"] = "eewdead",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2861,7 +2861,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sloth's Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqaew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2870,7 +2870,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Racer's Purification",
     ["startDir"] = "WEST",
     ["angles"] = "eaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2879,7 +2879,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Vehicle Purification",
     ["startDir"] = "EAST",
     ["angles"] = "eqqedwewew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2888,7 +2888,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Shooter Purification",
     ["startDir"] = "EAST",
     ["angles"] = "aadedade",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2897,7 +2897,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dexterity Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqqqwaaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2906,7 +2906,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Stamina Purification",
     ["startDir"] = "WEST",
     ["angles"] = "qqqadaddq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2915,7 +2915,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Calorie Purification",
     ["startDir"] = "WEST",
     ["angles"] = "adaqqqddqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2924,7 +2924,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dessert Purification",
     ["startDir"] = "WEST",
     ["angles"] = "adaqqqddaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2933,7 +2933,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Storage Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqwqqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2942,7 +2942,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Deterioration Purif.",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeweeewdeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2951,7 +2951,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Glamour Purification",
     ["startDir"] = "WEST",
     ["angles"] = "dwaawaqwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2960,7 +2960,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reading Purification",
     ["startDir"] = "WEST",
     ["angles"] = "awqqwaqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2969,7 +2969,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Culture Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qeqwqwqwqwqeqaweqqqqqwded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2978,7 +2978,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Nurture Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qeqwqwqwqwqeqawewwqqwwqwwqqww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2987,7 +2987,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Meterologist's Refl.",
     ["startDir"] = "WEST",
     ["angles"] = "eweweweweweeeaedqdqde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -2996,7 +2996,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Battery Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qwqwqwqwqwqqwwaadwdaaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3005,7 +3005,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Circadian Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wwawwawwqqawwdwwdwwaqwqwqwqwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3014,7 +3014,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Piecewise Exaltation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdwddwawdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3023,7 +3023,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Constant Imagination",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3032,7 +3032,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Constant Realisation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3041,7 +3041,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaternionic Rfln: j",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqqqqqee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3050,7 +3050,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaternionic Rfln: k",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqqqqqed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3059,7 +3059,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaternionic Inverse",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqqqqqew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3068,7 +3068,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pigment Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqwedeweeeewweeew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3077,7 +3077,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Postage Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qdeaaqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3086,7 +3086,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Transition: Feminine",
     ["startDir"] = "EAST",
     ["angles"] = "qqqqqewdedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3095,7 +3095,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Falling Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wdwdwedewqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3104,7 +3104,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reservoir Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqaweewaqaweedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3113,7 +3113,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Bind Storage - Temp.",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "edewedewede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3122,7 +3122,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Stocktake Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dwqqqqqwddww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3131,7 +3131,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Evocation Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "wwdeeeeeqeaqawwewewwaqawwewew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3140,7 +3140,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Sparkly Dust",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqqqaaqda",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3167,7 +3167,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Grant Amel Air Sacs",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wewdwewewewewdwew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3176,7 +3176,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Solid Color",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qqaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3185,7 +3185,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Genie Refl.: Memory",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qwddedqwaqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3194,7 +3194,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arch. Refl.: Memory",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwddedqwaqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3212,7 +3212,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Baton Reflection II",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqqwqawaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3221,7 +3221,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Williams' Gambit II",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "ewdedwqwqwdedwqwaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3230,7 +3230,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Scrutinize Sentinel",
     ["startDir"] = "EAST",
     ["angles"] = "waeawaeddwwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3239,7 +3239,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Length Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3248,7 +3248,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Circle's Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "eawae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3257,7 +3257,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Homeland Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqwqwqwqwqwawedewdwedew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3266,7 +3266,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pharmacist's Dstln.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qqqqqedwdwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3275,7 +3275,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Exltn.: Status",
     ["startDir"] = "EAST",
     ["angles"] = "ewqqqqqwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3284,7 +3284,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Grokking Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "aqawwqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3293,7 +3293,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Athena's Revelation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dweaqqqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3302,7 +3302,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Athena's Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dweaqqqqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3311,7 +3311,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Waystone Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3320,7 +3320,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Oncologist's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqdqqqwqaedea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3329,7 +3329,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gainax Purification",
     ["startDir"] = "EAST",
     ["angles"] = "awewaawew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3338,7 +3338,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Schrödinger's Refl.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3347,7 +3347,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Rfln: Break",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawwwqaqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3356,7 +3356,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Circle Marker Exlt.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aaweeqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3365,7 +3365,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reproduction Purif.",
     ["startDir"] = "EAST",
     ["angles"] = "awaaqdqaawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3374,7 +3374,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Jockey Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qeeqawqwqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3383,7 +3383,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hunger Purification",
     ["startDir"] = "WEST",
     ["angles"] = "qqqadaddw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3392,7 +3392,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Legacy Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "dwewdwedea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3401,7 +3401,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Feline Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqwqqwqwawaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3410,7 +3410,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Prescription Purif.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqadee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3419,7 +3419,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Professional Purif.",
     ["startDir"] = "EAST",
     ["angles"] = "qeqwqwqwqwqeqawewawqwawadeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3428,7 +3428,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Temporal Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wddwaqqwqaddaqqwddwaqqwqaddaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3437,7 +3437,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Geographical Purif.",
     ["startDir"] = "WEST",
     ["angles"] = "qwqwqawdqqaqqdwaqwqwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3446,7 +3446,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Vision Purification",
     ["startDir"] = "EAST",
     ["angles"] = "wdwwaawwewdwwewwdwwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3455,7 +3455,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Internalize Pigment",
     ["startDir"] = "EAST",
     ["angles"] = "awddwqawqwawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3464,7 +3464,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Externalize Pigment",
     ["startDir"] = "WEST",
     ["angles"] = "eqdweeqdwweeqddqdwwwdeww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3473,7 +3473,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Postman's Gambit II",
     ["startDir"] = "EAST",
     ["angles"] = "qdeqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3482,7 +3482,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Impact Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wdwdwedewdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3491,7 +3491,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Identity Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dedwqqwdedwqqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3500,7 +3500,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pathfinder's Gambit",
     ["startDir"] = "WEST",
     ["angles"] = "awqwawqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3509,7 +3509,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Capacity Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awedqdewa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3518,7 +3518,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Identify Importance",
     ["startDir"] = "WEST",
     ["angles"] = "eewdweqaqewdwee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3527,7 +3527,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Actualize Structure",
     ["startDir"] = "EAST",
     ["angles"] = "aeqeawaeqea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3536,7 +3536,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Visualize Structure",
     ["startDir"] = "EAST",
     ["angles"] = "aeqeawaeqeaqed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3554,7 +3554,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Abduction",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aeaeaeaeaeaaedwaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3563,7 +3563,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Expulsion",
     ["startDir"] = "EAST",
     ["angles"] = "wwdeeeeeqdwewewewewewwwdwqwdwqwdwqwdwqwdwqwdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3608,7 +3608,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Marked Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "edwwdeeede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3617,7 +3617,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Tangle Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "edeeeeeweeeaqqwqwqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3626,7 +3626,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Amanuensis' Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "deeeed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3635,7 +3635,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Bluemap Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawwddad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3644,7 +3644,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pl3xmap Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawwdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3653,7 +3653,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Genie Refl.: Media",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qwddedaeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3662,7 +3662,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arch. Refl.: Media",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwddedaeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3671,7 +3671,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dioscuri Gambit II",
     ["startDir"] = "EAST",
     ["angles"] = "waadadaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3680,7 +3680,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Axial Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqqaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3689,7 +3689,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Entropy Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "eqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3698,7 +3698,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Nullary Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "d",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3707,7 +3707,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Euler's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "aaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3716,7 +3716,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Spatial Reflection",
     ["startDir"] = "WEST",
     ["angles"] = "wqwqwqwqwqwaeqqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3725,7 +3725,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inferno Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqwqwqwqwqwaqaaqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3734,7 +3734,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ratio Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wawawqwqwqwqwqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3743,7 +3743,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Decorator's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wwawwqwwawwaqdq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3752,7 +3752,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Scout's Exaltation",
     ["startDir"] = "EAST",
     ["angles"] = "wqded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3761,7 +3761,7 @@ table.insert(hextable, {
     ["match_pattern"] = "State Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqwwdwewdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3770,7 +3770,7 @@ table.insert(hextable, {
     ["match_pattern"] = "State Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqdwawqwaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3779,7 +3779,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Glyph Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqeeeeedwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3788,7 +3788,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Notetaker's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqeeeeedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3797,7 +3797,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotation Gambit II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "ddqdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3806,7 +3806,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Flock's Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qwaeawqaeaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3815,7 +3815,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Fisherman's Gambit",
     ["startDir"] = "WEST",
     ["angles"] = "ddad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3824,7 +3824,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Augur's Exaltation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3833,7 +3833,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Railgun Exaltation",
     ["startDir"] = "EAST",
     ["angles"] = "wqqddqeqddq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3842,7 +3842,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Retreat Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "dedwdq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3851,7 +3851,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Leaping Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qaqdaqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3860,7 +3860,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rolling Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qadeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3869,7 +3869,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Soroban Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wdeaqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3878,7 +3878,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Restoration Prfct.",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dwwdqdwwddawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3887,7 +3887,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Tower Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awwaeawwawawdedwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3896,7 +3896,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Input Purification",
     ["startDir"] = "EAST",
     ["angles"] = "aqwaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3905,7 +3905,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Spacing Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awdwaaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3914,7 +3914,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Whisper Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "waqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3923,7 +3923,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Librarian's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "edeeedad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3932,7 +3932,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Normals reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qdewedqwqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3941,7 +3941,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mnemosyne's Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eweeewedqdeddw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3950,7 +3950,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Liposuction Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eeewdwqqwwdweee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3959,7 +3959,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Jason's Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "edade",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3968,7 +3968,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Jason's Exaltation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "edadedaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3977,7 +3977,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Observation Purif.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3986,7 +3986,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Prfn: Fall",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawweawawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -3995,7 +3995,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Rfln: Drop",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawweaqaddwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4004,7 +4004,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Rfln: Jump",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqawwqdwdwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4013,7 +4013,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Facet Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqeqqqwqaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4022,7 +4022,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Facet Distillation",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqeawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4031,7 +4031,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Suffocation Purif.",
     ["startDir"] = "EAST",
     ["angles"] = "wwaade",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4040,7 +4040,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Youth Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqdwaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4049,7 +4049,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ambit Purification",
     ["startDir"] = "EAST",
     ["angles"] = "wawaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4058,7 +4058,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Flesh Purification",
     ["startDir"] = "WEST",
     ["angles"] = "adaqqqddaed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4067,7 +4067,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Detective's Purif.",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qqqqqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4076,7 +4076,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Offer Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4085,7 +4085,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Chest Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqeaqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4094,7 +4094,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Aegis Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqddqeeeeqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4103,7 +4103,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Charm Distillation",
     ["startDir"] = "WEST",
     ["angles"] = "waqwwqaweede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4112,7 +4112,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Media Purification",
     ["startDir"] = "WEST",
     ["angles"] = "ddew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4121,7 +4121,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Anger Purification",
     ["startDir"] = "WEST",
     ["angles"] = "dedwaqwede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4130,7 +4130,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Parametric Surface",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdwddwqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4139,7 +4139,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Power Distillation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wedew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4148,7 +4148,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaternionic Exal.",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqqqqqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4157,7 +4157,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaternionic Dntg.",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdeeeeeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4166,7 +4166,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Mage Block",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "dee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4175,7 +4175,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pigment Exaltation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "edewqaqqqqqwqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4184,7 +4184,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Anchorite's Flight",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awawaawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4193,7 +4193,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Grasp Purification",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wdwdwedewdwaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4202,7 +4202,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Summon Cyclic Wisp",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqaweewaqawee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4211,7 +4211,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Depot Purification",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qqqqqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4220,7 +4220,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Charmed Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "waqqqqqeaqeaeaeaeaeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4256,7 +4256,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dynmap Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawwdee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4265,7 +4265,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Finale Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "aaddaddad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4274,7 +4274,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mind's Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4283,7 +4283,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pace Purification",
     ["startDir"] = "EAST",
     ["angles"] = "wq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4292,7 +4292,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reflecting Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "ddwqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4301,7 +4301,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Vector Exaltation",
     ["startDir"] = "EAST",
     ["angles"] = "eqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4310,7 +4310,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Swindler's Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qaawdde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4319,7 +4319,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Vacant Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qqaeaae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4328,7 +4328,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hallucinate Pling",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqada",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4337,7 +4337,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hallucinate Click",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqadaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4346,7 +4346,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Charge Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aqaddq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4364,7 +4364,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Soroban Gambit II",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqdee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4373,7 +4373,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sine Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4382,7 +4382,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Zero Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awwaeawwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4391,7 +4391,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Atalanta's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aqdea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4400,7 +4400,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Case Distillation",
     ["startDir"] = "WEST",
     ["angles"] = "dwwdwwdwdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4409,7 +4409,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ewer's Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "aeaaqawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4418,7 +4418,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Icon Marker Exlt.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aaweeqqaed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4427,7 +4427,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Marker Fill Dist.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4436,7 +4436,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Marker Line Dist.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4445,7 +4445,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Theodolite Purif.",
     ["startDir"] = "EAST",
     ["angles"] = "wqaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4454,7 +4454,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lung Purification",
     ["startDir"] = "EAST",
     ["angles"] = "wwaadee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4463,7 +4463,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Enderman's Purif.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qqqqwaadq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4472,7 +4472,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Device Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "waaqwwaqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4481,7 +4481,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Item Purification",
     ["startDir"] = "WEST",
     ["angles"] = "edeedq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4490,7 +4490,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Tool Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4499,7 +4499,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cart Purification",
     ["startDir"] = "WEST",
     ["angles"] = "edeeeeeqdee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4508,7 +4508,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pocket Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqdqaqdeeewedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4517,7 +4517,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Tier Purification",
     ["startDir"] = "EAST",
     ["angles"] = "qeqwqwqwqwqeqawdaeaeaeaeaea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4526,7 +4526,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Long Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wawdedwaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4535,7 +4535,7 @@ table.insert(hextable, {
     ["match_pattern"] = "White Sun's Nadir",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqqaqwawaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4544,7 +4544,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Black Sun's Nadir",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qqqqqaewawawe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4553,7 +4553,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Green Sun's Nadir",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqadwawaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4562,7 +4562,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Wayfarer's Flight",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dwdwdewq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4571,7 +4571,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Induce Exhaustion",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qqwqqwqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4580,7 +4580,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Disallow Transfer",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqqeqdeddweqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4589,7 +4589,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Unclogging Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aweeeeewa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4598,7 +4598,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Evoker Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "wwaqqqqqeeaqawwewewwaqawwewew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4607,7 +4607,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Simulate Firework",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "dedwaqwqqwqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4616,7 +4616,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Fragments",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqqqaaeaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4625,7 +4625,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Gateway",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wawewawewawewawewawewawwwqwqwqwqwqwaeqqqqqaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4634,7 +4634,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Charmed Gambit II",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "edewqaqqdeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4661,7 +4661,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Grant FireyFists",
     ["startDir"] = "EAST",
     ["angles"] = "wwewdawdewqewedadad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4670,7 +4670,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cubic Exaltation",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wqwawqwqqwqwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4679,7 +4679,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Archgenie Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwddedqedeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4688,7 +4688,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Baton Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqqwqawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4697,7 +4697,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Metronome Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqqwqaqddq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4706,7 +4706,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Williams' Gambit",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "eqqwqqqwaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4715,7 +4715,7 @@ table.insert(hextable, {
     ["match_pattern"] = "False Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dedq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4724,7 +4724,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arc's Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qdwdq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4733,7 +4733,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Manutius' Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqeeeeede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4742,7 +4742,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Icons Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "dwdwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4751,7 +4751,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Laser Exaltation",
     ["startDir"] = "EAST",
     ["angles"] = "weeaaeqeaae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4760,7 +4760,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dodge Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "edead",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4769,7 +4769,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Evade Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qaqda",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4778,7 +4778,7 @@ table.insert(hextable, {
     ["match_pattern"] = "UTF Purification",
     ["startDir"] = "EAST",
     ["angles"] = "eawdwae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4796,7 +4796,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sisyphus' Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4805,7 +4805,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Blank Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awdwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4814,7 +4814,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Comma Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "qa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4823,7 +4823,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Elysium's Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqqwqaeaqaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4832,7 +4832,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lindhal's Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "eawwaedeqeeeaeeeqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4841,7 +4841,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Symmastia Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "weewweew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4850,7 +4850,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Staff Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "waaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4859,7 +4859,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Media Reflection",
     ["startDir"] = "WEST",
     ["angles"] = "dde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4868,7 +4868,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Plane Reflection",
     ["startDir"] = "WEST",
     ["angles"] = "qwqwqwqwqwqqaedwaqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4877,7 +4877,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lunar Reflection",
     ["startDir"] = "WEST",
     ["angles"] = "eweweweweweeweeedadw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4886,7 +4886,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Neo's Exaltation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdwddweawwaeaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4895,7 +4895,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reset Mage Block",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "deeeaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4904,7 +4904,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Blue Sun's Nadir",
     ["startDir"] = "WEST",
     ["angles"] = "qqqqqawwawawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4913,7 +4913,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Prestidigitation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wedewedew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4922,7 +4922,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Wayfind Sentinel",
     ["startDir"] = "EAST",
     ["angles"] = "waeawaedwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4931,7 +4931,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Caster's Glamour",
     ["startDir"] = "WEST",
     ["angles"] = "dwaawedwewdwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4940,7 +4940,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Postman's Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "qde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4949,7 +4949,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Terminate Flight",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awawaawe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4958,7 +4958,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Snowball",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "ddeeeeewd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4967,7 +4967,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Fireball",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wqqqqqwaeaeaeaeae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4976,7 +4976,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Review Broadcast",
     ["startDir"] = "WEST",
     ["angles"] = "aqwqaweeeeewwaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4985,7 +4985,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Splitting Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "eaqaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -4994,7 +4994,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Hexburst",
     ["startDir"] = "EAST",
     ["angles"] = "aadaadqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5003,7 +5003,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Handy Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "qwawqwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5012,7 +5012,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Deploy Sentinels",
     ["startDir"] = "EAST",
     ["angles"] = "aeaae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5021,7 +5021,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Firework",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "dedwaqwwawwqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5030,7 +5030,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Broadcast Vision",
     ["startDir"] = "WEST",
     ["angles"] = "wewdwewwawwewdwew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5039,7 +5039,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Devour Structure",
     ["startDir"] = "WEST",
     ["angles"] = "dqeqdwdqeqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5048,7 +5048,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Particle",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqqqaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5057,7 +5057,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Sediment",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqqqaaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5066,7 +5066,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Audio Reflection",
     ["startDir"] = "WEST",
     ["angles"] = "aeede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5075,7 +5075,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Everett's Distl.",
     ["startDir"] = "EAST",
     ["angles"] = "dewedaewdwewd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5111,7 +5111,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gate's Dismissal",
     ["startDir"] = "EAST",
     ["angles"] = "edeqqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5120,7 +5120,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Imbue with Amel",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqwwawwqwwaqwewaawewa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5129,7 +5129,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Imbue Equipment",
     ["startDir"] = "WEST",
     ["angles"] = "dqaqdqaqdqaeadawadadawadadawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5138,7 +5138,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sekhmet' Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qaqdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5147,7 +5147,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Bubbling Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "aawede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5156,7 +5156,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Jumbling Gambit",
     ["startDir"] = "WEST",
     ["angles"] = "deaqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5165,7 +5165,7 @@ table.insert(hextable, {
     ["match_pattern"] = "True Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aqae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5174,7 +5174,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Progress Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5183,7 +5183,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Editor's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqeeeeedq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5192,7 +5192,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Censor's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqeeeeeda",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5201,7 +5201,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Seshat's Gambit",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qaeaqdadad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5210,7 +5210,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Novice's Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "a",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5219,7 +5219,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Jester's Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "aawdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5228,7 +5228,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotation Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "aaeaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5237,7 +5237,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dioscuri Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "aadadaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5246,7 +5246,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Grokking Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "ewdewwde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5255,7 +5255,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Scribe's Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "deeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5264,7 +5264,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Huginn's Gambit",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "eqqwawqaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5273,7 +5273,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Toppling Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awdedwawawwaeawwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5282,7 +5282,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Athena's Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dweaqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5291,7 +5291,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Castor's Gambit",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "adadee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5300,7 +5300,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pollux's Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dadaqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5309,7 +5309,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Charon's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aqdee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5318,7 +5318,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sifter's Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5327,7 +5327,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Wave Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qdewedq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5336,7 +5336,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Akasha's Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "eeeweeeeede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5345,7 +5345,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cleavage Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "weeeqqeeew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5354,7 +5354,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Stabilize Minds",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqqaeawaeaeqqqeqqwwqqeqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5363,7 +5363,7 @@ table.insert(hextable, {
     ["match_pattern"] = "News Reflection",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aeeedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5372,7 +5372,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Parametric Line",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdwddwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5381,7 +5381,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Long Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awdedwaaweewaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5390,7 +5390,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Matrixification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdeeeeeqeawwaeaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5399,7 +5399,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lesser Teleport",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "edqdewqaeaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5408,7 +5408,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Extinguish Area",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "ddedwdwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5417,7 +5417,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Red Sun's Nadir",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqadwawaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5426,7 +5426,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Summon Sentinel",
     ["startDir"] = "EAST",
     ["angles"] = "waeawae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5435,7 +5435,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Banish Sentinel",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qdwdqdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5444,7 +5444,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Locate Sentinel",
     ["startDir"] = "EAST",
     ["angles"] = "waeawaede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5453,7 +5453,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Network Gateway",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqqwdeddwdawqqqwaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5462,7 +5462,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Hextito",
     ["startDir"] = "EAST",
     ["angles"] = "qaqdqaqdwawaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5471,7 +5471,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Pierce Darkness",
     ["startDir"] = "WEST",
     ["angles"] = "edewawede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5480,7 +5480,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Visualize Forms",
     ["startDir"] = "WEST",
     ["angles"] = "eedwwawwdee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5489,7 +5489,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Make Fire-born",
     ["startDir"] = "EAST",
     ["angles"] = "wwqwqwadwawdawqwaeqqaqqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5498,7 +5498,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sieve Thoughts",
     ["startDir"] = "WEST",
     ["angles"] = "qadaadadqaqdadqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5507,7 +5507,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Banish Other's",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eeeeedwqwawwwawewawwwaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5516,7 +5516,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Write Grimoire",
     ["startDir"] = "WEST",
     ["angles"] = "aqwqaeaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5525,7 +5525,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Erase Grimoire",
     ["startDir"] = "WEST",
     ["angles"] = "aqwqaqded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5534,7 +5534,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Restore Scroll",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqwawqwqawawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5543,7 +5543,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Illuminate Ink",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqwawqwqawawaewdwdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5552,7 +5552,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Induce Digging",
     ["startDir"] = "EAST",
     ["angles"] = "wwwaqdadaadadqqqeaeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5570,7 +5570,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Craft Debugger",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aaewwwwwaqwawqwadawqwwwawwwqwwwaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5579,7 +5579,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Regress Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "eedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5588,7 +5588,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Heket's Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wdwadad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5597,7 +5597,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cleanse Status",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eeeeedaqdewed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5606,7 +5606,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lumière Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqeeeeewded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5615,7 +5615,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Draw Rectangle",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aaqdwdwdewaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5624,7 +5624,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Flock's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "ewdqdwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5633,7 +5633,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Shift Sentinel",
     ["startDir"] = "EAST",
     ["angles"] = "wwaeawwaeqqwqwqwqwqwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5642,7 +5642,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Soroban Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qdeeaae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5651,7 +5651,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mitosis Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "dwaqawdwdwwdqdwwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5660,7 +5660,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ma'at's Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5669,7 +5669,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Themis' Gambit",
     ["startDir"] = "WEST",
     ["angles"] = "dwaad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5678,7 +5678,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hermes' Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "deaqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5687,7 +5687,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Thoth's Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dadad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5696,7 +5696,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Thetis' Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "wdeaqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5705,7 +5705,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lethe's Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqqwqaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5714,7 +5714,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Brigh's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eweeewedww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5723,7 +5723,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hookean Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqqqqddqqqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5732,7 +5732,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Jason's Gambit",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "edadeqdwedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5741,7 +5741,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Payload Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ddeedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5750,7 +5750,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trigger Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ddewdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5759,7 +5759,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Modicum Purif.",
     ["startDir"] = "WEST",
     ["angles"] = "edqdeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5768,7 +5768,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Destroy Liquid",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "dedwedade",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5777,7 +5777,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Craft Artifact",
     ["startDir"] = "EAST",
     ["angles"] = "wwaqqqqqeawqwqwqwqwqwwqqeadaeqqeqqeadaeqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5786,7 +5786,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Particle Burst",
     ["startDir"] = "EAST",
     ["angles"] = "deeeewaaddwqqqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5795,7 +5795,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Place Block II",
     ["startDir"] = "WEST",
     ["angles"] = "eeeeedeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5804,7 +5804,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Flower",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "weqqqqqwaeaeaeaeaea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5813,7 +5813,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reorient Items",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaeqqwaeadaeawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5822,7 +5822,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Allow Transfer",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqqewwqeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5831,7 +5831,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Close Transmit",
     ["startDir"] = "EAST",
     ["angles"] = "ewaqawe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5840,7 +5840,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Network Dstln.",
     ["startDir"] = "EAST",
     ["angles"] = "eqqqqqaweqaeaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5849,7 +5849,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Routing Dstln.",
     ["startDir"] = "EAST",
     ["angles"] = "eqqqqqaweqaeaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5858,7 +5858,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Debris",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqqqaawqqqae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5885,7 +5885,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Charmed Gambit",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "waqqqqqedeqdqdqdqdqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5912,7 +5912,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Discern Shroud",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqwwaawewaawdww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5921,7 +5921,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gate's Opening",
     ["startDir"] = "WEST",
     ["angles"] = "qaqeede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5930,7 +5930,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gate's Closing",
     ["startDir"] = "WEST",
     ["angles"] = "qqqwwqqqwqqawdedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5939,7 +5939,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Enchant Fists",
     ["startDir"] = "EAST",
     ["angles"] = "qaqwweaeaqwww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5948,7 +5948,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Vanish Scroll",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqwawqwqaqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5957,7 +5957,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Alter Ballast",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wwawwawwqaqwedwwwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5966,7 +5966,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gothic Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqeeeeedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5975,7 +5975,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gemini Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "aadaadaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5984,7 +5984,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Shout Thought",
     ["startDir"] = "EAST",
     ["angles"] = "daqqqqwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -5993,7 +5993,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Consideration",
     ["startDir"] = "WEST",
     ["angles"] = "qqqaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6002,7 +6002,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Introspection",
     ["startDir"] = "WEST",
     ["angles"] = "qqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6011,7 +6011,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Retrospection",
     ["startDir"] = "EAST",
     ["angles"] = "eee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6020,7 +6020,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Apep's Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "dqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6029,7 +6029,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Tutu's Gambit",
     ["startDir"] = "WEST",
     ["angles"] = "eedqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6038,7 +6038,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Janus' Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aadee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6047,7 +6047,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Arke's Gambit",
     ["startDir"] = "WEST",
     ["angles"] = "waqdeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6056,7 +6056,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ewer's Gambit",
     ["startDir"] = "WEST",
     ["angles"] = "dqddedwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6065,7 +6065,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inscribe Idea",
     ["startDir"] = "EAST",
     ["angles"] = "eweweweweweeewqaqwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6074,7 +6074,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Retrieve Idea",
     ["startDir"] = "WEST",
     ["angles"] = "qwqwqwqwqwqqqwedewq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6083,7 +6083,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gainax Gambit",
     ["startDir"] = "WEST",
     ["angles"] = "dwqwddwqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6092,7 +6092,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Quaterniation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "waqqqqqeeawwaeaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6101,7 +6101,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Block",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6110,7 +6110,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Light",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6119,7 +6119,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Edify Sapling",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqaqwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6128,7 +6128,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotate Entity",
     ["startDir"] = "EAST",
     ["angles"] = "qqqdaqqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6137,7 +6137,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Magic Missile",
     ["startDir"] = "WEST",
     ["angles"] = "qaqww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6146,7 +6146,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Craft Trinket",
     ["startDir"] = "EAST",
     ["angles"] = "wwaqqqqqeaqeaeqqqeaeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6155,7 +6155,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Recharge Item",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqqwaeaeaeaeaea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6164,7 +6164,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "ade",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6173,7 +6173,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Thicken Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "adeeqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6182,7 +6182,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dismiss Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "adeaqde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6191,7 +6191,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Falling Block",
     ["startDir"] = "EAST",
     ["angles"] = "wqwawqwqwqwqwqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6200,7 +6200,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reawaken Item",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaeqwqqwqwwqwqqweqwaweadwawwwawdaewawq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6209,7 +6209,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Extract Block",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqdeeeqeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6218,7 +6218,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Collect Block",
     ["startDir"] = "EAST",
     ["angles"] = "aqaeaqdeeweweedq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6227,7 +6227,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Unlink Others",
     ["startDir"] = "WEST",
     ["angles"] = "qeeeeedweqqqqqaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6236,7 +6236,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Open Transmit",
     ["startDir"] = "WEST",
     ["angles"] = "qwdedwq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6245,7 +6245,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Preview Craft",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wwdwaqawdwaqwwawdedwawwqawdwaqawdww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6254,7 +6254,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Spike",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qdqdqdqdww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6263,7 +6263,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Describe Item",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "dwewdweedwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6272,7 +6272,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Media",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqqqaewawqwaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6308,7 +6308,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Translate BIT",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wqwqwqwqwqwawwaqaeaqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6317,7 +6317,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Enchant Skin",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqadaqwwawwwqwwawdwawwqwwwwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6326,7 +6326,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Enchant Feet",
     ["startDir"] = "WEST",
     ["angles"] = "ddqwaqeqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6335,7 +6335,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Enchant Arms",
     ["startDir"] = "WEST",
     ["angles"] = "aeaqqdeeeqewdwqwdwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6344,7 +6344,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Genie Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qwddedqedeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6362,7 +6362,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Geb's Gambit",
     ["startDir"] = "WEST",
     ["angles"] = "aaeaad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6371,7 +6371,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Nut's Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "aawdde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6380,7 +6380,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Send Thought",
     ["startDir"] = "EAST",
     ["angles"] = "qqqqwaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6389,7 +6389,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Iris' Gambit",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qwaqde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6398,7 +6398,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Marker Dist.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawda",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6407,7 +6407,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Create Water",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aqawqadaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6416,7 +6416,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotate Block",
     ["startDir"] = "EAST",
     ["angles"] = "edeeeeeweewadeeed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6425,7 +6425,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Craft Cypher",
     ["startDir"] = "EAST",
     ["angles"] = "waqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6434,7 +6434,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotate Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "adeaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6443,7 +6443,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Resize Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "adeeqed",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6452,7 +6452,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Crack Device",
     ["startDir"] = "EAST",
     ["angles"] = "wwaqqqqqeqdedwqeaeqwdedwqeaeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6461,7 +6461,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Spit",
     ["startDir"] = "EAST",
     ["angles"] = "dwqaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6470,7 +6470,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Bind Storage",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qaqwqaqwqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6479,7 +6479,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mediafy Item",
     ["startDir"] = "WEST",
     ["angles"] = "eaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6488,7 +6488,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Depot Gambit",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "eeeeedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6497,7 +6497,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Get Response",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qqqqwweaaead",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6506,7 +6506,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Export Media",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwedqdqddqqwae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6515,7 +6515,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Clear Vision",
     ["startDir"] = "WEST",
     ["angles"] = "eeeeeqaqeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6524,7 +6524,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Split Vision",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqdedaedqqdedaqaedeqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6533,7 +6533,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Dust",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqqqaaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6560,7 +6560,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Imbue Lapis",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qadwawdaqqeae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6569,7 +6569,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Refuel Lamp",
     ["startDir"] = "EAST",
     ["angles"] = "qaqwawqwqqwqwqwqwqwqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6578,7 +6578,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conduct Rod",
     ["startDir"] = "EAST",
     ["angles"] = "eqqqqqawweqqqqqawweqqqqqawwdeqewwwwweqeeeqewwwwweqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6587,7 +6587,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Phase Block",
     ["startDir"] = "WEST",
     ["angles"] = "daqqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6596,7 +6596,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Alter Scale",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "ddwdwwdwwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6605,7 +6605,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotate Icon",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aaqdwdwdedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6614,7 +6614,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Place Block",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eeeeede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6623,7 +6623,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Break Block",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6632,7 +6632,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Unautograph",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wwqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6641,7 +6641,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Wristpocket",
     ["startDir"] = "WEST",
     ["angles"] = "aaqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6650,7 +6650,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Alter Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "adeeaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6659,7 +6659,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Paint Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "adeqqaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6668,7 +6668,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Conjure Egg",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqwaqaaqeeewdedde",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6677,7 +6677,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Get Vessels",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaeqqdeewweedq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6686,7 +6686,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Link Others",
     ["startDir"] = "EAST",
     ["angles"] = "eqqqqqawqeeeeedww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6695,7 +6695,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Return Item",
     ["startDir"] = "EAST",
     ["angles"] = "qded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6704,7 +6704,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Use Item On",
     ["startDir"] = "EAST",
     ["angles"] = "qqqwqqqqaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6758,7 +6758,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Get BIT 4x4",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qwqwqwqwqwqqeawwaeaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6767,7 +6767,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Set BIT 4x4",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eweweweweweewwdqdwwdq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6776,7 +6776,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Imbue Mind",
     ["startDir"] = "WEST",
     ["angles"] = "aawqqwqqqaede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6785,7 +6785,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Banish Own",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wdwewdwdwqwawwwawewawwwaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6794,7 +6794,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Age Scroll",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqwawqwqawwwdwdwwwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6803,7 +6803,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Clear Icon",
     ["startDir"] = "WEST",
     ["angles"] = "awawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6812,7 +6812,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Scale Icon",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aaqwdwwwdwwwdweede",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6821,7 +6821,7 @@ table.insert(hextable, {
     ["match_pattern"] = "List Items",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaeqawawaedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6830,7 +6830,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mage Mouth",
     ["startDir"] = "WEST",
     ["angles"] = "aaqqadaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6839,7 +6839,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Erase Item",
     ["startDir"] = "EAST",
     ["angles"] = "qdqawwaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6848,7 +6848,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Move Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "adeqaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6857,7 +6857,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Roll Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "adeqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6866,7 +6866,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Time Speck",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "adeqqaawdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6875,7 +6875,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Illuminate",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aeaeaeaeaeawqqqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6884,7 +6884,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Check Item",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaeqqddqeeqddq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6893,7 +6893,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Set Recipe",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaeqwaeadawwadaeaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6902,7 +6902,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Bind Macro",
     ["startDir"] = "WEST",
     ["angles"] = "qqqwqqqqqaqeeaqwqae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6911,7 +6911,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Delay Wisp",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqawded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6920,7 +6920,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Play Sound",
     ["startDir"] = "WEST",
     ["angles"] = "qaqqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6938,7 +6938,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Rotate BIT",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wqwqwqwqwqwaqeeeeedww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6956,7 +6956,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Weave Mesh",
     ["startDir"] = "EAST",
     ["angles"] = "qaqqqqqwqqqdeewewee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6965,7 +6965,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mold Amel",
     ["startDir"] = "EAST",
     ["angles"] = "wqwawwqwaqeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6974,7 +6974,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ride Wisp",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqadqqdaqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6983,7 +6983,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Draw Text",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aaqdwdwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -6992,7 +6992,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Draw Line",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "aaqdwdwdeww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7001,7 +7001,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Evanition",
     ["startDir"] = "EAST",
     ["angles"] = "eeedw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7010,7 +7010,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mute Mind",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ddweeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7019,7 +7019,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Free Mind",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ddeawawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7028,7 +7028,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Explosion",
     ["startDir"] = "EAST",
     ["angles"] = "aawaawaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7037,7 +7037,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Make Note",
     ["startDir"] = "WEST",
     ["angles"] = "adaa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7046,7 +7046,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Overdrive",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqqeawawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7055,7 +7055,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Energized",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "deewad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7064,7 +7064,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ephemeral",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "deewwaawd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7073,7 +7073,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Autograph",
     ["startDir"] = "WEST",
     ["angles"] = "eeeeeww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7082,7 +7082,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Mage Hand",
     ["startDir"] = "WEST",
     ["angles"] = "aaqqaeea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7091,7 +7091,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gravitate",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wawawqaqwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7100,7 +7100,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Particles",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eqqqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7109,7 +7109,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Send Iota",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "qqqqqwdeddw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7118,7 +7118,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hex Gummy",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eeewdw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7127,7 +7127,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cut Stone",
     ["startDir"] = "EAST",
     ["angles"] = "qqqqqwaeaeaeaeaeadawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7136,7 +7136,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Appendage",
     ["startDir"] = "WEST",
     ["angles"] = "aaqqadaqwqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7145,7 +7145,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Inculcate",
     ["startDir"] = "EAST",
     ["angles"] = "wwaqqqqqeqdedwwqwqwwdedwwqwqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7154,7 +7154,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Name Item",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwawqwaadwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7181,7 +7181,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Scale BIT",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wqwqwqwqwqwawwaawaawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7199,7 +7199,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dismount",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awqqaee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7208,7 +7208,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Set Slot",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaeqawawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7217,7 +7217,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Disqueue",
     ["startDir"] = "WEST",
     ["angles"] = "eqeweweweweqedwqeeeeewwqqwqwqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7226,7 +7226,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Fireball",
     ["startDir"] = "EAST",
     ["angles"] = "ddwddwdd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7235,7 +7235,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Overgrow",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqaqwawqaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7244,7 +7244,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Volatile",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "deewedeeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7253,7 +7253,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Confetti",
     ["startDir"] = "EAST",
     ["angles"] = "awddeqaedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7262,7 +7262,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Lay Item",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "eaqwqaeqwaeaeqqeaeaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7271,7 +7271,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dispense",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqwawqwddaeeead",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7280,7 +7280,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Displace",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqqqqeedaqqqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7289,7 +7289,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Horrible",
     ["startDir"] = "EAST",
     ["angles"] = "wedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqeedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqeedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqqedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqqedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqeedqawqeewdeaqeewdeaqqedqawqqedqawqeedqawqqewdeaqqedqawqeewdeaqqewdeaqeewdeaqeedqawqqedqawqqewdeaqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7298,7 +7298,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Discharm",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqwddaaeawaea",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7307,7 +7307,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Kill BIT",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wqwqwqwqwqwaqdwddwdq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7316,7 +7316,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dye Ink",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "wqwawqwqawawaedd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7325,7 +7325,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Enqueue",
     ["startDir"] = "EAST",
     ["angles"] = "qeqwqwqwqwqeqaweqqqqqwweeweweewqdwwewewwewweweww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7334,7 +7334,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dequeue",
     ["startDir"] = "WEST",
     ["angles"] = "eqeweweweweqedwqeeeeewwqqwqwqqweawwqwqwwqwwqwqww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7343,7 +7343,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Impulse",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awqqqwaqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7352,7 +7352,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sleight",
     ["startDir"] = "WEST",
     ["angles"] = "aaqqadeeeq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7361,7 +7361,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Vibrate",
     ["startDir"] = "EAST",
     ["angles"] = "wwawawwd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7370,7 +7370,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sparkle",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "dqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7379,7 +7379,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Request",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qqqqwqdqddqe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7406,7 +7406,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Finale",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aqdeeweeew",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7415,7 +7415,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Encore",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "deaqqwqqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7424,7 +7424,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Reveal",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "de",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7433,7 +7433,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Ignite",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "aaqawawa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7442,7 +7442,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Bouncy",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "deeqa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7451,7 +7451,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Freeze",
     ["startDir"] = "WEST",
     ["angles"] = "weeeweedada",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7460,7 +7460,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Squawk",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wweedadw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7469,7 +7469,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Listen",
     ["startDir"] = "EAST",
     ["angles"] = "aqqqqqwdeddw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7478,7 +7478,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Wander",
     ["startDir"] = "EAST",
     ["angles"] = "eqwawqwaqww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7487,7 +7487,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Unlink",
     ["startDir"] = "WEST",
     ["angles"] = "qdeddqeeeeedwqdeddw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7496,7 +7496,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Hopper",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwawqwaeqqq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7505,7 +7505,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Switch",
     ["startDir"] = "WEST",
     ["angles"] = "dwewdwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7514,7 +7514,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Write",
     ["startDir"] = "WEST",
     ["angles"] = "dwewdweq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7523,7 +7523,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Blink",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awqqqwaq",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7532,7 +7532,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Smelt",
     ["startDir"] = "EAST",
     ["angles"] = "wqqqwqqadad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7541,7 +7541,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Haste",
     ["startDir"] = "WEST",
     ["angles"] = "aeawqqqae",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7550,7 +7550,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Craft",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wwawdedwawdewwdwaqawdwwedwawdedwaww",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7559,7 +7559,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Trade",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "awdedwaeqded",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7568,7 +7568,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Roast",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aqqwwqqawdadedad",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7577,7 +7577,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Smoke",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqadadadewdqqdwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7586,7 +7586,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Blast",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqadadadewweewwe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7595,7 +7595,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Haunt",
     ["startDir"] = "EAST",
     ["angles"] = "aawawqeqqqqqwa",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7613,7 +7613,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Wish",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "eweweweweweewedeaqqqd",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7622,7 +7622,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Name",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aqeeqaaeweeewe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7631,7 +7631,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dash",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "qaqqqqdweee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7640,7 +7640,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Gasp",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "aweeeeewaweeeee",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7649,7 +7649,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Link",
     ["startDir"] = "EAST",
     ["angles"] = "eaqaaeqqqqqaweaqaaw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7658,7 +7658,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Cook",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qwqqadadadewewewe",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 
@@ -7667,7 +7667,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Dye",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "dwaqqw",
-    ["handler"] = h.defaultspellhandler
+    ["handler"] = h.defaulthandler
 })
 
 

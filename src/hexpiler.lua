@@ -2,7 +2,6 @@ local h = require("handlers.hexhandlers")
 -- needed vars
 local hexpiler_dir = fs.getDir(shell.getRunningProgram())
 
-
 -- Helper Fns
 
 -- whether string is 'true' or not
@@ -38,7 +37,7 @@ local function removegreatspell(pattern)
                 if not goodlines then
                     goodlines = line
                 else
-                    goodlines = goodlines.."\n"..line
+                    goodlines = goodlines .. "\n" .. line
                 end
             end
         end
@@ -109,8 +108,8 @@ if not (export == true or export == false) then error("Invalid param set") end
 -- this will fail in non cc environments
 
 --load skip, comment, #define and #include first
-local lookuptables = { [1] = shell.resolve(hexpiler_dir .. "/lookups/special") }
---load user defined lookup tables
+local lookuptables = {}
+-- load user defined lookup tables
 for index, table_path in ipairs(arglookups) do
     if table_path then
         local curr_table = "/" .. shell.resolve(table_path)
@@ -118,21 +117,17 @@ for index, table_path in ipairs(arglookups) do
     end
 end
 
---attempt to load all non sensitive lookup tables in ./lookups
+--attempt to load all lookup tables in ./lookups
 for _, filename in pairs(fs.list(hexpiler_dir .. "/lookups")) do
     --strip .lua bc require doesn't like it
     local fixedfilename = string.gsub(filename, ".lua", "")
-    if fixedfilename ~= "special" or fixedfilename ~= "hexcasting" then
-        table.insert(lookuptables, hexpiler_dir .. "/lookups/" .. fixedfilename)
-    end
+    table.insert(lookuptables, "lookups." .. fixedfilename)
 end
 
--- --load base hexcasting last
--- table.insert(lookuptables, shell.resolve(hexpiler_dir .. "/lookups/hexcasting"))
 -- --flatten everything
 local hexlookup = {}
 for idx, table_path in ipairs(lookuptables) do
-    local curr_table = require("/" .. shell.resolve(table_path))
+    local curr_table = require(table_path)
     for hex_idx, hex_val in ipairs(curr_table["hextable"]) do
         table.insert(hexlookup, hex_val)
     end
@@ -141,8 +136,9 @@ end
 
 
 -- load input
-if not fs.exists(input) then error("Bad input path") end
-local file = fs.open(input, "r")
+
+if not fs.exists(shell.resolve(input)) then error("Bad input path") end
+local file = fs.open(shell.resolve(input), "r")
 local lines = {}
 while true do
     local line = file.readLine()
@@ -163,10 +159,6 @@ for line_num, line in ipairs(lines) do
             for hex_idx, hex_data in ipairs(hexlookup) do
                 local sidx, eidx = string.find(line, hex_data["match_pattern"], line_position)
                 if sidx and eidx and sidx == line_position then
-                    -- could be useful for debugging purposes, maybe make this a flag?
-                    -- if hex_data["name"] ~= "skip" then
-                    --     print(hex_data["name"])
-                    -- end
                     local res = hex_data:handler(string.sub(line, sidx, eidx), line_num)
 
                     if res ~= nil then

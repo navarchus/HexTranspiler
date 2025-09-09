@@ -43,7 +43,7 @@ def compare_pat(pat_a: Pattern, pat_b: Pattern):
 
 # get correct handler if not default
 def get_handler(name: str, canvas):
-    handler = "h.defaultspellhandler"
+    handler = "h.defaulthandler"
 
     if name in special_handlers.keys():
         handler = special_handlers.get(name)
