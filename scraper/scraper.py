@@ -99,7 +99,7 @@ for site in hexdoc_sites:
         if re.search(r"\+(.)\/\-(.)", matchpattern):
             symbol = re.search(r"\+(.)\/\-(.)", matchpattern).groups()[0]
             basename = matchpattern.split("+")[0].strip()
-            pos = f"{basename}: +{symbol}"
+            pos = f"{basename} +{symbol}"
             pos_name = (
                 pos.lower()
                 .replace("-", "minus")
@@ -112,7 +112,7 @@ for site in hexdoc_sites:
             pos_angles = canvas.get("data-string")
 
             sib = canvas.find_next_sibling("canvas", {"class": "spell-viz"})
-            neg = f"{basename}: -{symbol}"
+            neg = f"{basename} -{symbol}"
             neg_name = (
                 neg.lower()
                 .replace("-", "minus")
