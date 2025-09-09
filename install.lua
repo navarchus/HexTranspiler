@@ -219,7 +219,7 @@ end
 ]]
 
 -- clear out hexpiler dir if exists
-fs.delete("/hexpiler")
+fs.delete("./hexpiler")
 
 -- Edit these variables to use preset mode.
 -- Whether to download the files asynchronously (huge speed benefits, will also retry failed files)
@@ -288,7 +288,7 @@ if not json then
 	local file = fs.open("json", "w")
 	file.write(json_inline)
 	file.close()
-	os.loadAPI("json")
+	os.loadAPI("./json")
 end
 
 
@@ -358,19 +358,19 @@ end
 preset.done()
 
 --cleanup
-for _, name in pairs(fs.list("/hexpiler/src")) do
-    fs.move("/hexpiler/src/"..name, "/hexpiler/"..name)
+for _, name in pairs(fs.list("./hexpiler/src")) do
+    fs.move("./hexpiler/src/"..name, "./hexpiler/"..name)
 end
 
 
 --create stub executable in main folder
-local stub = fs.open("/hexpiler.lua", "w")
-stub.write('shell.execute("/hexpiler/hexpiler.lua", ...)')
+local stub = fs.open("./hexpiler.lua", "w")
+stub.write('shell.execute("./hexpiler/hexpiler.lua", ...)')
 stub.close()
 
 --cleanup
-fs.delete("/hexpiler/src")
-fs.delete("/hexpiler/install.lua")
-fs.delete("/hexpiler/scraper")
-fs.delete("json")
+fs.delete("./hexpiler/src")
+fs.delete("./hexpiler/install.lua")
+fs.delete("./hexpiler/scraper")
+fs.delete("./json")
 fs.delete(shell.getRunningProgram())
