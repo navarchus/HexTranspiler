@@ -1,22 +1,12 @@
-import dataclasses
 import functools
+import dataclasses
 import requests
-from bs4 import BeautifulSoup, Tag
+from bs4 import BeautifulSoup
 import re
 from functools import cmp_to_key
 
 hexdoc_sites = {
-    "hexcasting": "https://hexcasting.hexxy.media/v/0.11.2/1.0/en_us/#patterns/readwrite@hexcasting:local",
-    "hexal": "https://hexal.hexcast.ing/v/latest/remaint/en_us/#patterns/readwrite@hexcasting:local",
-    "complexhex": "http://complexhex.hexxy.media/v/latest/0.1.x/en_us/#patterns/readwrite@hexcasting:local",
-    "hexcassettes": "https://miyucomics.github.io/hexcassettes/v/1.1.4/1.0.0/en_us/#patterns/readwrite@hexcasting:local",
-    "hexcellular": "https://hexcellular.hexxy.media/v/1.0.4/1.0.0/en_us/#patterns/readwrite@hexcasting:local",
-    "hexdebug": "https://hexdebug.hexxy.media/v/0.2.2+1.20.1/1.0/en_us/#patterns/readwrite@hexcasting:local",
-    "hexical":"https://hexical.hexxy.media/v/1.5.0/1.0.0/en_us/#patterns/readwrite@hexcasting:local",
-    "hextweaks": "https://walksanatora.github.io/HexTweaks/?nospoiler/#patterns/readwrite@hexcasting:local",
-    ##broken rn, have to do manually
-    # "moreiotas": "https://talia-12.github.io/MoreIotas/#patterns/readwrite@hexcasting:local"
-    "oneironaut":"https://oneironaut.hexxy.media/v/0.4.0/1.0/en_us/#patterns/readwrite@hexcasting:local"
+    "hexbook": "https://book.hexxy.media/v/latest/v2/en_us/#patterns/readwrite@hexcasting:local"
 }
 
 
@@ -24,52 +14,20 @@ hexdoc_sites = {
 class Pattern:
     name: str
     matchpattern: str
+    handler: str
     startDir: str
     angles: str
 
-special_handlers={
-    ##base hex
-    "create-lava":"h.greatspellhandler",
-    "summon-lightning":"h.greatspellhandler",
-    "summon-rain":"h.greatspellhandler",
-    "dispel-rain":"h.greatspellhandler",
-    "altiora":"h.greatspellhandler",
-    "greater-teleport":"h.greatspellhandler",
-    "blue-suns-zenith":"h.greatspellhandler",
-    "black-suns-zenith":"h.greatspellhandler",
-    "white-suns-zenith":"h.greatspellhandler",
-    "red-suns-zenith":"h.greatspellhandler",
-    "green-suns-zenith":"h.greatspellhandler",
-    "summon-greater-sentinel":"h.greatspellhandler",
-    "craft-phial":"h.greatspellhandler",
-    "flay-mind":"h.greatspellhandler",
-    "bookkeepers-gambit":"h.bookkeeperhandler",
-    "numerical-reflection":"h.numhandler",
-    ##hexal
-    "accelerate":"h.greatspellhandler",
-    "consume-wisp":"h.greatspellhandler",
-    "bind-wisp":"h.greatspellhandler",
-    "gates-reflection":"h.greatspellhandler",
-    ##complexhex
-    "summon-block-display":"h.greatspellhandler",
-    "summon-item-display":"h.greatspellhandler",
-    "summon-text-display":"h.greatspellhandler",
-    ##hexical
-    "greater-blink": "h.greatspellhandler",
+
+special_handlers = {
+    # base hex
+    "bookkeepers-gambit": "h.bookkeeperhandler",
+    "numerical-reflection": "h.numhandler",
+    # hexical
     "sehkmets-gambit": "hexicalhandlers.sehkmethandler",
-    "nephthyss-gambit": "hexicalhandlers.nepthyshandler",
-    ##hextweaks
-    "natural-search":"h.greatspellhandler",
-    "suspicious-glyph":"h.greatspellhandler",
-    ##moreiotas
-    #TODO, online book broken for moreiotas
-    ##oneironaut
-    "media-infusion":"h.greatspellhandler",
-    "noetic-gateway":"h.greatspellhandler",
-    "spatial-interchange":"h.greatspellhandler",
-    "stealth-shroud":"h.greatspellhandler",
-    "uplifting-resonance":"h.greatspellhandler",
+    "nephthys-gambit": "hexicalhandlers.nepthyshandler",
 }
+
 
 def compare_pat(pat_a: Pattern, pat_b: Pattern):
     match_one = pat_a.__dict__.get("matchpattern")
@@ -81,6 +39,18 @@ def compare_pat(pat_a: Pattern, pat_b: Pattern):
     elif len(match_one) < len(match_two):
         return 1
     return 0
+
+
+# get correct handler if not default
+def get_handler(name: str, canvas):
+    handler = "h.defaultspellhandler"
+
+    if name in special_handlers.keys():
+        handler = special_handlers.get(name)
+    elif canvas.get("data-per-world") == "True":
+        handler = "h.greatspellhandler"
+
+    return handler
 
 
 for site in hexdoc_sites:
@@ -97,8 +67,8 @@ for site in hexdoc_sites:
 
     patterns: list[Pattern] = []
 
-    for pattern in pattern_canvases:
-        is_secondary_canvas = pattern.find_previous_sibling(
+    for canvas in pattern_canvases:
+        is_secondary_canvas = canvas.find_previous_sibling(
             "canvas", {"class": "spell-viz"}
         )
 
@@ -108,7 +78,7 @@ for site in hexdoc_sites:
 
         ## yay list comp
         matchpattern = (
-            [string for string in pattern.parent.parent.find("h4").strings][0]
+            [string for string in canvas.parent.parent.find("h4").strings][0]
             .split("(")[0]
             .strip()
         )
@@ -125,6 +95,7 @@ for site in hexdoc_sites:
             .strip()
         )
 
+        # special case for vector reflections (weird formatting)
         if re.search(r"\+(.)\/\-(.)", matchpattern):
             symbol = re.search(r"\+(.)\/\-(.)", matchpattern).groups()[0]
             basename = matchpattern.split("+")[0].strip()
@@ -137,10 +108,10 @@ for site in hexdoc_sites:
                 .replace(" ", "-")
                 .replace("'", "")
             )
-            pos_start = pattern.get("data-start").upper()
-            pos_angles = pattern.get("data-string")
+            pos_start = canvas.get("data-start").upper()
+            pos_angles = canvas.get("data-string")
 
-            sib = pattern.find_next_sibling("canvas", {"class": "spell-viz"})
+            sib = canvas.find_next_sibling("canvas", {"class": "spell-viz"})
             neg = f"{basename}: -{symbol}"
             neg_name = (
                 neg.lower()
@@ -150,12 +121,13 @@ for site in hexdoc_sites:
                 .replace("'", "")
                 .replace(":", "")
             )
-            neg_start = pattern.get("data-start").upper()
-            neg_angles = pattern.get("data-string")
+            neg_start = canvas.get("data-start").upper()
+            neg_angles = canvas.get("data-string")
 
             pos_pat = Pattern(
                 pos_name,
                 pos,
+                handler=get_handler(pos_name, canvas),
                 startDir=pos_start,
                 angles=pos_angles,
             )
@@ -163,11 +135,13 @@ for site in hexdoc_sites:
             neg_pat = Pattern(
                 neg_name,
                 neg,
+                handler=get_handler(neg_name, canvas),
                 startDir=neg_start,
                 angles=neg_angles,
             )
             patterns.append(neg_pat)
 
+        #all other patterns
         else:
             name = (
                 matchpattern.lower()
@@ -180,8 +154,9 @@ for site in hexdoc_sites:
             pat = Pattern(
                 name,
                 matchpattern,
-                startDir=pattern.get("data-start").upper(),
-                angles=pattern.get("data-string"),
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
             )
             patterns.append(pat)
 
@@ -197,12 +172,17 @@ for site in hexdoc_sites:
                 patterns.pop(idx)
 
     with open(f"./output/{site}.lua", "w") as file:
-        file.write("""
+        file.write(
+            """
 local h = require("handlers.hexhandlers")
 
 local hextable = {}
-""")
+"""
+        )
         for pat in patterns:
+            # get correct handler
+            handler_name = "h.defaultspellhandler"
+
             file.write(
                 f"""
 table.insert(hextable, {{
@@ -210,10 +190,12 @@ table.insert(hextable, {{
     ["match_pattern"] = "{pat.__dict__.get("matchpattern")}",
     ["startDir"] = "{pat.__dict__.get("startDir")}",
     ["angles"] = "{pat.__dict__.get("angles")}",
-    ["handler"] = {"h.defaultspellhandler" if pat.__dict__.get("name") not in special_handlers.keys() else special_handlers.get(pat.__dict__.get("name"))}
+    ["handler"] = {pat.__dict__.get("handler")}
 }})\n
 """
             )
-        file.write("""
+        file.write(
+            """
 return { hextable = hextable }
-""")
+"""
+        )
