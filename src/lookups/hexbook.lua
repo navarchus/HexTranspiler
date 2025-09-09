@@ -211,6 +211,33 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "multiplicative-distillation",
+    ["match_pattern"] = "Multiplicative Distillation",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "waqaw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "entity-distillation-status",
+    ["match_pattern"] = "Entity Distillation: Status",
+    ["startDir"] = "EAST",
+    ["angles"] = "eaeeeeeae",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "entity-purification-animal",
+    ["match_pattern"] = "Entity Purification: Animal",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "qqqqqdaqaawa",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "entity-purification-player",
     ["match_pattern"] = "Entity Purification: Player",
     ["startDir"] = "SOUTH_EAST",
@@ -256,19 +283,19 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "cartographers-purification",
-    ["match_pattern"] = "Cartographer's Purification",
+    ["name"] = "transformation-purification",
+    ["match_pattern"] = "Transformation Purification",
     ["startDir"] = "EAST",
-    ["angles"] = "qwedewqqqqq",
+    ["angles"] = "aeqeawaeqeaaee",
     ["handler"] = h.defaulthandler
 })
 
 
 table.insert(hextable, {
-    ["name"] = "multiplicative-distillation",
-    ["match_pattern"] = "Multiplicative Distillation",
-    ["startDir"] = "SOUTH_EAST",
-    ["angles"] = "waqaw",
+    ["name"] = "cartographers-purification",
+    ["match_pattern"] = "Cartographer's Purification",
+    ["startDir"] = "EAST",
+    ["angles"] = "qwedewqqqqq",
     ["handler"] = h.defaulthandler
 })
 
@@ -427,6 +454,15 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "chroniclers-purification",
+    ["match_pattern"] = "Chronicler's Purification",
+    ["startDir"] = "EAST",
+    ["angles"] = "wawqwqwqwqwqw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "glyphmakers-distillation",
     ["match_pattern"] = "Glyphmaker's Distillation",
     ["startDir"] = "NORTH_EAST",
@@ -503,15 +539,6 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Distillation: Living",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqqqqwdeddwd",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "chroniclers-purification",
-    ["match_pattern"] = "Chronicler's Purification",
-    ["startDir"] = "EAST",
-    ["angles"] = "wawqwqwqwqwqw",
     ["handler"] = h.defaulthandler
 })
 
@@ -643,10 +670,55 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "subtractive-distillation",
+    ["match_pattern"] = "Subtractive Distillation",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "wddw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "running-sum-purification",
+    ["match_pattern"] = "Running Sum Purification",
+    ["startDir"] = "WEST",
+    ["angles"] = "aea",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "decorators-purification",
+    ["match_pattern"] = "Decorator's Purification",
+    ["startDir"] = "SOUTH_WEST",
+    ["angles"] = "wwawwqwwawwaeae",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "handwriting-distillation",
     ["match_pattern"] = "Handwriting Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "eadqqqa",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "disjunction-distillation",
+    ["match_pattern"] = "Disjunction Distillation",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "waw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "conjunction-distillation",
+    ["match_pattern"] = "Conjunction Distillation",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "wdw",
     ["handler"] = h.defaulthandler
 })
 
@@ -724,15 +796,6 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "conjunction-distillation",
-    ["match_pattern"] = "Conjunction Distillation",
-    ["startDir"] = "NORTH_EAST",
-    ["angles"] = "wdw",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
     ["name"] = "wave-location-reflection",
     ["match_pattern"] = "Wave Location Reflection",
     ["startDir"] = "SOUTH_WEST",
@@ -805,19 +868,10 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "subtractive-distillation",
-    ["match_pattern"] = "Subtractive Distillation",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "wddw",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "disjunction-distillation",
-    ["match_pattern"] = "Disjunction Distillation",
-    ["startDir"] = "SOUTH_EAST",
-    ["angles"] = "waw",
+    ["name"] = "conjugation-purification",
+    ["match_pattern"] = "Conjugation Purification",
+    ["startDir"] = "SOUTH_WEST",
+    ["angles"] = "wqqd",
     ["handler"] = h.defaulthandler
 })
 
@@ -949,6 +1003,15 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "assessors-purification",
+    ["match_pattern"] = "Assessor's Purification",
+    ["startDir"] = "EAST",
+    ["angles"] = "wdwewewewewewqw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "equestrian-purification",
     ["match_pattern"] = "Equestrian Purification",
     ["startDir"] = "NORTH_EAST",
@@ -980,6 +1043,24 @@ table.insert(hextable, {
     ["match_pattern"] = "Zone Exltn.: Not-Status",
     ["startDir"] = "EAST",
     ["angles"] = "qweeeeewq",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "retrograde-purification",
+    ["match_pattern"] = "Retrograde Purification",
+    ["startDir"] = "EAST",
+    ["angles"] = "qqqaede",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "uniqueness-purification",
+    ["match_pattern"] = "Uniqueness Purification",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "aweaqa",
     ["handler"] = h.defaulthandler
 })
 
@@ -1034,33 +1115,6 @@ table.insert(hextable, {
     ["match_pattern"] = "Manipulative Reflection",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "edaqq",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "assessors-purification",
-    ["match_pattern"] = "Assessor's Purification",
-    ["startDir"] = "EAST",
-    ["angles"] = "wdwewewewewewqw",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "retrograde-purification",
-    ["match_pattern"] = "Retrograde Purification",
-    ["startDir"] = "EAST",
-    ["angles"] = "qqqaede",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "uniqueness-purification",
-    ["match_pattern"] = "Uniqueness Purification",
-    ["startDir"] = "NORTH_EAST",
-    ["angles"] = "aweaqa",
     ["handler"] = h.defaulthandler
 })
 
@@ -1327,6 +1381,15 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "auditors-purification",
+    ["match_pattern"] = "Auditor's Purification",
+    ["startDir"] = "EAST",
+    ["angles"] = "wawqwqwqwqwqwew",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "vector-reflection-zero",
     ["match_pattern"] = "Vector Reflection Zero",
     ["startDir"] = "NORTH_WEST",
@@ -1354,10 +1417,37 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "selection-distillation",
+    ["match_pattern"] = "Selection Distillation",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "deeed",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "excisors-distillation",
     ["match_pattern"] = "Excisor's Distillation",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "edqdewaqa",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "exclusion-distillation",
+    ["match_pattern"] = "Exclusion Distillation",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "dwa",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "zone-distillation-any",
+    ["match_pattern"] = "Zone Distillation: Any",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "qqqqqwded",
     ["handler"] = h.defaulthandler
 })
 
@@ -1381,19 +1471,19 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "selection-distillation",
-    ["match_pattern"] = "Selection Distillation",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "deeed",
+    ["name"] = "locators-distillation",
+    ["match_pattern"] = "Locator's Distillation",
+    ["startDir"] = "EAST",
+    ["angles"] = "dedqde",
     ["handler"] = h.defaulthandler
 })
 
 
 table.insert(hextable, {
-    ["name"] = "excisors-distillation",
-    ["match_pattern"] = "Excisor's Distillation",
-    ["startDir"] = "SOUTH_WEST",
-    ["angles"] = "edqdewaqa",
+    ["name"] = "flocks-disintegration",
+    ["match_pattern"] = "Flock's Disintegration",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qwaeawq",
     ["handler"] = h.defaulthandler
 })
 
@@ -1403,15 +1493,6 @@ table.insert(hextable, {
     ["match_pattern"] = "Speaker's Distillation",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "ddewedd",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "auditors-purification",
-    ["match_pattern"] = "Auditor's Purification",
-    ["startDir"] = "EAST",
-    ["angles"] = "wawqwqwqwqwqwew",
     ["handler"] = h.defaulthandler
 })
 
@@ -1435,28 +1516,10 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "locators-distillation",
-    ["match_pattern"] = "Locator's Distillation",
-    ["startDir"] = "EAST",
-    ["angles"] = "dedqde",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
     ["name"] = "patternmasters-prfct.",
     ["match_pattern"] = "Patternmaster's Prfct.",
     ["startDir"] = "NORTH_WEST",
     ["angles"] = "wdwewdwdw",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "flocks-disintegration",
-    ["match_pattern"] = "Flock's Disintegration",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qwaeawq",
     ["handler"] = h.defaulthandler
 })
 
@@ -1673,15 +1736,6 @@ table.insert(hextable, {
     ["match_pattern"] = "Imagining Complexities",
     ["startDir"] = "WEST",
     ["angles"] = "eew",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "exclusion-distillation",
-    ["match_pattern"] = "Exclusion Distillation",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "dwa",
     ["handler"] = h.defaulthandler
 })
 
@@ -1921,6 +1975,87 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "additive-distillation",
+    ["match_pattern"] = "Additive Distillation",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "waaw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "division-distillation",
+    ["match_pattern"] = "Division Distillation",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "wdedw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-disintegration",
+    ["match_pattern"] = "Vector Disintegration",
+    ["startDir"] = "EAST",
+    ["angles"] = "qeeeee",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-plusx",
+    ["match_pattern"] = "Vector Reflection: +X",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqea",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-minusx",
+    ["match_pattern"] = "Vector Reflection: -X",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqea",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-plusy",
+    ["match_pattern"] = "Vector Reflection: +Y",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqew",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-minusy",
+    ["match_pattern"] = "Vector Reflection: -Y",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqew",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-plusz",
+    ["match_pattern"] = "Vector Reflection: +Z",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqed",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-minusz",
+    ["match_pattern"] = "Vector Reflection: -Z",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqed",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "spatial-reflection-ii",
     ["match_pattern"] = "Spatial Reflection II",
     ["startDir"] = "WEST",
@@ -1970,6 +2105,51 @@ table.insert(hextable, {
     ["match_pattern"] = "Ablation Purification",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "wqeawaqddaqw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "fishermans-gambit-ii",
+    ["match_pattern"] = "Fisherman's Gambit II",
+    ["startDir"] = "EAST",
+    ["angles"] = "aada",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "negation-purification",
+    ["match_pattern"] = "Negation Purification",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "dw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "equality-distillation",
+    ["match_pattern"] = "Equality Distillation",
+    ["startDir"] = "EAST",
+    ["angles"] = "ad",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "sorters-purification",
+    ["match_pattern"] = "Sorter's Purification",
+    ["startDir"] = "EAST",
+    ["angles"] = "qaqqaea",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "zone-exaltation-type",
+    ["match_pattern"] = "Zone Exaltation: Type",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "waweeeeewaw",
     ["handler"] = h.defaulthandler
 })
 
@@ -2038,6 +2218,24 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "power-distillation-ii",
+    ["match_pattern"] = "Power Distillation II",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "wedewqawwawqwa",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "wave-speed-reflection",
+    ["match_pattern"] = "Wave Speed Reflection",
+    ["startDir"] = "SOUTH_WEST",
+    ["angles"] = "eaqdaadqaeewq",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "listeners-reflection",
     ["match_pattern"] = "Listener's Reflection",
     ["startDir"] = "EAST",
@@ -2078,6 +2276,33 @@ table.insert(hextable, {
     ["match_pattern"] = "Bubbles' Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qdqdqdqdqdq",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "akashas-distillation",
+    ["match_pattern"] = "Akasha's Distillation",
+    ["startDir"] = "WEST",
+    ["angles"] = "qqqwqqqqqaq",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "metadata-purification",
+    ["match_pattern"] = "Metadata Purification",
+    ["startDir"] = "WEST",
+    ["angles"] = "qwqwqwqwqwqqqeqaqeq",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "metadata-distillation",
+    ["match_pattern"] = "Metadata Distillation",
+    ["startDir"] = "WEST",
+    ["angles"] = "qwqwqwqwqwqaeqedeqe",
     ["handler"] = h.defaulthandler
 })
 
@@ -2209,33 +2434,6 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "division-distillation",
-    ["match_pattern"] = "Division Distillation",
-    ["startDir"] = "NORTH_EAST",
-    ["angles"] = "wdedw",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "negation-purification",
-    ["match_pattern"] = "Negation Purification",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "dw",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "division-distillation",
-    ["match_pattern"] = "Division Distillation",
-    ["startDir"] = "NORTH_EAST",
-    ["angles"] = "wdedw",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
     ["name"] = "transition-masculine",
     ["match_pattern"] = "Transition: Masculine",
     ["startDir"] = "SOUTH_EAST",
@@ -2276,15 +2474,6 @@ table.insert(hextable, {
     ["match_pattern"] = "Recitation Reflection",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "weeeeew",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "additive-distillation",
-    ["match_pattern"] = "Additive Distillation",
-    ["startDir"] = "NORTH_EAST",
-    ["angles"] = "waaw",
     ["handler"] = h.defaulthandler
 })
 
@@ -2472,17 +2661,8 @@ table.insert(hextable, {
 table.insert(hextable, {
     ["name"] = "numerical-reflection",
     ["match_pattern"] = "Numerical Reflection",
-    ["startDir"] = "SOUTH_WEST",
-    ["angles"] = "aqaaqww",
-    ["handler"] = h.numhandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "numerical-reflection",
-    ["match_pattern"] = "Numerical Reflection",
     ["startDir"] = "SOUTH_EAST",
-    ["angles"] = "aqaaqdww",
+    ["angles"] = "aqaa",
     ["handler"] = h.numhandler
 })
 
@@ -2533,10 +2713,37 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "reading-purification",
+    ["match_pattern"] = "Reading Purification",
+    ["startDir"] = "SOUTH_WEST",
+    ["angles"] = "awaqeeeee",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "collage-purification",
     ["match_pattern"] = "Collage Purification",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dwdeqqqqqawq",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "selection-exaltation",
+    ["match_pattern"] = "Selection Exaltation",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qaeaqwded",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "surgeons-exaltation",
+    ["match_pattern"] = "Surgeon's Exaltation",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "wqaeaqw",
     ["handler"] = h.defaulthandler
 })
 
@@ -2605,15 +2812,6 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "surgeons-exaltation",
-    ["match_pattern"] = "Surgeon's Exaltation",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "wqaeaqw",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
     ["name"] = "offensive-reflection",
     ["match_pattern"] = "Offensive Reflection",
     ["startDir"] = "NORTH_EAST",
@@ -2654,15 +2852,6 @@ table.insert(hextable, {
     ["match_pattern"] = "Thanatos' Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "qqaed",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "selection-exaltation",
-    ["match_pattern"] = "Selection Exaltation",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qaeaqwded",
     ["handler"] = h.defaulthandler
 })
 
@@ -2956,15 +3145,6 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "reading-purification",
-    ["match_pattern"] = "Reading Purification",
-    ["startDir"] = "WEST",
-    ["angles"] = "awqqwaqd",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
     ["name"] = "culture-purification",
     ["match_pattern"] = "Culture Purification",
     ["startDir"] = "EAST",
@@ -3235,6 +3415,15 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "chroniclers-gambit",
+    ["match_pattern"] = "Chronicler's Gambit",
+    ["startDir"] = "EAST",
+    ["angles"] = "wdwewewewewew",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "length-purification",
     ["match_pattern"] = "Length Purification",
     ["startDir"] = "NORTH_EAST",
@@ -3280,10 +3469,100 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "seshats-reflection",
+    ["match_pattern"] = "Seshat's Reflection",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "wqaqwadad",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "prospectors-gambit",
+    ["match_pattern"] = "Prospector's Gambit",
+    ["startDir"] = "EAST",
+    ["angles"] = "aaedd",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "undertakers-gambit",
+    ["match_pattern"] = "Undertaker's Gambit",
+    ["startDir"] = "EAST",
+    ["angles"] = "ddqaa",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "bookkeepers-gambit",
+    ["match_pattern"] = "Bookkeeper's Gambit",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "aeea",
+    ["handler"] = h.bookkeeperhandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "sorters-reflection",
+    ["match_pattern"] = "Sorter's Reflection",
+    ["startDir"] = "SOUTH_WEST",
+    ["angles"] = "edeedqd",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "entity-purification",
+    ["match_pattern"] = "Entity Purification",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "qqqqqdaqa",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "grokking-reflection",
     ["match_pattern"] = "Grokking Reflection",
     ["startDir"] = "EAST",
     ["angles"] = "aqawwqaw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "stealthy-reflection",
+    ["match_pattern"] = "Stealthy Reflection",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "wede",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "scribes-reflection",
+    ["match_pattern"] = "Scribe's Reflection",
+    ["startDir"] = "EAST",
+    ["angles"] = "aqqqqq",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "muninns-reflection",
+    ["match_pattern"] = "Muninn's Reflection",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "qeewdweddw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "cosine-purification",
+    ["match_pattern"] = "Cosine Purification",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "qqqqqad",
     ["handler"] = h.defaulthandler
 })
 
@@ -3302,6 +3581,33 @@ table.insert(hextable, {
     ["match_pattern"] = "Athena's Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "dweaqqqqd",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "breaking-reflection",
+    ["match_pattern"] = "Breaking Reflection",
+    ["startDir"] = "EAST",
+    ["angles"] = "waawaw",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "sifters-reflection",
+    ["match_pattern"] = "Sifter's Reflection",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "ewded",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "ewers-purification",
+    ["match_pattern"] = "Ewer's Purification",
+    ["startDir"] = "EAST",
+    ["angles"] = "adaaddad",
     ["handler"] = h.defaulthandler
 })
 
@@ -3442,6 +3748,15 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "quaterionic-prfn-k",
+    ["match_pattern"] = "Quaterionic Prfn: k",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "wdeeeeeqd",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "vision-purification",
     ["match_pattern"] = "Vision Purification",
     ["startDir"] = "EAST",
@@ -3509,6 +3824,15 @@ table.insert(hextable, {
     ["match_pattern"] = "Capacity Reflection",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "awedqdewa",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "hopper-purification",
+    ["match_pattern"] = "Hopper Purification",
+    ["startDir"] = "SOUTH_WEST",
+    ["angles"] = "qqqeawqwawq",
     ["handler"] = h.defaulthandler
 })
 
@@ -3671,6 +3995,24 @@ table.insert(hextable, {
     ["match_pattern"] = "Dioscuri Gambit II",
     ["startDir"] = "EAST",
     ["angles"] = "waadadaa",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "power-distillation",
+    ["match_pattern"] = "Power Distillation",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "wedew",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "floor-purification",
+    ["match_pattern"] = "Floor Purification",
+    ["startDir"] = "EAST",
+    ["angles"] = "ewq",
     ["handler"] = h.defaulthandler
 })
 
@@ -4130,15 +4472,6 @@ table.insert(hextable, {
     ["match_pattern"] = "Parametric Surface",
     ["startDir"] = "SOUTH_EAST",
     ["angles"] = "wdwddwqq",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "power-distillation",
-    ["match_pattern"] = "Power Distillation",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "wedew",
     ["handler"] = h.defaulthandler
 })
 
@@ -5380,7 +5713,7 @@ table.insert(hextable, {
     ["name"] = "long-reflection",
     ["match_pattern"] = "Long Reflection",
     ["startDir"] = "SOUTH_EAST",
-    ["angles"] = "awdedwaaweewaw",
+    ["angles"] = "awdedwaaw",
     ["handler"] = h.defaulthandler
 })
 

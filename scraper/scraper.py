@@ -99,7 +99,6 @@ for site in hexdoc_sites:
         if re.search(r"\+(.)\/\-(.)", matchpattern):
             symbol = re.search(r"\+(.)\/\-(.)", matchpattern).groups()[0]
             basename = matchpattern.split("+")[0].strip()
-
             pos = f"{basename}: +{symbol}"
             pos_name = (
                 pos.lower()
@@ -107,6 +106,7 @@ for site in hexdoc_sites:
                 .replace("+", "plus")
                 .replace(" ", "-")
                 .replace("'", "")
+                .replace(":", "")
             )
             pos_start = canvas.get("data-start").upper()
             pos_angles = canvas.get("data-string")
@@ -140,7 +140,6 @@ for site in hexdoc_sites:
                 angles=neg_angles,
             )
             patterns.append(neg_pat)
-
         #all other patterns
         else:
             name = (
@@ -161,15 +160,14 @@ for site in hexdoc_sites:
             patterns.append(pat)
 
     patterns.sort(key=functools.cmp_to_key(compare_pat))
+
     ##dedup list
-    for idx, pat in enumerate(patterns):
-        for oidx, other_pat in enumerate(patterns):
-            if (
-                pat.__dict__.get("matchpattern")
-                == other_pat.__dict__.get("matchpattern")
-                and idx != oidx
-            ):
-                patterns.pop(idx)
+    unique_patterns = []
+    seen_ids = set()
+    for pat in patterns:
+        if pat.name not in seen_ids:
+            unique_patterns.append(pat)
+            seen_ids.add(pat.name)
 
     with open(f"./output/{site}.lua", "w") as file:
         file.write(
@@ -179,7 +177,7 @@ local h = require("handlers.hexhandlers")
 local hextable = {}
 """
         )
-        for pat in patterns:
+        for pat in unique_patterns:
             # get correct handler
             handler_name = "h.defaultspellhandler"
 
