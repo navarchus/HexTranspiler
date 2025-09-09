@@ -463,6 +463,15 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "numerical-reflection",
+    ["match_pattern"] = "Numerical Reflection: %d+",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "aqaa",
+    ["handler"] = h.numhandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "glyphmakers-distillation",
     ["match_pattern"] = "Glyphmaker's Distillation",
     ["startDir"] = "NORTH_EAST",
@@ -2002,6 +2011,60 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "vector-reflection-%plusx",
+    ["match_pattern"] = "Vector Reflection %+X",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqea",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-%minusx",
+    ["match_pattern"] = "Vector Reflection %-X",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqea",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-%plusy",
+    ["match_pattern"] = "Vector Reflection %+Y",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqew",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-%minusy",
+    ["match_pattern"] = "Vector Reflection %-Y",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqew",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-%plusz",
+    ["match_pattern"] = "Vector Reflection %+Z",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqed",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
+    ["name"] = "vector-reflection-%minusz",
+    ["match_pattern"] = "Vector Reflection %-Z",
+    ["startDir"] = "NORTH_WEST",
+    ["angles"] = "qqqqqed",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "spatial-reflection-ii",
     ["match_pattern"] = "Spatial Reflection II",
     ["startDir"] = "WEST",
@@ -2605,15 +2668,6 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "numerical-reflection",
-    ["match_pattern"] = "Numerical Reflection",
-    ["startDir"] = "SOUTH_EAST",
-    ["angles"] = "aqaa",
-    ["handler"] = h.numhandler
-})
-
-
-table.insert(hextable, {
     ["name"] = "ceiling-purification",
     ["match_pattern"] = "Ceiling Purification",
     ["startDir"] = "EAST",
@@ -2627,60 +2681,6 @@ table.insert(hextable, {
     ["match_pattern"] = "Modulus Distillation",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "addwaad",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "vector-reflection-plusx",
-    ["match_pattern"] = "Vector Reflection +X",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qqqqqea",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "vector-reflection-minusx",
-    ["match_pattern"] = "Vector Reflection -X",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qqqqqea",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "vector-reflection-plusy",
-    ["match_pattern"] = "Vector Reflection +Y",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qqqqqew",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "vector-reflection-minusy",
-    ["match_pattern"] = "Vector Reflection -Y",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qqqqqew",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "vector-reflection-plusz",
-    ["match_pattern"] = "Vector Reflection +Z",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qqqqqed",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "vector-reflection-minusz",
-    ["match_pattern"] = "Vector Reflection -Z",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qqqqqed",
     ["handler"] = h.defaulthandler
 })
 

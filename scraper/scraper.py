@@ -83,10 +83,7 @@ for site in hexdoc_sites:
             .strip()
         )
 
-        ## ignore examples
-        if matchpattern == "An Example":
-            continue
-        ## replace abbreviations with full words
+                ## replace abbreviations with full words
         matchpattern = (
             matchpattern.replace("Dstl.", "Distillation")
             .replace("Prfn.", "Purification")
@@ -95,11 +92,15 @@ for site in hexdoc_sites:
             .strip()
         )
 
+        ## ignore examples
+        if matchpattern == "An Example":
+            continue
+
         # special case for vector reflections (weird formatting)
-        if re.search(r"\+(.)\/\-(.)", matchpattern):
+        elif re.search(r"\+(.)\/\-(.)", matchpattern):
             symbol = re.search(r"\+(.)\/\-(.)", matchpattern).groups()[0]
             basename = matchpattern.split("+")[0].strip()
-            pos = f"{basename} +{symbol}"
+            pos = f"{basename} %+{symbol}"
             pos_name = (
                 pos.lower()
                 .replace("-", "minus")
@@ -112,7 +113,7 @@ for site in hexdoc_sites:
             pos_angles = canvas.get("data-string")
 
             sib = canvas.find_next_sibling("canvas", {"class": "spell-viz"})
-            neg = f"{basename} -{symbol}"
+            neg = f"{basename} %-{symbol}"
             neg_name = (
                 neg.lower()
                 .replace("-", "minus")
@@ -140,6 +141,26 @@ for site in hexdoc_sites:
                 angles=neg_angles,
             )
             patterns.append(neg_pat)
+        
+        #numbers yay
+        elif matchpattern == "Numerical Reflection":
+            name = (
+                matchpattern.lower()
+                .replace("-", "minus")
+                .replace("+", "plus")
+                .replace(" ", "-")
+                .replace("'", "")
+                .replace(":", "")
+            )
+            pat = Pattern(
+                name,
+                matchpattern+": %d+",
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
+            )
+            patterns.append(pat)
+
         #all other patterns
         else:
             name = (
