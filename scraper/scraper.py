@@ -24,8 +24,8 @@ special_handlers = {
     "bookkeepers-gambit": "h.bookkeeperhandler",
     "numerical-reflection": "h.numhandler",
     # hexical
-    "sehkmets-gambit": "hexicalhandlers.sehkmethandler",
-    "nephthys-gambit": "hexicalhandlers.nepthyshandler",
+    "sehkmets-gambit": "h.sehkmethandler",
+    "nephthys-gambit": "h.nepthyshandler",
 }
 
 
