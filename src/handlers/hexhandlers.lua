@@ -275,7 +275,7 @@ local function numhandler(self, match, line_num)
     error("line " .. line_num .. ": " .. "Could not create number via decompositon!", 0)
 end
 
--- The following are specific to Hexical
+-- The following are specific to Hexical/Overevaluate/whatever miyu comes up with lol
 local function nepthyshandler(self, match, line_num)
     local num = tonumber(string.match(match, "Nephthys's Gambit:[%s]*([%d]+)"))
     if num == nil or num < 0 then
@@ -297,7 +297,7 @@ local function nepthyshandler(self, match, line_num)
     return {{["startDir"]=startDir, ["angles"]=angles}}
 end
 
-local function sehkmethandler(self, match, line_num)
+local function sekhmethandler(self, match, line_num)
     local num = tonumber(string.match(match, "Sehkmet's Gambit:[%s]*([%d]+)"))
     if num == nil or num < 0 then
         error("Line: "..line_num.." Sehkmet's Gambit must have a numerical value greater than or equal to 0")
@@ -316,6 +316,36 @@ local function sehkmethandler(self, match, line_num)
     return {{["startDir"]=startDir, ["angles"]=angles}}
 end
 
+local function gebhandler(self, match, line_num)
+        local num = tonumber(string.match(match, "Sehkmet's Gambit:[%s]*([%d]+)"))
+    if num == nil or num < 1 then
+        error("Line: "..line_num.." Geb's Gambit must have a numerical value greater than or equal to 1")
+    end
+    local startDir = "WEST"
+    local angles = "aaeaad"
+
+    for i = 1, num, 1 do
+        angles = angles.."w"
+    end
+
+    return {{["startDir"]=startDir, ["angles"]=angles}}
+end
+
+local function nuthandler(self, match, line_num)
+        local num = tonumber(string.match(match, "Sehkmet's Gambit:[%s]*([%d]+)"))
+    if num == nil or num < 1 then
+        error("Line: "..line_num.." Nut's Gambit must have a numerical value greater than or equal to 1")
+    end
+    local startDir = "EAST"
+    local angles = "aawdde"
+
+    for i = 1, num, 1 do
+        angles = angles.."w"
+    end
+
+    return {{["startDir"]=startDir, ["angles"]=angles}}
+end
+
 return {
     numhandler = numhandler,
     greatspellhandler = greatspellhandler,
@@ -325,5 +355,7 @@ return {
     bookkeeperhandler = bookkeeperhandler,
     includehandler = includehandler,
     nepthyshandler = nepthyshandler,
-    sehkmethandler = sehkmethandler
+    sehkmethandler = sekhmethandler,
+    gebhandler = gebhandler,
+    nuthandler = nuthandler,
 }

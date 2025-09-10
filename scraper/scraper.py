@@ -23,9 +23,13 @@ special_handlers = {
     # base hex
     "bookkeepers-gambit": "h.bookkeeperhandler",
     "numerical-reflection": "h.numhandler",
-    # hexical
-    "sehkmets-gambit": "h.sehkmethandler",
+    # hexical/miyu stuff lol
+    "sehkmets-gambit": "h.sekhmethandler",
+    # typo?
+    "sehkmet-gambit": "h.sekhmethandler",
     "nephthys-gambit": "h.nepthyshandler",
+    "gebs-gambit": "h.gebhandler",
+    "nuts-gambit": "h.nuthandler",
 }
 
 
@@ -51,6 +55,18 @@ def get_handler(name: str, canvas):
         handler = "h.greatspellhandler"
 
     return handler
+
+
+def clean_name(name: str):
+    name = (
+        name.lower()
+        .replace("-", "minus")
+        .replace("+", "plus")
+        .replace(" ", "-")
+        .replace("'", "")
+        .replace(":", "")
+    )
+    return name
 
 
 for site in hexdoc_sites:
@@ -83,7 +99,7 @@ for site in hexdoc_sites:
             .strip()
         )
 
-                ## replace abbreviations with full words
+        ## replace abbreviations with full words
         matchpattern = (
             matchpattern.replace("Dstl.", "Distillation")
             .replace("Prfn.", "Purification")
@@ -96,32 +112,18 @@ for site in hexdoc_sites:
         if matchpattern == "An Example":
             continue
 
-        # special case for vector reflections (weird formatting)
         elif re.search(r"\+(.)\/\-(.)", matchpattern):
+            # special case for vector reflections
             symbol = re.search(r"\+(.)\/\-(.)", matchpattern).groups()[0]
             basename = matchpattern.split("+")[0].strip()
             pos = f"{basename} %+{symbol}"
-            pos_name = (
-                pos.lower()
-                .replace("-", "minus")
-                .replace("+", "plus")
-                .replace(" ", "-")
-                .replace("'", "")
-                .replace(":", "")
-            )
+            pos_name = clean_name(pos)
             pos_start = canvas.get("data-start").upper()
             pos_angles = canvas.get("data-string")
 
             sib = canvas.find_next_sibling("canvas", {"class": "spell-viz"})
             neg = f"{basename} %-{symbol}"
-            neg_name = (
-                neg.lower()
-                .replace("-", "minus")
-                .replace("+", "plus")
-                .replace(" ", "-")
-                .replace("'", "")
-                .replace(":", "")
-            )
+            neg_name = clean_name(neg)
             neg_start = canvas.get("data-start").upper()
             neg_angles = canvas.get("data-string")
 
@@ -141,20 +143,13 @@ for site in hexdoc_sites:
                 angles=neg_angles,
             )
             patterns.append(neg_pat)
-        
-        #numbers yay
+
         elif matchpattern == "Numerical Reflection":
-            name = (
-                matchpattern.lower()
-                .replace("-", "minus")
-                .replace("+", "plus")
-                .replace(" ", "-")
-                .replace("'", "")
-                .replace(":", "")
-            )
+            # numbers
+            name = clean_name(matchpattern)
             pat = Pattern(
                 name,
-                matchpattern+":%s*%-*%d*%.*%d+",
+                matchpattern + ":%s*%-*%d*%.*%d+",
                 handler=get_handler(name, canvas),
                 startDir=canvas.get("data-start").upper(),
                 angles=canvas.get("data-string"),
@@ -162,14 +157,8 @@ for site in hexdoc_sites:
             patterns.append(pat)
 
         elif matchpattern == "Introspection":
-            name = (
-                matchpattern.lower()
-                .replace("-", "minus")
-                .replace("+", "plus")
-                .replace(" ", "-")
-                .replace("'", "")
-                .replace(":", "")
-            )
+            # introspection
+            name = clean_name(matchpattern)
             pat = Pattern(
                 name,
                 matchpattern,
@@ -187,15 +176,10 @@ for site in hexdoc_sites:
                 angles=canvas.get("data-string"),
             )
             patterns.append(pat2)
+
         elif matchpattern == "Retrospection":
-            name = (
-                matchpattern.lower()
-                .replace("-", "minus")
-                .replace("+", "plus")
-                .replace(" ", "-")
-                .replace("'", "")
-                .replace(":", "")
-            )
+            # retrospection
+            name = clean_name(matchpattern)
             pat = Pattern(
                 name,
                 matchpattern,
@@ -213,33 +197,70 @@ for site in hexdoc_sites:
                 angles=canvas.get("data-string"),
             )
             patterns.append(pat2)
+
         elif matchpattern == "Bookkeeper's Gambit":
-            name = (
-                matchpattern.lower()
-                .replace("-", "minus")
-                .replace("+", "plus")
-                .replace(" ", "-")
-                .replace("'", "")
-                .replace(":", "")
-            )
+            # bookkepers case
+            name = clean_name(matchpattern)
             pat = Pattern(
                 name,
-                matchpattern+":%s*[v-]+",
+                matchpattern + ":%s*[v-]+",
                 handler=get_handler(name, canvas),
                 startDir=canvas.get("data-start").upper(),
                 angles=canvas.get("data-string"),
             )
             patterns.append(pat)
-        #all other patterns
-        else:
-            name = (
-                matchpattern.lower()
-                .replace("-", "minus")
-                .replace("+", "plus")
-                .replace(" ", "-")
-                .replace("'", "")
-                .replace(":", "")
+
+        elif matchpattern == "Sekhmet' Gambit" or matchpattern == "Sekhmet's Gambit":
+            # Sekhmet case (typo in docs?)
+            name = clean_name(matchpattern)
+            pat = Pattern(
+                name,
+                matchpattern + ":%s*%d+",
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
             )
+            patterns.append(pat)
+
+        elif matchpattern == "Sekhmet' Gambit" or matchpattern == "Sekhmet's Gambit":
+            # Sekhmet case (typo in docs?)
+            name = clean_name(matchpattern)
+            pat = Pattern(
+                name,
+                matchpattern + ":%s*%d+",
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
+            )
+            patterns.append(pat)
+
+        elif matchpattern == "Geb's Gambit":
+            # Geb case
+            name = clean_name(matchpattern)
+            pat = Pattern(
+                name,
+                matchpattern + ":%s*%d+",
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
+            )
+            patterns.append(pat)
+
+        elif matchpattern == "Geb's Gambit":
+            # Nut case (heh)
+            name = clean_name(matchpattern)
+            pat = Pattern(
+                name,
+                matchpattern + ":%s*%d+",
+                handler=get_handler(name, canvas),
+                startDir=canvas.get("data-start").upper(),
+                angles=canvas.get("data-string"),
+            )
+            patterns.append(pat)
+
+        # all other patterns
+        else:
+            name = clean_name(matchpattern)
             pat = Pattern(
                 name,
                 matchpattern,
@@ -259,18 +280,16 @@ for site in hexdoc_sites:
             unique_patterns.append(pat)
             seen_ids.add(pat.name)
 
+##output to file
     with open(f"./output/{site}.lua", "w") as file:
         file.write(
-            """
+"""
 local h = require("handlers.hexhandlers")
 
 local hextable = {}
 """
         )
         for pat in unique_patterns:
-            # get correct handler
-            handler_name = "h.defaultspellhandler"
-
             file.write(
                 f"""
 table.insert(hextable, {{

@@ -1390,6 +1390,15 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "sekhmet-gambit",
+    ["match_pattern"] = "Sekhmet' Gambit:%s*%d+",
+    ["startDir"] = "SOUTH_WEST",
+    ["angles"] = "qaqdd",
+    ["handler"] = h.defaulthandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "jumbling-decomposition",
     ["match_pattern"] = "Jumbling Decomposition",
     ["startDir"] = "SOUTH_WEST",
@@ -2920,8 +2929,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "schrï¿½dingers-gambit",
-    ["match_pattern"] = "Schrï¿½dinger's Gambit",
+    ["name"] = "schrödingers-gambit",
+    ["match_pattern"] = "Schrödinger's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawq",
     ["handler"] = h.defaulthandler
@@ -2929,8 +2938,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "schrï¿½dingers-purif.",
-    ["match_pattern"] = "Schrï¿½dinger's Purif.",
+    ["name"] = "schrödingers-purif.",
+    ["match_pattern"] = "Schrödinger's Purif.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawa",
     ["handler"] = h.defaulthandler
@@ -3424,6 +3433,15 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
+    ["name"] = "gebs-gambit",
+    ["match_pattern"] = "Geb's Gambit:%s*%d+",
+    ["startDir"] = "WEST",
+    ["angles"] = "aaeaad",
+    ["handler"] = h.gebhandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "chroniclers-gambit",
     ["match_pattern"] = "Chronicler's Gambit",
     ["startDir"] = "EAST",
@@ -3640,8 +3658,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "schrï¿½dingers-refl.",
-    ["match_pattern"] = "Schrï¿½dinger's Refl.",
+    ["name"] = "schrödingers-refl.",
+    ["match_pattern"] = "Schrödinger's Refl.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawe",
     ["handler"] = h.defaulthandler
@@ -5467,15 +5485,6 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "sekhmet-gambit",
-    ["match_pattern"] = "Sekhmet' Gambit",
-    ["startDir"] = "SOUTH_WEST",
-    ["angles"] = "qaqdd",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
     ["name"] = "bubbling-gambit",
     ["match_pattern"] = "Bubbling Gambit",
     ["startDir"] = "EAST",
@@ -5935,8 +5944,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "lumiï¿½re-gambit",
-    ["match_pattern"] = "Lumiï¿½re Gambit",
+    ["name"] = "lumière-gambit",
+    ["match_pattern"] = "Lumière Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqeeeeewded",
     ["handler"] = h.defaulthandler
@@ -6691,20 +6700,11 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "gebs-gambit",
-    ["match_pattern"] = "Geb's Gambit",
-    ["startDir"] = "WEST",
-    ["angles"] = "aaeaad",
-    ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
     ["name"] = "nuts-gambit",
     ["match_pattern"] = "Nut's Gambit",
     ["startDir"] = "EAST",
     ["angles"] = "aawdde",
-    ["handler"] = h.defaulthandler
+    ["handler"] = h.nuthandler
 })
 
 
