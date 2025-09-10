@@ -154,7 +154,7 @@ for site in hexdoc_sites:
             )
             pat = Pattern(
                 name,
-                matchpattern+":%s*%d*%.*%d+",
+                matchpattern+":%s*%-*%d*%.*%d+",
                 handler=get_handler(name, canvas),
                 startDir=canvas.get("data-start").upper(),
                 angles=canvas.get("data-string"),

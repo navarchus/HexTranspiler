@@ -4,20 +4,20 @@ local h = require("handlers.hexhandlers")
 local hextable = {}
 
 table.insert(hextable, {
+    ["name"] = "numerical-reflection",
+    ["match_pattern"] = "Numerical Reflection:%s*%-*%d*%.*%d+",
+    ["startDir"] = "SOUTH_EAST",
+    ["angles"] = "aqaa",
+    ["handler"] = h.numhandler
+})
+
+
+table.insert(hextable, {
     ["name"] = "everetts-relative-purification-ii",
     ["match_pattern"] = "Everett's Relative Purification II",
     ["startDir"] = "NORTH_EAST",
     ["angles"] = "daqqad",
     ["handler"] = h.defaulthandler
-})
-
-
-table.insert(hextable, {
-    ["name"] = "numerical-reflection",
-    ["match_pattern"] = "Numerical Reflection:%s*%d*%.*%d+",
-    ["startDir"] = "SOUTH_EAST",
-    ["angles"] = "aqaa",
-    ["handler"] = h.numhandler
 })
 
 
@@ -2920,8 +2920,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "schrödingers-gambit",
-    ["match_pattern"] = "Schrödinger's Gambit",
+    ["name"] = "schrï¿½dingers-gambit",
+    ["match_pattern"] = "Schrï¿½dinger's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawq",
     ["handler"] = h.defaulthandler
@@ -2929,8 +2929,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "schrödingers-purif.",
-    ["match_pattern"] = "Schrödinger's Purif.",
+    ["name"] = "schrï¿½dingers-purif.",
+    ["match_pattern"] = "Schrï¿½dinger's Purif.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawa",
     ["handler"] = h.defaulthandler
@@ -3640,8 +3640,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "schrödingers-refl.",
-    ["match_pattern"] = "Schrödinger's Refl.",
+    ["name"] = "schrï¿½dingers-refl.",
+    ["match_pattern"] = "Schrï¿½dinger's Refl.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawe",
     ["handler"] = h.defaulthandler
@@ -5935,8 +5935,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "lumière-gambit",
-    ["match_pattern"] = "Lumière Gambit",
+    ["name"] = "lumiï¿½re-gambit",
+    ["match_pattern"] = "Lumiï¿½re Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "awaqeeeeewded",
     ["handler"] = h.defaulthandler
