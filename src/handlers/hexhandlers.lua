@@ -305,7 +305,7 @@ local function sekhmethandler(self, match, line_num)
     local startDir = "SOUTH_WEST"
     local angles = "qaqdd"
 
-    for i = 1, num, 1 do
+    for i = 0, num, 1 do
         if i % 2 == 0 then
             angles = angles.."e"
         else
@@ -339,7 +339,7 @@ local function nuthandler(self, match, line_num)
     local startDir = "EAST"
     local angles = "aawdde"
 
-    for i = 1, num, 1 do
+    for _ = 1, num, 1 do
         angles = angles.."w"
     end
 
