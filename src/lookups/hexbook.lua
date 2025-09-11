@@ -1394,7 +1394,7 @@ table.insert(hextable, {
     ["match_pattern"] = "Sekhmet' Gambit:%s*%d+",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "qaqdd",
-    ["handler"] = h.defaulthandler
+    ["handler"] = h.sekhmethandler
 })
 
 

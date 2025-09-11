@@ -355,7 +355,7 @@ return {
     bookkeeperhandler = bookkeeperhandler,
     includehandler = includehandler,
     nepthyshandler = nepthyshandler,
-    sehkmethandler = sekhmethandler,
+    sekhmethandler = sekhmethandler,
     gebhandler = gebhandler,
     nuthandler = nuthandler,
 }

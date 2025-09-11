@@ -24,9 +24,9 @@ special_handlers = {
     "bookkeepers-gambit": "h.bookkeeperhandler",
     "numerical-reflection": "h.numhandler",
     # hexical/miyu stuff lol
-    "sehkmets-gambit": "h.sekhmethandler",
+    "sekhmets-gambit": "h.sekhmethandler",
     # typo?
-    "sehkmet-gambit": "h.sekhmethandler",
+    "sekhmet-gambit": "h.sekhmethandler",
     "nephthys-gambit": "h.nepthyshandler",
     "gebs-gambit": "h.gebhandler",
     "nuts-gambit": "h.nuthandler",
