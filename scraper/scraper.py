@@ -124,8 +124,8 @@ for site in hexdoc_sites:
             sib = canvas.find_next_sibling("canvas", {"class": "spell-viz"})
             neg = f"{basename} %-{symbol}"
             neg_name = clean_name(neg)
-            neg_start = canvas.get("data-start").upper()
-            neg_angles = canvas.get("data-string")
+            neg_start = sib.get("data-start").upper()
+            neg_angles = sib.get("data-string")
 
             pos_pat = Pattern(
                 pos_name,
@@ -135,6 +135,7 @@ for site in hexdoc_sites:
                 angles=pos_angles,
             )
             patterns.append(pos_pat)
+
             neg_pat = Pattern(
                 neg_name,
                 neg,

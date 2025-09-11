@@ -2040,8 +2040,8 @@ table.insert(hextable, {
 table.insert(hextable, {
     ["name"] = "vector-reflection-%minusx",
     ["match_pattern"] = "Vector Reflection %-X",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qqqqqea",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "eeeeeqa",
     ["handler"] = h.defaulthandler
 })
 
@@ -2058,8 +2058,8 @@ table.insert(hextable, {
 table.insert(hextable, {
     ["name"] = "vector-reflection-%minusy",
     ["match_pattern"] = "Vector Reflection %-Y",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qqqqqew",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "eeeeeqw",
     ["handler"] = h.defaulthandler
 })
 
@@ -2076,8 +2076,8 @@ table.insert(hextable, {
 table.insert(hextable, {
     ["name"] = "vector-reflection-%minusz",
     ["match_pattern"] = "Vector Reflection %-Z",
-    ["startDir"] = "NORTH_WEST",
-    ["angles"] = "qqqqqed",
+    ["startDir"] = "NORTH_EAST",
+    ["angles"] = "eeeeeqd",
     ["handler"] = h.defaulthandler
 })
 
