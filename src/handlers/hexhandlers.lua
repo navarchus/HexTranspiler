@@ -312,10 +312,10 @@ local function sekhmethandler(self, match, line_num)
     local angles = "qaqdd"
 
     for i = 0, num, 1 do
-        if i % 2 == 0 and i ~= 0 then
-            angles = angles.."e"
-        else
+        if i % 2 == 0 or i == 0 then
             angles = angles.."q"
+        else
+            angles = angles.."e"
         end
     end
 
