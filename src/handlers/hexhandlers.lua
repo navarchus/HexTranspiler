@@ -299,6 +299,13 @@ end
 
 local function sekhmethandler(self, match, line_num)
     local num = tonumber(string.match(match, "Sekhmet's Gambit:[%s]*([%d]+)"))
+
+    if num == nil then
+        -- temp fix for bad hexpattern stuff
+        num = tonumber(string.match(match, "Sekhmet' Gambit:[%s]*([%d]+)"))
+    end
+
+    print(match)
     if num == nil or num < 0 then
         error("Line: "..line_num.." Sekhmet's Gambit must have a numerical value greater than or equal to 0")
     end
@@ -317,7 +324,7 @@ local function sekhmethandler(self, match, line_num)
 end
 
 local function gebhandler(self, match, line_num)
-        local num = tonumber(string.match(match, "Geb's Gambit:[%s]*([%d]+)"))
+    local num = tonumber(string.match(match, "Geb's Gambit:[%s]*([%d]+)"))
     if num == nil or num < 1 then
         error("Line: "..line_num.." Geb's Gambit must have a numerical value greater than or equal to 1")
     end
@@ -332,7 +339,7 @@ local function gebhandler(self, match, line_num)
 end
 
 local function nuthandler(self, match, line_num)
-        local num = tonumber(string.match(match, "Nut's Gambit:[%s]*([%d]+)"))
+    local num = tonumber(string.match(match, "Nut's Gambit:[%s]*([%d]+)"))
     if num == nil or num < 1 then
         error("Line: "..line_num.." Nut's Gambit must have a numerical value greater than or equal to 1")
     end
