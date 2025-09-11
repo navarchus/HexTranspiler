@@ -311,7 +311,7 @@ local function sekhmethandler(self, match, line_num)
     local startDir = "SOUTH_WEST"
     local angles = "qaqdd"
 
-    for i = 0, num, 1 do
+    for i = 1, num, 1 do
         if i % 2 == 0 or i == 0 then
             angles = angles.."q"
         else
