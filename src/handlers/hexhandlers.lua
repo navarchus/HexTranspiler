@@ -305,7 +305,6 @@ local function sekhmethandler(self, match, line_num)
         num = tonumber(string.match(match, "Sekhmet' Gambit:[%s]*([%d]+)"))
     end
 
-    print(match)
     if num == nil or num < 0 then
         error("Line: "..line_num.." Sekhmet's Gambit must have a numerical value greater than or equal to 0")
     end
