@@ -1,24 +1,5 @@
 local csv = require("utilities.csv")
 
--- needed for numhandler
-function table.deepcopy(o, seen)
-    seen = seen or {}
-    if o == nil then return nil end
-    if seen[o] then return seen[o] end
-
-
-    local no = {}
-    seen[o] = no
-    setmetatable(no, table.deepcopy(getmetatable(o), seen))
-
-    for k, v in next, o, nil do
-        k = (type(k) == 'table') and k:deepcopy(seen) or k
-        v = (type(v) == 'table') and v:deepcopy(seen) or v
-        no[k] = v
-    end
-    return no
-end
-
 local function defaulthandler(self, _match, line_num)
     return { [1] = { ["startDir"] = self["startDir"], ["angles"] = self["angles"] } }
 end
@@ -34,34 +15,37 @@ local function greatspellhandler(self, match, line_num)
         greatspellfile.write("NAME, MATCHPATTERN, STARTDIR, ANGLES")
         greatspellfile.close()
     end
-    local f = csv.open(hexpiler_dir .. "/greatspells/greatspells.csv", {["header"]=true})
+    local f = csv.open(hexpiler_dir .. "/greatspells/greatspells.csv", { ["header"] = true })
     if f == nil then
-        error("Could not open Great Spell file",0)
+        error("Could not open Great Spell file", 0)
     end
     for fields in f:lines() do
-        if fields["NAME"]==self["name"] then
+        if fields["NAME"] == self["name"] then
             local res = {
-                [1] = {["startDir"] = fields["STARTDIR"], ["angles"] = fields["ANGLES"]}
+                [1] = { ["startDir"] = fields["STARTDIR"], ["angles"] = fields["ANGLES"] }
             }
             return res
         end
     end
 
-    local continueprompt = "\nPress y to proceed with Great Spell definition.\nPress any other key to abort compilation.\n"
-    print("No matching great spell found for "..match)
+    local continueprompt =
+    "\nPress y to proceed with Great Spell definition.\nPress any other key to abort compilation.\n"
+    print("No matching great spell found for " .. match)
     print(continueprompt)
     local user_input = read()
     if user_input ~= "y" then
-        error("Undefined great spell on line: "..line_num, 0)
+        error("Undefined great spell on line: " .. line_num, 0)
     end
     print()
 
 
-    print("Insert a focus containing the definition for "..match.." into a focal port attached to this computer.\nThe definition must be escaped with consideration, not intro/retrospection.")
+    print("Insert a focus containing the definition for " ..
+        match ..
+        " into a focal port attached to this computer.\nThe definition must be escaped with consideration, not intro/retrospection.")
     print(continueprompt)
     local user_input = read()
     if user_input ~= "y" then
-        error("Undefined great spell on line: "..line_num, 0)
+        error("Undefined great spell on line: " .. line_num, 0)
     end
     print()
 
@@ -77,7 +61,7 @@ local function greatspellhandler(self, match, line_num)
     end
 
     local greatspellfilehandler = fs.open(hexpiler_dir .. "/greatspells/greatspells.csv", "a")
-    greatspellfilehandler.write("\n"..self["name"]..","..self["match_pattern"]..","..startDir..","..angles)
+    greatspellfilehandler.write("\n" .. self["name"] .. "," .. self["match_pattern"] .. "," .. startDir .. "," .. angles)
     greatspellfilehandler.close()
 
     print("If exporting, insert a blank focus into attached focal port to write hex to.")
@@ -89,7 +73,7 @@ local function greatspellhandler(self, match, line_num)
     print()
 
     local res = {
-        [1] = {["startDir"] = startDir, ["angles"] = angles}
+        [1] = { ["startDir"] = startDir, ["angles"] = angles }
     }
 
     return res
@@ -197,104 +181,75 @@ end
 
 -- TODO: Rework this to make it (theoretically) doable by hand
 local function numhandler(self, match, line_num)
-    ---comment
-    ---@param current number
-    ---@param target number
-    ---@param patternstring string
-    ---@return string
-    local function calc_num(current, target, patternstring)
-        if current == target then
-            return patternstring
-        end
 
-        local diff = math.abs(target - current)
-        if (current * 2) <= diff and current ~= 0 then
-            return calc_num(current * 2, target, patternstring .. "a")
-        elseif diff >= 10 then
-            return calc_num(current + 10, target, patternstring .. "e")
-        elseif diff >= 5 then
-            return calc_num(current + 5, target, patternstring .. "q")
+    local function gen_num(num)
+        num = math.floor(num)
+        local pattern = ""
+        local base = ""
+        if num < 0 then
+            base = "dedd"
         else
-            return calc_num(current + 1, target, patternstring .. "w")
+            base = "aqaa"
         end
+        num = math.abs(num)
+        while num > 0 do
+            if num % 2 == 0 then
+                num = num / 2
+                pattern = pattern .. "a"
+            else
+                num = num - 1
+                pattern = pattern .. "w"
+            end
+        end
+        pattern = string.reverse(pattern)
+        return base .. pattern
     end
 
-    local add_pat = { ["startDir"] = "NORTH_EAST", ["angles"] = "waaw" }
-    local divide_pat = { ["startDir"] = "NORTH_EAST", ["angles"] = "wdedw" }
+    local sign, num, fraction = string.match(match, "(%-?)([%d]+([.]?[%d]*))")
 
-    local sign, whole, fraction = string.match(match, "(-?)([%d]+)[.]?([%d]*)")
+    local startDir = ""
+    local angles = ""
 
-    whole = tonumber(whole)
-    fraction = tonumber(fraction)
-
-    if whole == nil then
-        error("line " .. line_num .. ": " .. "Error creating Numerical Reflection, check syntax", 0)
-    end
-
-    local zero = {}
     if sign == "-" then
-        zero = { ["startDir"] = "NORTH_EAST", ["angles"] = "dedd" }
+        startDir = "NORTH_EAST"
     else
-        zero = { ["startDir"] = "SOUTH_EAST", ["angles"] = "aqaa" }
+        startDir = "SOUTH_EAST"
     end
 
-    --calculate whole part of number
-    local calc_whole = table.deepcopy(zero)
-    if calc_whole == nil then
-        error("line " .. line_num .. ": " .. "Error copying numerical zero table", 0)
-    end
+    if fraction ~= "" then
+        local precision = #fraction-1 --account for "." being included
 
-    local extra_whole_symbols = calc_num(0, whole, "")
-    calc_whole["angles"] = calc_whole["angles"] .. extra_whole_symbols
-
-    if fraction ~= nil then
-        --we need to do fraction
-        local calc_fraction = table.deepcopy(zero)
-        -- need this to always be positive zero
-        local calc_divisor = { ["startDir"] = "SOUTH_EAST", ["angles"] = "aqaa" }
-
-
-        if calc_fraction == nil or calc_divisor == nil then
-            error("line " .. line_num .. ": " .. "Error copying numerical zero table", 0)
-        end
-        local extra_fraction_symbols = calc_num(0, fraction, "")
-        calc_fraction["angles"] = calc_fraction["angles"] .. extra_fraction_symbols
-
-        local extra_divisor_symbols = calc_num(0, 10 ^ string.len(fraction), "")
-        calc_divisor["angles"] = calc_divisor["angles"] .. extra_divisor_symbols
-
-        return { [1] = calc_whole, [2] = calc_fraction, [3] = calc_divisor, [4] = divide_pat, [5] = add_pat }
+        angles = gen_num((2 ^ tonumber(precision)) * tonumber(sign..num)) .. string.rep("d", precision)
+        -- chloe : to let it work with decimals, just multiply the input number by 2^<precision level>
+        -- and append <precision level> as 'a' to the end of the literal
+        -- (think she meant 'd')
     else
-        --we can just return whole number
-        return { [1] = calc_whole }
+        angles = gen_num(tonumber(sign..num))
     end
 
-
-
-    -- if we would return nil something awful has happened
-    error("line " .. line_num .. ": " .. "Could not create number via decompositon!", 0)
+    return { { ["startDir"] = startDir, ["angles"] = angles } }
 end
 
 -- The following are specific to Hexical/Overevaluate/whatever miyu comes up with lol
 local function nepthyshandler(self, match, line_num)
     local num = tonumber(string.match(match, "Nephthys's Gambit:[%s]*([%d]+)"))
     if num == nil or num < 0 then
-        error("Line: "..line_num.." Nepthys's Gambit must have a numerical value greater than or equal to 0")
+        error("Line: " .. line_num .. " Nepthys's Gambit must have a numerical value greater than or equal to 0")
     end
     local startDir = "SOUTH_EAST"
     local angles = "deaqq"
 
     for i = 1, num, 1 do
         if i == 1 then
-            angles = angles.."d"
+            angles = angles .. "d"
         elseif i % 2 == 0 then
-            angles = angles.."q"
+            angles = angles .. "q"
         else
-            angles = angles.."e"
+            angles = angles .. "e"
         end
     end
 
-    return {{["startDir"]=startDir, ["angles"]=angles}}
+    return { { ["startDir"] = startDir, ["angles"] = angles } }
 end
 
 local function sekhmethandler(self, match, line_num)
@@ -306,50 +261,50 @@ local function sekhmethandler(self, match, line_num)
     end
 
     if num == nil or num < 0 then
-        error("Line: "..line_num.." Sekhmet's Gambit must have a numerical value greater than or equal to 0")
+        error("Line: " .. line_num .. " Sekhmet's Gambit must have a numerical value greater than or equal to 0")
     end
     local startDir = "SOUTH_WEST"
     local angles = "qaqdd"
 
-    for i = 0, num-1, 1 do
+    for i = 0, num - 1, 1 do
         if i % 2 == 0 or i == 0 then
-            angles = angles.."q"
+            angles = angles .. "q"
         else
-            angles = angles.."e"
+            angles = angles .. "e"
         end
     end
 
-    return {{["startDir"]=startDir, ["angles"]=angles}}
+    return { { ["startDir"] = startDir, ["angles"] = angles } }
 end
 
 local function gebhandler(self, match, line_num)
     local num = tonumber(string.match(match, "Geb's Gambit:[%s]*([%d]+)"))
     if num == nil or num < 1 then
-        error("Line: "..line_num.." Geb's Gambit must have a numerical value greater than or equal to 1")
+        error("Line: " .. line_num .. " Geb's Gambit must have a numerical value greater than or equal to 1")
     end
     local startDir = "WEST"
     local angles = "aaeaad"
 
     for i = 1, num, 1 do
-        angles = angles.."w"
+        angles = angles .. "w"
     end
 
-    return {{["startDir"]=startDir, ["angles"]=angles}}
+    return { { ["startDir"] = startDir, ["angles"] = angles } }
 end
 
 local function nuthandler(self, match, line_num)
     local num = tonumber(string.match(match, "Nut's Gambit:[%s]*([%d]+)"))
     if num == nil or num < 1 then
-        error("Line: "..line_num.." Nut's Gambit must have a numerical value greater than or equal to 1")
+        error("Line: " .. line_num .. " Nut's Gambit must have a numerical value greater than or equal to 1")
     end
     local startDir = "EAST"
     local angles = "aawdde"
 
     for _ = 1, num, 1 do
-        angles = angles.."w"
+        angles = angles .. "w"
     end
 
-    return {{["startDir"]=startDir, ["angles"]=angles}}
+    return { { ["startDir"] = startDir, ["angles"] = angles } }
 end
 
 return {
