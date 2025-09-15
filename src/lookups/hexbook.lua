@@ -2929,8 +2929,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "schrödingers-gambit",
-    ["match_pattern"] = "Schrödinger's Gambit",
+    ["name"] = "schrodingers-gambit",
+    ["match_pattern"] = "Schrodinger's Gambit",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawq",
     ["handler"] = h.defaulthandler
@@ -2938,8 +2938,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "schrödingers-purif.",
-    ["match_pattern"] = "Schrödinger's Purif.",
+    ["name"] = "schrodingers-purif.",
+    ["match_pattern"] = "Schrodinger's Purif.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawa",
     ["handler"] = h.defaulthandler
@@ -3658,8 +3658,8 @@ table.insert(hextable, {
 
 
 table.insert(hextable, {
-    ["name"] = "schrödingers-refl.",
-    ["match_pattern"] = "Schrödinger's Refl.",
+    ["name"] = "schrodingers-refl.",
+    ["match_pattern"] = "Schrodinger's Refl.",
     ["startDir"] = "SOUTH_WEST",
     ["angles"] = "aawe",
     ["handler"] = h.defaulthandler
