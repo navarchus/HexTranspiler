@@ -65,6 +65,7 @@ def clean_name(name: str):
         .replace(" ", "-")
         .replace("'", "")
         .replace(":", "")
+        .replace("ö", "o")
     )
     return name
 
@@ -106,6 +107,11 @@ for site in hexdoc_sites:
             .replace("Rfln.", "Reflection")
             .replace("Tan.", "Tangent")
             .strip()
+        )
+
+        ##special case for weird characters
+        matchpattern = (
+            matchpattern.replace("ö", "o")
         )
 
         ## ignore examples
