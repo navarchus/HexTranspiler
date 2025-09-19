@@ -1,5 +1,4 @@
 local h = require("handlers.hexhandlers")
-local definepattern = "#define ([%a%s]+) (%(%s*(%S+)%s*([aqweds]*)%s*%))([,%a%s%=%-%>]*)"
 
 local hextable = {}
 
@@ -16,13 +15,12 @@ table.insert(hextable, {
 
 table.insert(hextable, {
     ["name"] = "define-macro",
-    ["match_pattern"] = definepattern,
+    ["match_pattern"] = h.definepattern,
     ["handler"] = h.definehandler
 })
 table.insert(hextable, {
     ["name"] = "include-macro",
-    -- need to escape quotes here
-    ["match_pattern"] = "#include%s+\"([%S]+)\"%s*$",
+    ["match_pattern"] = h.includepattern,
     ["handler"] = h.includehandler
 })
 

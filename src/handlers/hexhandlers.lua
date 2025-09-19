@@ -1,6 +1,7 @@
 local csv = require("utilities.csv")
 
 local definepattern="#define ([%a%s]+) (%(%s*(%S+)%s*([aqweds]*)%s*%))([,%a%s%=%-%>]*)"
+local includepattern="#include%s+\"([%S]+)\"%s*$"
 
 local function defaulthandler(self, _match, line_num)
     return { [1] = { ["startDir"] = self["startDir"], ["angles"] = self["angles"] } }
@@ -310,6 +311,9 @@ local function nuthandler(self, match, line_num)
 end
 
 return {
+    definepattern = definepattern,
+    includepattern = includepattern,
+
     numhandler = numhandler,
     greatspellhandler = greatspellhandler,
     defaulthandler = defaulthandler,
