@@ -1,5 +1,7 @@
 local csv = require("utilities.csv")
 
+local definepattern="#define ([%a%s]+) (%(%s*(%S+)%s*([aqweds]*)%s*%))([,%a%s%=%-%>]*)"
+
 local function defaulthandler(self, _match, line_num)
     return { [1] = { ["startDir"] = self["startDir"], ["angles"] = self["angles"] } }
 end
@@ -81,7 +83,7 @@ end
 
 local function definehandler(self, match, line_num)
     local name, _patterndef, startDir, angles, _operation_info = string.match(match,
-        "#define ([%a%s]+) (%(%s*(%S+)%s*([aqweds]*)%s*%))([%a%s%=%-%>]*)")
+        definepattern)
 
     if name == nil and startDir == nil and angles == nil then
         error("line " .. line_num .. ": " .. "Cannot have empty define", 0)
@@ -129,7 +131,7 @@ local function includehandler(self, match, line_num)
     --look for #define statements:
     for include_line_num, include_line in ipairs(include_lines) do
         local include_sidx, include_eidx = string.find(include_line,
-            "#define ([%a%s]+) (%(%s*(%S+)%s*([aqweds]*)%s*%))([%a%s%=%-%>]*)")
+            definepattern)
         if include_sidx ~= nil and include_eidx ~= nil then
             local define_res = definehandler(self, string.sub(include_line, include_sidx, include_eidx), include_line_num)
             table.insert(defines, define_res[1][1])
