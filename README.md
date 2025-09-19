@@ -52,4 +52,5 @@ would attempt to read the file `counter.hexpattern`, write raw anglesigs to the 
 ## TODO:
 - Optimized numerical reflection/more accurate numerical reflection (https://s5bug.github.io/squiggler/)??
 - More detailed error messages
-- Use Hexbug format instead of custom format for lookup tables
+- Use Hexbug format instead of custom format for lookup tables (no regex so may be impossible)
+- nested #include directives (need to figure out cyclical dependency detection)
