@@ -1,6 +1,7 @@
 local csv = require("utilities.csv")
 
-local definepattern="#define ([%a%s]+) (%(%s*(%S+)%s*([aqweds]*)%s*%))([,%a%s%=%-%>]*)"
+--https://iamreiyn.github.io/lua-pattern-tester/
+local definepattern="#define ([%a%s]+)%s*(%(%s*(%S+)%s*([aqweds]*)%s*%))([,%a%s%=%-%>]*)"
 local includepattern="#include%s+\"([%S]+)\"%s*$"
 
 local function defaulthandler(self, _match, line_num)
