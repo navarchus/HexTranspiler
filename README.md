@@ -38,19 +38,9 @@ The command
 
 would attempt to read the file `counter.hexpattern`, write raw anglesigs to the file `a.out`, and attempt to write the result to an attached focal port.
 
-## Current list of supported addons:
-- complexhex
-- hexal
-- hexcassettes
-- hexcellular
-- hexdebug
-- hexical
-- hextweaks
-- moreiotas
-- oneironaut
-
 ## TODO:
 - Optimized numerical reflection/more accurate numerical reflection (https://s5bug.github.io/squiggler/)??
 - More detailed error messages
 - Use Hexbug format instead of custom format for lookup tables (no regex so may be impossible)
 - nested #include directives (need to figure out cyclical dependency detection)
+- document scraper usage
