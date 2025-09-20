@@ -39,7 +39,8 @@ The command
 would attempt to read the file `counter.hexpattern`, write raw anglesigs to the file `a.out`, and attempt to write the result to an attached focal port.
 
 ## TODO:
-- Optimized numerical reflection/more accurate numerical reflection (https://s5bug.github.io/squiggler/)??
+- Optimized numerical reflection/more accurate numerical reflection (https://s5bug.github.io/squiggler/ is an option)
+    - could also look into re-introducing decomposition
 - More detailed error messages
 - Use Hexbug format instead of custom format for lookup tables (no regex so may be impossible)
 - nested #include directives (need to figure out cyclical dependency detection)

@@ -209,7 +209,7 @@ local function numhandler(self, match, line_num)
         return base .. pattern
     end
 
-    local sign, num, fraction = string.match(match, "(%-?)([%d]+([.]?[%d]*))")
+    local sign, whole, fraction = string.match(match, "(%-?)([%d]+)%.?([%d]*)")
 
     local startDir = ""
     local angles = ""
@@ -221,14 +221,13 @@ local function numhandler(self, match, line_num)
     end
 
     if fraction ~= "" then
-        local precision = #fraction-1 --account for "." being included
-
-        angles = gen_num((2 ^ tonumber(precision)) * tonumber(sign..num)) .. string.rep("d", precision)
+        local precision = #fraction
+        angles = gen_num((2 ^ tonumber(precision)) * tonumber(sign..whole.."."..fraction)) .. string.rep("d", precision)
         -- chloe : to let it work with decimals, just multiply the input number by 2^<precision level>
         -- and append <precision level> as 'a' to the end of the literal
-        -- (think she meant 'd')
+        -- (think she meant divide, so 'd' instead)
     else
-        angles = gen_num(tonumber(sign..num))
+        angles = gen_num(tonumber(sign..whole))
     end
 
     return { { ["startDir"] = startDir, ["angles"] = angles } }
