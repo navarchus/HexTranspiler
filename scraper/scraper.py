@@ -3,10 +3,11 @@ import dataclasses
 import requests
 from bs4 import BeautifulSoup
 import re
+import os
 from functools import cmp_to_key
 
 hexdoc_sites = {
-    "hexbook": "https://book.hexxy.media/v/latest/v2/en_us/#patterns/readwrite@hexcasting:local"
+    "hexbook": "https://book.hexxy.media/v/latest/main/en_us/?nospoiler"
 }
 
 
@@ -288,7 +289,10 @@ for site in hexdoc_sites:
             seen_ids.add(pat.name)
 
 ##output to file
-    with open(f"./output/{site}.lua", "w") as file:
+    out_dir = "./output"
+    if not os.path.exists(out_dir):
+        os.makedirs(out_dir, exist_ok=True)
+    with open(f"{out_dir}/{site}.lua", "w") as file:
         file.write(
 """
 local h = require("handlers.hexhandlers")
